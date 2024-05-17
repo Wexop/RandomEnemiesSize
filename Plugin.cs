@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Globalization;
 using BepInEx;
 using BepInEx.Configuration;
 using HarmonyLib;
@@ -7,7 +6,6 @@ using LethalConfig;
 using LethalConfig.ConfigItems;
 using LethalConfig.ConfigItems.Options;
 using RandomEnemiesSize.Patches;
-using UnityEngine;
 
 namespace RandomEnemiesSize
 {
@@ -18,7 +16,7 @@ namespace RandomEnemiesSize
 
         const string GUID = "wexop.random_enemies_size";
         const string NAME = "RandomEnemiesSize";
-        const string VERSION = "1.0.1";
+        const string VERSION = "1.0.2";
 
         public static RandomEnemiesSize instance;
         
@@ -83,7 +81,10 @@ namespace RandomEnemiesSize
 
             string customEnemies = customEnemyEntry.Value;
 
-            if (customEnemies.Contains(name.ToLower()))
+            float minvalue = 1;
+            float maxvalue = 1;
+
+            if (customEnemies.ToLower().Contains(name.ToLower()))
             {
                 customEnemy.found = true;
                 var enemies = customEnemies.Split(";");
@@ -93,8 +94,11 @@ namespace RandomEnemiesSize
                     var values = e.Split(":");
                     if (values[0].ToLower().Contains(name.ToLower()))
                     {
-                        customEnemy.minValue = float.Parse(values[1]);
-                        customEnemy.maxValue = float.Parse(values[2]);
+                        float.TryParse(values[1], NumberStyles.Any, CultureInfo.InvariantCulture, out minvalue);
+                        float.TryParse(values[2], NumberStyles.Any, CultureInfo.InvariantCulture, out maxvalue);
+
+                        customEnemy.minValue = minvalue;
+                        customEnemy.minValue = maxvalue;
                     }
                 }
                 
@@ -110,8 +114,8 @@ namespace RandomEnemiesSize
 
     public class CustomEnemySize
     {
-        public float maxValue;
-        public float minValue;
+        public float maxValue = 1;
+        public float minValue = 1;
         public bool found = false;
     }
 }

@@ -1,6 +1,8 @@
 Every human don't have the same height no ? So why monsters do ? 
 
-This mod make monsters spawn with a random size !
+This mod make monsters spawn with a random size ! 
+
+
 
 You can configure the range size for :
 
@@ -8,7 +10,11 @@ You can configure the range size for :
 - Indoor enemies
 - Custom enemies
 
-FOR CUSTOM ENEMIES
+**Note that:**
+- Others mods enemies should be impacted by this mod.
+- Only the **player who host the game** config will be taken.
+
+**FOR CUSTOM ENEMIES**
 
 This is an input, you can for example write -> ForestGiant:1:2;NutCracker:1:2
 Make sure to have a separator ';' between monsters, even if you have only one custom enemies !
