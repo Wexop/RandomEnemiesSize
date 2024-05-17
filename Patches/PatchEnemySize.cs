@@ -15,9 +15,22 @@ namespace RandomEnemiesSize.Patches
         {
             
                 if (!__instance.IsServer || !__instance.IsOwner) return;
-
-                var scale = Random.Range(RandomEnemiesSize.instance.minSizeEntry.Value, RandomEnemiesSize.instance.maxSizeEntry.Value);
                 
+
+                var scale = Random.Range(RandomEnemiesSize.instance.minSizeOutdoorEntry.Value, RandomEnemiesSize.instance.maxSizeOutdoorEntry.Value);
+
+                if (!__instance.isOutside)
+                {
+                    scale = Random.Range(RandomEnemiesSize.instance.minSizeIndoorEntry.Value, RandomEnemiesSize.instance.maxSizeIndoorEntry.Value);
+                }
+
+                var customEnemy = RandomEnemiesSize.instance.GetCustomEnemySize(__instance.enemyType.enemyName);
+                if (customEnemy.found)
+                {
+                    scale = Random.Range(customEnemy.minValue, customEnemy.maxValue);
+                }
+                
+                //server dispawn gameobject, change scale, and respawn it to sync with clients
                 __instance.gameObject.GetComponent<NetworkObject>().Despawn(destroy: false);
                 __instance.gameObject.transform.localScale = new Vector3(1, 1, 1) * scale ;
                 __instance.gameObject.GetComponent<NetworkObject>().Spawn();
