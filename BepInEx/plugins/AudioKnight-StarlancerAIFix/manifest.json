@@ -1,0 +1,9 @@
+{
+    "name": "StarlancerAIFix",
+    "version_number": "3.6.0",
+    "website_url": "https://github.com/AudioKnight/Starlancer",
+    "description": "Automatically assigns interior/exterior AI for enemies based on their spawn location. Also fixes a null reference exception regarding EnableEnemyMesh(). Part of my Starlancer Series!",
+    "dependencies": [
+	"BepInEx-BepInExPack-5.4.2100"
+    ]
+}
