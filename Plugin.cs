@@ -30,10 +30,10 @@ namespace RandomEnemiesSize
 
             Logger.LogInfo($"RandomEnemiesSize starting....");
             
-            minSizeEntry = Config.Bind("Size", "MinMonstersSize", 0.5f, "Change the minimum size of monsters");
+            minSizeEntry = Config.Bind("Size", "MinMonstersSize", 0.5f, "Change the minimum size of monsters. No need to restart the game :)");
             CreateFloatConfig(minSizeEntry);
             
-            maxSizeEntry = Config.Bind("Size", "MaxMonstersSize", 3f, "Change the maximum size of monsters");
+            maxSizeEntry = Config.Bind("Size", "MaxMonstersSize", 3f, "Change the maximum size of monsters. No need to restart the game :)");
             CreateFloatConfig(maxSizeEntry);
             
             Harmony.CreateAndPatchAll(typeof(PatchEnemySize));
@@ -47,7 +47,8 @@ namespace RandomEnemiesSize
             var exampleSlider = new FloatSliderConfigItem(configEntry, new FloatSliderOptions() 
             {
                 Min = 0f,
-                Max = 50f
+                Max = 50f,
+                RequiresRestart = false
             });
             LethalConfigManager.AddConfigItem(exampleSlider);
         }

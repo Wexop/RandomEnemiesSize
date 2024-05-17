@@ -1,18 +1,3 @@
-Add common lethal company monsters or anything in the game as scraps items (Be careful it can be noisy!)
+Every human don't have the same height no ? So why monsters do ? 
 
-Every spawn rate can be configured with LethalConfig !
-
-Current scraps items:
-
-- DogToy
-- BrackenToy
-- NutCrackerToy
-- GiantToy
-- OldBirdToy
-- BlobToy
-- FireExitToy
-- GoldenFireExitToy
-- JesterToy
-- CoilHeadToy
-- BugToy
-- LittleGirlToy
+This mod make monsters spawn with a random size, that you can configure with LethalLib !
