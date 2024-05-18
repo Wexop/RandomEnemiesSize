@@ -16,7 +16,7 @@ namespace RandomEnemiesSize
 
         const string GUID = "wexop.random_enemies_size";
         const string NAME = "RandomEnemiesSize";
-        const string VERSION = "1.0.2";
+        const string VERSION = "1.0.3";
 
         public static RandomEnemiesSize instance;
         
@@ -75,16 +75,27 @@ namespace RandomEnemiesSize
             LethalConfigManager.AddConfigItem(exampleSlider);
         }
 
-        public CustomEnemySize GetCustomEnemySize(string name)
+        public CustomEnemySize GetCustomEnemySize(string nameValue)
         {
             var customEnemy = new CustomEnemySize();
 
-            string customEnemies = customEnemyEntry.Value;
+            string customEnemies = customEnemyEntry.Value.ToLower();
+
+            while (customEnemies.Contains(" "))
+            {
+                customEnemies = customEnemies.Replace(" ", "");
+            }
 
             float minvalue = 1;
             float maxvalue = 1;
 
-            if (customEnemies.ToLower().Contains(name.ToLower()))
+            var name = nameValue.ToLower();
+            while (name.Contains(" "))
+            {
+                name = name.Replace(" ", "");
+            }
+
+            if (customEnemies.ToLower().Contains(name))
             {
                 customEnemy.found = true;
                 var enemies = customEnemies.Split(";");
@@ -92,13 +103,13 @@ namespace RandomEnemiesSize
                 foreach (var e in enemies)
                 {
                     var values = e.Split(":");
-                    if (values[0].ToLower().Contains(name.ToLower()))
+                    if (values[0].Contains(name))
                     {
                         float.TryParse(values[1], NumberStyles.Any, CultureInfo.InvariantCulture, out minvalue);
                         float.TryParse(values[2], NumberStyles.Any, CultureInfo.InvariantCulture, out maxvalue);
 
                         customEnemy.minValue = minvalue;
-                        customEnemy.minValue = maxvalue;
+                        customEnemy.maxValue = maxvalue;
                     }
                 }
                 

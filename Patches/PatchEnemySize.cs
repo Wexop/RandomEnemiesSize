@@ -31,8 +31,11 @@ namespace RandomEnemiesSize.Patches
                 }
                 
                 //server dispawn gameobject, change scale, and respawn it to sync with clients
+
+                var originalScale = __instance.gameObject.transform.localScale;
+                
                 __instance.gameObject.GetComponent<NetworkObject>().Despawn(destroy: false);
-                __instance.gameObject.transform.localScale = new Vector3(1, 1, 1) * scale ;
+                __instance.gameObject.transform.localScale = originalScale * scale ;
                 __instance.gameObject.GetComponent<NetworkObject>().Spawn();
 
                 
