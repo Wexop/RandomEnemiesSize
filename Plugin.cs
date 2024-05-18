@@ -5,6 +5,7 @@ using HarmonyLib;
 using LethalConfig;
 using LethalConfig.ConfigItems;
 using LethalConfig.ConfigItems.Options;
+using RandomEnemiesSize.Helpers;
 using RandomEnemiesSize.Patches;
 
 namespace RandomEnemiesSize
@@ -19,6 +20,7 @@ namespace RandomEnemiesSize
         const string VERSION = "1.0.4";
 
         public static RandomEnemiesSize instance;
+        public OriginalMonsters OriginalMonsters;
         
         public ConfigEntry<float> minSizeIndoorEntry;
         public ConfigEntry<float> maxSizeIndoorEntry;
@@ -26,6 +28,7 @@ namespace RandomEnemiesSize
         public ConfigEntry<float> minSizeOutdoorEntry;
         public ConfigEntry<string> customEnemyEntry;
         
+        public ConfigEntry<bool> influenceHpConfig;
         
         public ConfigEntry<bool> funModeEntry;
         public ConfigEntry<float> funModeHorizontalMinEntry;
@@ -53,6 +56,9 @@ namespace RandomEnemiesSize
             
             customEnemyEntry = Config.Bind("Custom", "CustomEnemiesSize", "", "Custom the size for an enemy wanted with his EXACT name. for example -> ForestGiant:0.4:5;FlowerMan:0.2:6. Dont forgot the separator ';' between each monsters. No need to restart the game :)");
             CreateStringConfig(customEnemyEntry);
+            
+            influenceHpConfig = Config.Bind("Influence", "InfluenceHp", false, "Activate to make size influence monsters HP. No need to restart the game :)");
+            CreateBoolConfig(influenceHpConfig);
 
             funModeEntry = Config.Bind("FunMode", "FunMode", false, "Activate the fun mode to randomize the size in every space direction (verticaly, horizontaly). No need to restart the game :)");
             CreateBoolConfig(funModeEntry);
@@ -62,9 +68,12 @@ namespace RandomEnemiesSize
             
             funModeHorizontalMaxEntry = Config.Bind("FunMode", "FunModeHorizontalSizeMax", 1.5f, "If fun mode is activated, it will change the maximum horizontal size of monsters (axis x and z). No need to restart the game :)");
             CreateFloatConfig(funModeHorizontalMaxEntry);
-            
+
             Harmony.CreateAndPatchAll(typeof(PatchEnemySize));
-            
+
+            OriginalMonsters = new OriginalMonsters();
+            OriginalMonsters.Init();
+
             Logger.LogInfo($"RandomEnemiesSize Patched !!");
             
         }
