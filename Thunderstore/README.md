@@ -30,4 +30,6 @@ This normaly should work with modded enemies. For any issues, create an issue on
 You can activate the fun mode to randomize the size of every axis (x,y,z).
 The height range is based on initial configs, but you can config horizontals ranges (x,z)
 
+You can lock the horizontal axis (x and z) to have the same value.
+
 Have fun :)

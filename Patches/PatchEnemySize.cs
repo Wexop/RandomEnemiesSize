@@ -40,6 +40,11 @@ namespace RandomEnemiesSize.Patches
                     
                     var funXSize = Random.Range(RandomEnemiesSize.instance.funModeHorizontalMinEntry.Value, RandomEnemiesSize.instance.funModeHorizontalMaxEntry.Value);
                     var funZSize = Random.Range(RandomEnemiesSize.instance.funModeHorizontalMinEntry.Value, RandomEnemiesSize.instance.funModeHorizontalMaxEntry.Value);
+
+                    if (RandomEnemiesSize.instance.lockFunModeHorizontalEnrty.Value)
+                    {
+                        funZSize = funXSize;
+                    }
                     
                     newScale = new Vector3(newScale.x * funXSize, newScale.y, newScale.z * funZSize);
                 }
@@ -53,7 +58,7 @@ namespace RandomEnemiesSize.Patches
                 
 
                 
-                Debug.Log($"ENEMY ({__instance.gameObject.name}) SPAWNED WITH RANDOM SIZE {scale}");
+                Debug.Log($"ENEMY ({__instance.gameObject.name}) SPAWNED WITH RANDOM SIZE {newScale.ToString()}");
         }
         
     }

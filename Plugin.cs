@@ -16,7 +16,7 @@ namespace RandomEnemiesSize
 
         const string GUID = "wexop.random_enemies_size";
         const string NAME = "RandomEnemiesSize";
-        const string VERSION = "1.0.4";
+        const string VERSION = "1.0.5";
 
         public static RandomEnemiesSize instance;
         
@@ -30,6 +30,7 @@ namespace RandomEnemiesSize
         public ConfigEntry<bool> funModeEntry;
         public ConfigEntry<float> funModeHorizontalMinEntry;
         public ConfigEntry<float> funModeHorizontalMaxEntry;
+        public ConfigEntry<bool> lockFunModeHorizontalEnrty;
 
         void Awake()
         {
@@ -62,6 +63,9 @@ namespace RandomEnemiesSize
             
             funModeHorizontalMaxEntry = Config.Bind("FunMode", "FunModeHorizontalSizeMax", 1.5f, "If fun mode is activated, it will change the maximum horizontal size of monsters (axis x and z). No need to restart the game :)");
             CreateFloatConfig(funModeHorizontalMaxEntry);
+            
+            lockFunModeHorizontalEnrty = Config.Bind("FunMode", "LockHorizontalAxis", false, "If fun mode is activated, it will change the horizontal axis (x and z) with the same value. No need to restart the game :)");
+            CreateBoolConfig(lockFunModeHorizontalEnrty);
             
             Harmony.CreateAndPatchAll(typeof(PatchEnemySize));
             
