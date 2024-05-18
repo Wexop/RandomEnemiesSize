@@ -52,10 +52,10 @@ namespace RandomEnemiesSize
             maxSizeOutdoorEntry = Config.Bind("General", "MaxMonstersSizeOutdoor", 3f, "Change the maximum size of monsters outside the factory. No need to restart the game :)");
             CreateFloatConfig(maxSizeOutdoorEntry);
             
-            customEnemyEntry = Config.Bind("Custom", "CustomEnemiesSize", "", "Custom the size for an enemy wanted with his EXACT name. for example -> ForestGiant:0.4:5;FlowerMan:0.2:6. Dont forgot the separator ';' between each monsters. RECOMMENDED: Go to the thunderstore mod page, you can find a generator to make easier this config. No need to restart the game :)");
+            customEnemyEntry = Config.Bind("Custom", "CustomEnemiesSize", "", "Custom the size for an enemy wanted with his EXACT name. RECOMMENDED: Go to the thunderstore mod page, you can find a generator to make easier this config. Manual example -> ForestGiant:0.4:5;FlowerMan:0.2:6. Dont forgot the separator ';' between each monsters. No need to restart the game :)");
             CreateStringConfig(customEnemyEntry);
 
-            funModeEntry = Config.Bind("FunMode", "FunMode", false, "Activate the fun mode to randomize the size in every space direction (verticaly, horizontaly). No need to restart the game :)");
+            funModeEntry = Config.Bind("FunMode", "FunMode", false, "Activate the fun mode to randomize the size in every space directions (verticaly, horizontaly). No need to restart the game :)");
             CreateBoolConfig(funModeEntry);
             
             funModeHorizontalMinEntry = Config.Bind("FunMode", "FunModeHorizontalSizeMin", 0.5f, "If fun mode is activated, it will change the minimum horizontal size of monsters (axis x and z). No need to restart the game :)");
