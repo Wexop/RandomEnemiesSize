@@ -1,5 +1,6 @@
 ﻿
 using HarmonyLib;
+using LethalLevelLoader;
 using Unity.Netcode;
 using UnityEngine;
 
@@ -29,7 +30,16 @@ namespace RandomEnemiesSize.Patches
                 {
                     scale = Random.Range(customEnemy.minValue, customEnemy.maxValue);
                 }
-                
+
+                if (!__instance.isOutside)
+                {
+                    
+                    Debug.Log($"ACTUAL DUNGEON NAME {DungeonManager.CurrentExtendedDungeonFlow.DungeonName}");
+
+                    scale *= RandomEnemiesSize.instance.GetInteriorMultiplier(__instance.enemyType.enemyName,
+                        DungeonManager.CurrentExtendedDungeonFlow.DungeonName);
+                }
+
                 //server dispawn gameobject, change scale, and respawn it to sync with clients
 
                 var originalScale = __instance.gameObject.transform.localScale;

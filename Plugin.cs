@@ -25,6 +25,7 @@ namespace RandomEnemiesSize
         public ConfigEntry<float> maxSizeOutdoorEntry;
         public ConfigEntry<float> minSizeOutdoorEntry;
         public ConfigEntry<string> customEnemyEntry;
+        public ConfigEntry<string> customInteriorEntry;
         
         
         public ConfigEntry<bool> funModeEntry;
@@ -53,7 +54,10 @@ namespace RandomEnemiesSize
             CreateFloatConfig(maxSizeOutdoorEntry);
             
             customEnemyEntry = Config.Bind("Custom", "CustomEnemiesSize", "", "Custom the size for an enemy wanted with his EXACT name. RECOMMENDED: Go to the thunderstore mod page, you can find a generator to make easier this config. Manual example -> ForestGiant:0.4:5;FlowerMan:0.2:6. Dont forgot the separator ';' between each monsters. No need to restart the game :)");
-            CreateStringConfig(customEnemyEntry);
+            CreateStringConfig(customEnemyEntry);       
+            
+            customInteriorEntry = Config.Bind("Custom", "CustomInteriorsSize", "", "Multiply the base size for an indoor enemy in an interior wanted with his EXACT name. RECOMMENDED: Go to the thunderstore mod page, you can find a generator to make easier this config. Manual example -> mansion#any:1.5,NutCracker:2;customInterior#any:3; No need to restart the game :)");
+            CreateStringConfig(customInteriorEntry);
 
             funModeEntry = Config.Bind("FunMode", "FunMode", false, "Activate the fun mode to randomize the size in every space directions (verticaly, horizontaly). No need to restart the game :)");
             CreateBoolConfig(funModeEntry);
@@ -146,6 +150,70 @@ namespace RandomEnemiesSize
 
             return customEnemy;
 
+        }
+
+        public float GetInteriorMultiplier(string enemyNameValue, string interiorNameValue
+        )
+        {
+
+            //remove spaces
+            var enemyName = enemyNameValue.ToLower();
+            while (enemyName.Contains(" "))
+            {
+                enemyName = enemyName.Replace(" ", "");
+            }
+            
+            var interiorName = interiorNameValue.ToLower();
+            while (interiorName.Contains(" "))
+            {
+                interiorName = interiorName.Replace(" ", "");
+            }
+
+            var interiorsInputValue = customInteriorEntry.Value.ToLower();
+            while (interiorsInputValue.Contains(" "))
+            {
+                interiorsInputValue = interiorsInputValue.Replace(" ", "");
+            }
+            
+            //check
+            if (interiorsInputValue.Contains(enemyName) && interiorsInputValue.Contains(interiorName))
+            {
+
+                var multiplier = 1f;
+                
+                var interiors = interiorsInputValue.Split(";");
+                foreach (var i in interiors)
+                {
+                    var splitInterior = i.Split("#");
+                    var name = splitInterior[0];
+
+                    if (name.Contains(interiorName))
+                    {
+
+                        var values = splitInterior[1].Split(",");
+                        
+                        foreach (var v in values)
+                        {
+                            var monsterValue = v.Split(":");
+                            var monsterName = monsterValue[0];
+                            var monsterMultiplier = monsterValue[1];
+
+                            if (monsterName == "any" || monsterName == enemyName)
+                            {
+                                float.TryParse(monsterMultiplier, NumberStyles.Any, CultureInfo.InvariantCulture, out multiplier);
+                            }
+
+                        }
+                    }
+                    
+                }
+
+                return multiplier;
+
+            }
+
+
+            return 1f;
         }
 
 
