@@ -16,7 +16,7 @@ namespace RandomEnemiesSize
 
         const string GUID = "wexop.random_enemies_size";
         const string NAME = "RandomEnemiesSize";
-        const string VERSION = "1.0.3";
+        const string VERSION = "1.0.4";
 
         public static RandomEnemiesSize instance;
         
@@ -25,6 +25,11 @@ namespace RandomEnemiesSize
         public ConfigEntry<float> maxSizeOutdoorEntry;
         public ConfigEntry<float> minSizeOutdoorEntry;
         public ConfigEntry<string> customEnemyEntry;
+        
+        
+        public ConfigEntry<bool> funModeEntry;
+        public ConfigEntry<float> funModeHorizontalMinEntry;
+        public ConfigEntry<float> funModeHorizontalMaxEntry;
 
         void Awake()
         {
@@ -48,6 +53,15 @@ namespace RandomEnemiesSize
             
             customEnemyEntry = Config.Bind("Custom", "CustomEnemiesSize", "", "Custom the size for an enemy wanted with his EXACT name. for example -> ForestGiant:0.4:5;FlowerMan:0.2:6. Dont forgot the separator ';' between each monsters. No need to restart the game :)");
             CreateStringConfig(customEnemyEntry);
+
+            funModeEntry = Config.Bind("FunMode", "FunMode", false, "Activate the fun mode to randomize the size in every space direction (verticaly, horizontaly). No need to restart the game :)");
+            CreateBoolConfig(funModeEntry);
+            
+            funModeHorizontalMinEntry = Config.Bind("FunMode", "FunModeHorizontalSizeMin", 0.5f, "If fun mode is activated, it will change the minimum horizontal size of monsters (axis x and z). No need to restart the game :)");
+            CreateFloatConfig(funModeHorizontalMinEntry);    
+            
+            funModeHorizontalMaxEntry = Config.Bind("FunMode", "FunModeHorizontalSizeMax", 1.5f, "If fun mode is activated, it will change the maximum horizontal size of monsters (axis x and z). No need to restart the game :)");
+            CreateFloatConfig(funModeHorizontalMaxEntry);
             
             Harmony.CreateAndPatchAll(typeof(PatchEnemySize));
             
@@ -60,7 +74,7 @@ namespace RandomEnemiesSize
             var exampleSlider = new FloatSliderConfigItem(configEntry, new FloatSliderOptions() 
             {
                 Min = 0f,
-                Max = 50f,
+                Max = 30f,
                 RequiresRestart = false
             });
             LethalConfigManager.AddConfigItem(exampleSlider);
@@ -69,6 +83,15 @@ namespace RandomEnemiesSize
         private void CreateStringConfig( ConfigEntry<string> configEntry)
         {
             var exampleSlider = new TextInputFieldConfigItem(configEntry, new TextInputFieldOptions() 
+            {
+                RequiresRestart = false,
+            });
+            LethalConfigManager.AddConfigItem(exampleSlider);
+        }
+        
+        private void CreateBoolConfig( ConfigEntry<bool> configEntry)
+        {
+            var exampleSlider = new BoolCheckBoxConfigItem(configEntry, new BoolCheckBoxOptions() 
             {
                 RequiresRestart = false,
             });

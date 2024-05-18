@@ -33,10 +33,24 @@ namespace RandomEnemiesSize.Patches
                 //server dispawn gameobject, change scale, and respawn it to sync with clients
 
                 var originalScale = __instance.gameObject.transform.localScale;
+                var newScale = originalScale * scale;
+
+                if (RandomEnemiesSize.instance.funModeEntry.Value)
+                {
+                    
+                    var funXSize = Random.Range(RandomEnemiesSize.instance.funModeHorizontalMinEntry.Value, RandomEnemiesSize.instance.funModeHorizontalMaxEntry.Value);
+                    var funZSize = Random.Range(RandomEnemiesSize.instance.funModeHorizontalMinEntry.Value, RandomEnemiesSize.instance.funModeHorizontalMaxEntry.Value);
+                    
+                    newScale = new Vector3(newScale.x * funXSize, newScale.y, newScale.z * funZSize);
+                }
                 
                 __instance.gameObject.GetComponent<NetworkObject>().Despawn(destroy: false);
-                __instance.gameObject.transform.localScale = originalScale * scale ;
+                
+                //change size
+                __instance.gameObject.transform.localScale = newScale ;
+
                 __instance.gameObject.GetComponent<NetworkObject>().Spawn();
+                
 
                 
                 Debug.Log($"ENEMY ({__instance.gameObject.name}) SPAWNED WITH RANDOM SIZE {scale}");

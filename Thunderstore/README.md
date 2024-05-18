@@ -26,4 +26,8 @@ Make sure to have a separator ';' between monsters, even if you have only one cu
 
 This normaly should work with modded enemies. For any issues, create an issue on the git page :)
 
+**FUN MODE**
+You can activate the fun mode to randomize the size of every axis (x,y,z).
+The height range is based on initial configs, but you can config horizontals ranges (x,z)
+
 Have fun :)
