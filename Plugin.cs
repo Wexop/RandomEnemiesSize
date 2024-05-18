@@ -52,7 +52,7 @@ namespace RandomEnemiesSize
             maxSizeOutdoorEntry = Config.Bind("General", "MaxMonstersSizeOutdoor", 3f, "Change the maximum size of monsters outside the factory. No need to restart the game :)");
             CreateFloatConfig(maxSizeOutdoorEntry);
             
-            customEnemyEntry = Config.Bind("Custom", "CustomEnemiesSize", "", "Custom the size for an enemy wanted with his EXACT name. for example -> ForestGiant:0.4:5;FlowerMan:0.2:6. Dont forgot the separator ';' between each monsters. No need to restart the game :)");
+            customEnemyEntry = Config.Bind("Custom", "CustomEnemiesSize", "", "Custom the size for an enemy wanted with his EXACT name. for example -> ForestGiant:0.4:5;FlowerMan:0.2:6. Dont forgot the separator ';' between each monsters. RECOMMENDED: Go to the thunderstore mod page, you can find a generator to make easier this config. No need to restart the game :)");
             CreateStringConfig(customEnemyEntry);
 
             funModeEntry = Config.Bind("FunMode", "FunMode", false, "Activate the fun mode to randomize the size in every space direction (verticaly, horizontaly). No need to restart the game :)");
@@ -124,7 +124,7 @@ namespace RandomEnemiesSize
 
             if (customEnemies.ToLower().Contains(name))
             {
-                customEnemy.found = true;
+
                 var enemies = customEnemies.Split(";");
 
                 foreach (var e in enemies)
@@ -134,7 +134,8 @@ namespace RandomEnemiesSize
                     {
                         float.TryParse(values[1], NumberStyles.Any, CultureInfo.InvariantCulture, out minvalue);
                         float.TryParse(values[2], NumberStyles.Any, CultureInfo.InvariantCulture, out maxvalue);
-
+                        
+                        customEnemy.found = true;
                         customEnemy.minValue = minvalue;
                         customEnemy.maxValue = maxvalue;
                     }
