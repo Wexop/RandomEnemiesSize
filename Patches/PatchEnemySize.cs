@@ -34,7 +34,7 @@ namespace RandomEnemiesSize.Patches
                 if (!__instance.isOutside)
                 {
                     
-                    Debug.Log($"ACTUAL DUNGEON NAME {DungeonManager.CurrentExtendedDungeonFlow.DungeonName}");
+                    //Debug.Log($"ACTUAL DUNGEON NAME {DungeonManager.CurrentExtendedDungeonFlow.DungeonName}");
 
                     scale *= RandomEnemiesSize.instance.GetInteriorMultiplier(__instance.enemyType.enemyName,
                         DungeonManager.CurrentExtendedDungeonFlow.DungeonName);
