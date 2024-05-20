@@ -31,7 +31,7 @@ namespace RandomEnemiesSize.Patches
                     scale = Random.Range(customEnemy.minValue, customEnemy.maxValue);
                 }
 
-                if (!__instance.isOutside)
+                if (!__instance.isOutside && DungeonManager.CurrentExtendedDungeonFlow?.DungeonName != null)
                 {
                     
                     //Debug.Log($"ACTUAL DUNGEON NAME {DungeonManager.CurrentExtendedDungeonFlow.DungeonName}");
