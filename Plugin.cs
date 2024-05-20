@@ -15,7 +15,7 @@ namespace RandomEnemiesSize
     {
         private const string GUID = "wexop.random_enemies_size";
         private const string NAME = "RandomEnemiesSize";
-        private const string VERSION = "1.0.6";
+        private const string VERSION = "1.0.7";
 
         public static RandomEnemiesSize instance;
         public ConfigEntry<string> customEnemyEntry;
@@ -25,10 +25,12 @@ namespace RandomEnemiesSize
         public ConfigEntry<bool> funModeEntry;
         public ConfigEntry<float> funModeHorizontalMaxEntry;
         public ConfigEntry<float> funModeHorizontalMinEntry;
+
+        public ConfigEntry<bool> influenceHpConfig;
         public ConfigEntry<bool> lockFunModeHorizontalEnrty;
+
         public ConfigEntry<float> maxSizeIndoorEntry;
         public ConfigEntry<float> maxSizeOutdoorEntry;
-
         public ConfigEntry<float> minSizeIndoorEntry;
         public ConfigEntry<float> minSizeOutdoorEntry;
 
@@ -61,6 +63,10 @@ namespace RandomEnemiesSize
             customInteriorEntry = Config.Bind("Custom", "CustomInteriorsSize", "",
                 "Multiply the base size for an indoor enemy in an interior wanted with his EXACT name. RECOMMENDED: Go to the thunderstore mod page, you can find a generator to make easier this config. Manual example -> mansion#any:1.5,NutCracker:2;customInterior#any:3; No need to restart the game :)");
             CreateStringConfig(customInteriorEntry);
+
+            influenceHpConfig = Config.Bind("Influences", "InfluenceHp", true,
+                "Activate to make size influence monsters HP. No need to restart the game :)");
+            CreateBoolConfig(influenceHpConfig);
 
             funModeEntry = Config.Bind("FunMode", "FunMode", false,
                 "Activate the fun mode to randomize the size in every space directions (verticaly, horizontaly). No need to restart the game :)");

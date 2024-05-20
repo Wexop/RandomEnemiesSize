@@ -49,7 +49,10 @@ namespace RandomEnemiesSize.Patches
 
             //changes on every client
 
-            NetworkSize.UpdateEnemyClientRpc(__instance.NetworkObjectId, newScale, scale);
+            var influences = new Influences();
+            influences.GetInfos();
+
+            NetworkSize.UpdateEnemyClientRpc(__instance.NetworkObjectId, newScale, scale, influences);
 
 
             Debug.Log($"ENEMY ({__instance.gameObject.name}) SPAWNED WITH RANDOM SIZE {newScale.ToString()}");
