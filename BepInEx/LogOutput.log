@@ -26,7 +26,7 @@
 [Message:   BepInEx] Preloader finished
 [Message:   BepInEx] Chainloader ready
 [Message:   BepInEx] Chainloader started
-[Info   :   BepInEx] 8 plugins to load
+[Info   :   BepInEx] 9 plugins to load
 [Info   :   BepInEx] Loading [LethalConfig 1.4.2]
 [Info   :ainavt.lc.lethalconfig] Registered config "LethalConfig/Example/Int Slider"
 [Info   :ainavt.lc.lethalconfig] Registered config "LethalConfig/Example/Float Slider"
@@ -57,16 +57,31 @@
 [Info   :LethalDevMode] Plugin LethalDevMode is loaded!
 [Info   :   BepInEx] Loading [FartZone 1.0.2]
 [Info   :  FartZone] FartZone starting....
-[Info   :   BepInEx] Loading [RandomEnemiesSize 1.0.0]
+[Info   :   BepInEx] Loading [StaticNetcodeLib 1.0.3]
+[Debug  :StaticNetcodeLib] Patching...
+[Debug  :StaticNetcodeLib] Finished patching!
+[Info   :StaticNetcodeLib] Xilophor.StaticNetcodeLib v1.0.3 has loaded!
+[Info   :   BepInEx] Loading [RandomEnemiesSize 1.0.6]
 [Info   :RandomEnemiesSize] RandomEnemiesSize starting....
+[Info   :ainavt.lc.lethalconfig] Registered config "RandomEnemiesSize/General/MinMonstersSizeIndoor"
+[Info   :ainavt.lc.lethalconfig] Registered config "RandomEnemiesSize/General/MaxMonstersSizeIndoor"
+[Info   :ainavt.lc.lethalconfig] Registered config "RandomEnemiesSize/General/MinMonstersSizeOutdoor"
+[Info   :ainavt.lc.lethalconfig] Registered config "RandomEnemiesSize/General/MaxMonstersSizeOutdoor"
+[Info   :ainavt.lc.lethalconfig] Registered config "RandomEnemiesSize/Custom/CustomEnemiesSize"
+[Info   :ainavt.lc.lethalconfig] Registered config "RandomEnemiesSize/Custom/CustomInteriorsSize"
+[Info   :ainavt.lc.lethalconfig] Registered config "RandomEnemiesSize/Influence/InfluenceHp"
+[Info   :ainavt.lc.lethalconfig] Registered config "RandomEnemiesSize/FunMode/FunMode"
+[Info   :ainavt.lc.lethalconfig] Registered config "RandomEnemiesSize/FunMode/FunModeHorizontalSizeMin"
+[Info   :ainavt.lc.lethalconfig] Registered config "RandomEnemiesSize/FunMode/FunModeHorizontalSizeMax"
+[Info   :ainavt.lc.lethalconfig] Registered config "RandomEnemiesSize/FunMode/LockHorizontalAxis"
 [Info   :RandomEnemiesSize] RandomEnemiesSize Patched !!
 [Message:   BepInEx] Chainloader startup complete
 [Info   :LethalLevelLoader] No ExtendedMod Found In Bundle: fartmoon. Forcefully Loading ExtendedContent!
 [Info   : Unity Log] Saving changed settings
-[Info   : Unity Log] subcribing to steam callbacks
 [Warning: Unity Log] DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
 [Info   :LethalLevelLoader] Registering Bundle Content!
 [Info   :LethalLevelLoader] Skipped Registering 0 NetworkObjects As They Were Already Registered.
+[Info   : Unity Log] Facepunch transport is disabled.
 [Info   :MaxWasUnavailable.LethalModDataLib] Registering ModDataAttribute fields...
 [Info   :MaxWasUnavailable.LethalModDataLib] Hooking up save, load and delete events...
 [Info   :MaxWasUnavailable.LethalModDataLib] ModDataHandler initialised!
@@ -74,10 +89,10 @@
 [Debug  :MaxWasUnavailable.LethalModDataLib] LethalModDataLib version (1.2.2) matches last saved version (1.2.2).
 [Debug  :MaxWasUnavailable.LethalModDataLib] Saving data to file LCGeneralSaveData.moddata with key MaxWasUnavailable.LethalModDataLib.LMDLVersion...
 [Info   :ainavt.lc.lethalconfig] Injecting mod config menu into main menu...
-[Info   : Unity Log] Returning week num: 22
-[Info   : Unity Log] week num: 22
+[Info   : Unity Log] Returning week num: 23
+[Info   : Unity Log] week num: 23
 [Info   :ainavt.lc.lethalconfig] Injecting mod config menu into main menu...
-[Debug  :ainavt.lc.lethalconfig] 8 mods loaded: ainavt.lc.lethalconfig;AudioKnight.StarlancerAIFix;evaisa.lethallib;MaxWasUnavailable.LethalModDataLib;imabatby.lethallevelloader;LethalDevMode;wexop.fartzone;wexop.random_enemies_size
+[Debug  :ainavt.lc.lethalconfig] 9 mods loaded: ainavt.lc.lethalconfig;AudioKnight.StarlancerAIFix;evaisa.lethallib;MaxWasUnavailable.LethalModDataLib;imabatby.lethallevelloader;LethalDevMode;wexop.fartzone;Xilophor.StaticNetcodeLib;wexop.random_enemies_size
 [Debug  :ainavt.lc.lethalconfig] ainavt.lc.lethalconfig : LethalConfig : 1.4.2
 [Debug  :ainavt.lc.lethalconfig] AudioKnight.StarlancerAIFix : Starlancer AI Fix : 3.6.0
 [Debug  :ainavt.lc.lethalconfig] evaisa.lethallib : LethalLib : 0.15.1
@@ -85,25 +100,13 @@
 [Debug  :ainavt.lc.lethalconfig] imabatby.lethallevelloader : LethalLevelLoader : 1.2.0.1
 [Debug  :ainavt.lc.lethalconfig] LethalDevMode : LethalDevMode : 1.0.0
 [Debug  :ainavt.lc.lethalconfig] wexop.fartzone : FartZone : 1.0.2
-[Debug  :ainavt.lc.lethalconfig] wexop.random_enemies_size : RandomEnemiesSize : 1.0.0
+[Debug  :ainavt.lc.lethalconfig] Xilophor.StaticNetcodeLib : StaticNetcodeLib : 1.0.3
+[Debug  :ainavt.lc.lethalconfig] wexop.random_enemies_size : RandomEnemiesSize : 1.0.6
 [Info   :ainavt.lc.lethalconfig] Generated 1 mod entries.
-[Info   :ainavt.lc.lethalconfig] Generated 13 configs, of which 2 were missing and registered.
+[Info   :ainavt.lc.lethalconfig] Generated 24 configs, of which 2 were missing and registered.
 [Info   : Unity Log] host button pressed
-[Info   : Unity Log] Returning week num: 22
-[Info   : Unity Log] AAAAAA
-[Info   : Unity Log] 0
-[Info   : Unity Log] 0
-[Info   : Unity Log] AAAAAA
-[Info   : Unity Log] 0
-[Info   : Unity Log] 1
-[Info   : Unity Log] AAAAAA
-[Info   : Unity Log] 0
-[Info   : Unity Log] 2
-[Info   : Unity Log] AAAAAA
-[Info   : Unity Log] 0
-[Info   : Unity Log] -1
-[Info   : Unity Log] Returning week num: 22
-[Info   : Unity Log] host button pressed
+[Info   : Unity Log] Returning week num: 23
+[Info   : Unity Log] Clicked local connection only
 [Info   : Unity Log] Displaying menu message
 [Info   : Unity Log] Connection approval callback! Game version of client request: 
 [Info   : Unity Log] Joining client id: 0; Local/host client id: 0
@@ -111,11 +114,7 @@
 [Warning: Unity Log] [Netcode] You cannot decline the host connection. The connection was automatically approved.
 [Info   : Unity Log] started host!
 [Info   : Unity Log] are we in a server?: True
-[Info   : Unity Log] Lobby has been created
-[Warning: Unity Log] [Dissonance:Recording] (20:07:23.316) BasePreprocessingPipeline: Lost 960 samples in the preprocessor (buffer full), injecting silence to compensate
-[Warning: Unity Log] [Dissonance:Recording] (20:07:23.484) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:0,2638235)
-[Warning: Unity Log] [Dissonance:Recording] (20:07:25.882) BasePreprocessingPipeline: Lost 960 samples in the preprocessor (buffer full), injecting silence to compensate
-[Warning: Unity Log] [Dissonance:Recording] (20:07:25.884) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:0,2952427)
+[Warning: Unity Log] [Dissonance:Recording] (19:48:06.674) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:0,1721658)
 [Info   :LethalLevelLoader] LethalLevelLoader Loaded The Following ExtendedLevels:
 1. 41 Experimentation (Vanilla)
 2. 220 Assurance (Vanilla)
@@ -138,12 +137,12 @@
 3. Facility (Level1FlowExtraLarge) (Vanilla)
 4. Facility (Level1Flow3Exits) (Vanilla)
 
-[Debug  :MaxWasUnavailable.LethalModDataLib] Loading data from file LCSaveFile1.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile1.customItemDictionary...
-[Debug  :MaxWasUnavailable.LethalModDataLib] Loading data from file LCSaveFile1.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile1.allItemsList...
-[Debug  :MaxWasUnavailable.LethalModDataLib] Loading data from file LCSaveFile1.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile1.itemSaveDataList...
-[Debug  :MaxWasUnavailable.LethalModDataLib] Loading data from file LCSaveFile1.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile1.itemSaveData...
-[Debug  :MaxWasUnavailable.LethalModDataLib] Loading data from file LCSaveFile1.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile1.CurrentLevelName...
-[Info   :LethalLevelLoader] Initialized LLL Save File, Current Level Was: , Current Vanilla Save Is: LCSaveFile1
+[Debug  :MaxWasUnavailable.LethalModDataLib] Loading data from file LCSaveFile2.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile2.customItemDictionary...
+[Debug  :MaxWasUnavailable.LethalModDataLib] Loading data from file LCSaveFile2.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile2.allItemsList...
+[Debug  :MaxWasUnavailable.LethalModDataLib] Loading data from file LCSaveFile2.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile2.itemSaveDataList...
+[Debug  :MaxWasUnavailable.LethalModDataLib] Loading data from file LCSaveFile2.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile2.itemSaveData...
+[Debug  :MaxWasUnavailable.LethalModDataLib] Loading data from file LCSaveFile2.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile2.CurrentLevelName...
+[Info   :LethalLevelLoader] Initialized LLL Save File, Current Level Was: FartZoneLevel, Current Vanilla Save Is: LCSaveFile2
 [Info   :LethalLevelLoader] LethalLevelLoader Has Finished Initializing.
 [Info   : Unity Log] Enabling connection callbacks in StartOfRound
 [Info   : Unity Log] Began listening to SceneManager_OnLoadComplete1 on this client
@@ -151,14 +150,15 @@
 [Info   : LethalLib] Adding 0 items to terminal
 [Warning: Unity Log] damageTrigger is disabled! Netcode for GameObjects does not support spawning disabled NetworkBehaviours! The InteractTrigger component was skipped during spawn!
 [Info   : LethalLib] Found 0 prefabs to fix
-[Info   : Unity Log] level id: 0
+[Info   :LethalLevelLoader] Loading Previously Saved SelectableLevel: FartZone
+[Info   : Unity Log] level id: 13
 [Info   : Unity Log] Changing level
-[Info   :LethalLevelLoader] Saving Current SelectableLevel: 41 Experimentation
-[Debug  :MaxWasUnavailable.LethalModDataLib] Saving data to file LCSaveFile1.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile1.customItemDictionary...
-[Debug  :MaxWasUnavailable.LethalModDataLib] Saving data to file LCSaveFile1.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile1.allItemsList...
-[Debug  :MaxWasUnavailable.LethalModDataLib] Saving data to file LCSaveFile1.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile1.itemSaveDataList...
-[Debug  :MaxWasUnavailable.LethalModDataLib] Saving data to file LCSaveFile1.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile1.itemSaveData...
-[Debug  :MaxWasUnavailable.LethalModDataLib] Saving data to file LCSaveFile1.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile1.CurrentLevelName...
+[Info   :LethalLevelLoader] Saving Current SelectableLevel: FartZone
+[Debug  :MaxWasUnavailable.LethalModDataLib] Saving data to file LCSaveFile2.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile2.customItemDictionary...
+[Debug  :MaxWasUnavailable.LethalModDataLib] Saving data to file LCSaveFile2.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile2.allItemsList...
+[Debug  :MaxWasUnavailable.LethalModDataLib] Saving data to file LCSaveFile2.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile2.itemSaveDataList...
+[Debug  :MaxWasUnavailable.LethalModDataLib] Saving data to file LCSaveFile2.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile2.itemSaveData...
+[Debug  :MaxWasUnavailable.LethalModDataLib] Saving data to file LCSaveFile2.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile2.CurrentLevelName...
 [Info   : Unity Log] Item sales percentages #0: 0
 [Info   : Unity Log] Item sales percentages #1: 0
 [Info   : Unity Log] Item sales percentages #2: 0
@@ -176,7 +176,12 @@
 [Info   : Unity Log] Suits: 1
 [Info   : Unity Log] Suit #0: 0
 [Info   : Unity Log] pos: (-2.45, 2.75, -8.41); rot: (0.00, 90.00, 0.00)
-[Info   : Unity Log] Key 'shipGrabbableItems' does not exist
+[Info   : Unity Log] Ship grabbable items list loaded. Count: 25
+[Info   : Unity Log] Setting scrap value for item: RedLocustHive(Clone): 0
+[Info   : Unity Log] Setting scrap value for item: RedLocustHive(Clone): 0
+[Info   : Unity Log] Setting scrap value for item: RedLocustHive(Clone): 0
+[Info   : Unity Log] Setting scrap value for item: RedLocustHive(Clone): 0
+[Info   : Unity Log] Setting scrap value for item: RedLocustHive(Clone): 0
 [Info   : Unity Log] Item sales percentages #0: 0
 [Info   : Unity Log] Item sales percentages #1: 0
 [Info   : Unity Log] Item sales percentages #2: 0
@@ -190,15 +195,15 @@
 [Info   : Unity Log] Item sales percentages #10: 0
 [Info   : Unity Log] Item sales percentages #11: 0
 [Info   : Unity Log] Item sales percentages #12: 0
-[Info   : Unity Log] Group credits: 60
+[Info   : Unity Log] Group credits: 1000000
 [Info   :ainavt.lc.lethalconfig] Injecting mod config menu into quick menu...
 [Warning:LethalLevelLoader] Disabling LethalLib Dungeon.RoundManager_Start() Function To Prevent Conflicts
 [Info   : Unity Log] Called teleport function on Player
+[Info   : Unity Log] Current lobby is null. (Attempted to set lobby joinable True.)
 [Info   : Unity Log] Taking control of player Player and enabling camera!
 [Info   : Unity Log] Called teleport function on Player (1)
 [Info   : Unity Log] Called teleport function on Player (2)
 [Info   : Unity Log] Called teleport function on Player (3)
-[Info   : Unity Log] Starting voice tracking for player: Wexop
 [Info   : Unity Log] !!!! ENABLING CAMERA FOR PLAYER: Player
 [Info   : Unity Log] !!!! connectedPlayersAmount: 0
 [Info   : Unity Log] Has beta?: {hasBeta}
@@ -239,443 +244,1292 @@ If you absolutely need to use negative scaling you can use the convex MeshCollid
 [Warning: Unity Log] BoxColliders does not support negative scale or size.
 The effective box size has been forced positive and is likely to give unexpected collision geometry.
 If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Environment/HangarShip/StorageCloset/Cube.000/Cube"
+[Info   : Unity Log] Connection approval callback! Game version of client request: 50
+[Info   : Unity Log] Joining client id: 1; Local/host client id: 0
+[Info   : Unity Log] Approved connection?: True. Connected players #: 1
+[Info   : Unity Log] Disapproval reason: 
+[Info   : Unity Log] Client connected callback in gamenetworkmanager
+[Info   : Unity Log] player connected
+[Info   : Unity Log] connected players #: 0
+[Info   : Unity Log] Connecting new player on host; clientId: 1
+[Info   : Unity Log] New player assigned object id: Player (1) (UnityEngine.GameObject)
+[Info   : Unity Log] NEW CLIENT JOINED THE SERVER!!; clientId: 1
+[Info   : Unity Log] New player: Player (1)
+[Info   : Unity Log] Called teleport function on Player (1)
+[Info   : Unity Log] Connected players (joined clients) amount after connection: 1
+[Info   : Unity Log] This client is not the client who just joined. Our client id: 0; joining client id: 1
+[Info   : Unity Log] client id connecting: 1 ; their corresponding player object id: 1
+[Info   : Unity Log] Syncing already-held objects on server
+[Info   : Unity Log] pocketed objects count: 0
+[Info   : Unity Log] held objects count: 0
+[Info   : Unity Log] Server: objects in ship: 5
+[Info   : Unity Log] Server: placeableObject #0: StorageCloset
+[Info   : Unity Log] Server: position #0: (0.00, 0.00, 0.00)
+[Info   : Unity Log] Server: placeableObject #1: FileCabinet
+[Info   : Unity Log] Server: position #1: (0.00, 0.00, 0.00)
+[Info   : Unity Log] Server: placeableObject #2: LightSwitchContainer
+[Info   : Unity Log] Server: position #2: (0.00, 0.00, 0.00)
+[Info   : Unity Log] Server: placeableObject #3: Bunkbeds
+[Info   : Unity Log] Server: position #3: (0.00, 0.00, 0.00)
+[Info   : Unity Log] Server: placeableObject #4: Terminal
+[Info   : Unity Log] Server: position #4: (0.00, 0.00, 0.00)
+[Info   : Unity Log] Setting animation on client
+[Warning: Unity Log] [Netcode] Deferred messages were received for a trigger of type OnSpawn with key 0, but that trigger was not received within within 1 second(s).
+[Info   : Unity Log] Refreshing voice playback objects. Number of voice objects found: 1
+[Info   : Unity Log] Found a match for voice object #0 and player object #1
+[Info   : Unity Log] player voice chat audiosource: Player ff1ed1a8-fff8-4aba-bd79-a1efed3b514e voice comms (UnityEngine.AudioSource); set audiomixer to VoicePlayer1 (UnityEngine.AudioMixerGroup) ; VoicePlayer1 (UnityEngine.AudioMixerGroup) ; 1
+[Info   : Unity Log] Skipping player #2 as they are not controlled or dead
+[Info   : Unity Log] Skipping player #3 as they are not controlled or dead
+[Info   : Unity Log] Setting animation on client
+[Warning: Unity Log] KillTrigger is disabled! Netcode for GameObjects does not support spawning disabled NetworkBehaviours! The InteractTrigger component was skipped during spawn!
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "TestRoom(Clone)/TestLevel/CatwalkStairs.002 (1)/StairCollider"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "TestRoom(Clone)/TestLevel/CatwalkStairs.002 (1)/StairCollider (6)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "TestRoom(Clone)/TestLevel/CatwalkStairs.002 (1)/StairCollider (8)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "TestRoom(Clone)/TestLevel/CatwalkStairs.002 (1)/StairCollider (10)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "TestRoom(Clone)/TestLevel/CatwalkStairs.002 (1)/StairCollider (5)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "TestRoom(Clone)/TestLevel/CatwalkStairs.002 (1)/StairCollider (9)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "TestRoom(Clone)/TestLevel/CatwalkStairs.002 (1)/StairCollider (7)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "TestRoom(Clone)/TestLevel/CatwalkStairs.002 (1)/StairCollider (4)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "TestRoom(Clone)/TestLevel/CatwalkStairs.002 (1)/StairCollider (2)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "TestRoom(Clone)/TestLevel/CatwalkStairs.002 (1)/StairCollider (3)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "TestRoom(Clone)/TestLevel/CatwalkStairs.002 (1)/StairCollider (1)"
+[Info   :Starlancer AI Fix] Finding outside AI nodes.
+[Info   :Starlancer AI Fix] Finding inside AI nodes.
+[Info   : Unity Log] Odin Serializer ArchitectureInfo initialization with defaults (all unaligned read/writes disabled).
+[Info   : Unity Log] ENEMIE FOUND MouthDog(Clone) NEW SCALE IS (4.92, 4.92, 4.92) WITH A MULTIPLIER OF 4,922068
+[Info   : Unity Log] ENEMY (MouthDog(Clone)) SPAWNED WITH RANDOM SIZE (4.92, 4.92, 4.92)
+[Warning: Unity Log] [Dissonance:Recording] (19:49:00.797) BasePreprocessingPipeline: Lost 480 samples in the preprocessor (buffer full), injecting silence to compensate
+[Warning: Unity Log] [Dissonance:Recording] (19:49:00.799) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:0,2744605)
+[Info   :ainavt.lc.lethalconfig] Saved config values for 2 items.
+[Info   :ainavt.lc.lethalconfig] Modified 0 item(s) that requires a restart.
+[Info   : Unity Log] ENEMIE FOUND MouthDog(Clone) NEW SCALE IS (0.25, 0.25, 0.25) WITH A MULTIPLIER OF 0,25
+[Info   : Unity Log] ENEMY (MouthDog(Clone)) SPAWNED WITH RANDOM SIZE (0.25, 0.25, 0.25)
+[Info   : Unity Log] playerHeldBy on grabbed object: Player (1) (GameNetcodeStuff.PlayerControllerB)
+[Warning: Unity Log] [Dissonance:Recording] (19:49:49.514) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:0,151112)
+[Warning: Unity Log] [Dissonance:Recording] (19:49:50.750) BasePreprocessingPipeline: Lost 960 samples in the preprocessor (buffer full), injecting silence to compensate
+[Info   : Unity Log] Current behaviour state: 0
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 1
+[Info   : Unity Log] Current behaviour state: 0
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 1
+[Info   : Unity Log] Setting animation on client
+[Info   : Unity Log] Current behaviour state: 1
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Kill player rpc
+[Info   : Unity Log] killing player A
+[Info   : Unity Log] killing player B
+[Info   : Unity Log] Setting animation on client
+[Info   : Unity Log] Current behaviour state: 3
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] Current behaviour state: 2
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] Current behaviour state: 1
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Setting lastHeardNoisePosition to (35.49, -3.47, -31.31)
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Current behaviour state: 3
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Ending lunge
+[Info   : Unity Log] Setting animation on client
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Setting animation on client
+[Info   : Unity Log] Setting animation on client
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] Current behaviour state: 3
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Ending lunge
+[Info   : Unity Log] Setting animation on client
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] Setting animation on client
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] Setting animation on client
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] Setting animation on client
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] Setting animation on client
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] Kill enemy server rpc called with destroy False
+[Info   : Unity Log] Kill enemy client rpc called; False
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] Kill enemy called; destroy: False
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Setting animation on client
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Setting animation on client
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Current behaviour state: 3
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Ending lunge
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Setting animation on client
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Setting animation on client
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Setting animation on client
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Setting animation on client
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Setting animation on client
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Setting animation on client
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Setting animation on client
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Player is not targetable
+[Info   : Unity Log] Kill enemy server rpc called with destroy False
+[Info   : Unity Log] Kill enemy client rpc called; False
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] Kill enemy called; destroy: False
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] Setting animation on client
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   :ainavt.lc.lethalconfig] Saved config values for 1 items.
+[Info   :ainavt.lc.lethalconfig] Modified 0 item(s) that requires a restart.
+[Info   : Unity Log] ENEMIE FOUND MouthDog(Clone) NEW SCALE IS (0.25, 0.25, 0.25) WITH A MULTIPLIER OF 0,25
+[Info   : Unity Log] ENEMY (MouthDog(Clone)) SPAWNED WITH RANDOM SIZE (0.25, 0.25, 0.25)
+[Info   : Unity Log] Current behaviour state: 0
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 1
+[Warning: Unity Log] [Dissonance:Recording] (19:50:28.980) BasePreprocessingPipeline: Lost 960 samples in the preprocessor (buffer full), injecting silence to compensate
+[Warning: Unity Log] [Dissonance:Recording] (19:50:29.019) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:0,157096)
+[Info   : Unity Log] Current behaviour state: 1
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Setting animation on client
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Setting lastHeardNoisePosition to (39.58, -2.94, -36.77)
+[Info   : Unity Log] Setting lastHeardNoisePosition to (39.58, -2.94, -36.77)
+[Info   : Unity Log] Current behaviour state: 3
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Ending lunge
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Setting animation on client
+[Info   : Unity Log] Setting animation on client
+[Info   : Unity Log] Kill enemy server rpc called with destroy False
+[Info   : Unity Log] Kill enemy client rpc called; False
+[Info   : Unity Log] Current behaviour state: 3
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Kill enemy called; destroy: False
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] ENEMIE FOUND MouthDog(Clone) NEW SCALE IS (0.25, 0.25, 0.25) WITH A MULTIPLIER OF 0,25
+[Info   : Unity Log] ENEMY (MouthDog(Clone)) SPAWNED WITH RANDOM SIZE (0.25, 0.25, 0.25)
+[Info   : Unity Log] ENEMIE FOUND MouthDog(Clone) NEW SCALE IS (0.25, 0.25, 0.25) WITH A MULTIPLIER OF 0,25
+[Info   : Unity Log] ENEMY (MouthDog(Clone)) SPAWNED WITH RANDOM SIZE (0.25, 0.25, 0.25)
+[Info   : Unity Log] ENEMIE FOUND MouthDog(Clone) NEW SCALE IS (0.25, 0.25, 0.25) WITH A MULTIPLIER OF 0,25
+[Info   : Unity Log] ENEMY (MouthDog(Clone)) SPAWNED WITH RANDOM SIZE (0.25, 0.25, 0.25)
+[Info   : Unity Log] Current behaviour state: 0
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 1
+[Info   : Unity Log] Current behaviour state: 0
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Current behaviour state: 0
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 1
+[Info   : Unity Log] Setting animation on client
+[Info   : Unity Log] Current behaviour state: 1
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Setting lastHeardNoisePosition to (43.85, -2.48, -33.46)
+[Info   : Unity Log] Current behaviour state: 1
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Setting lastHeardNoisePosition to (43.85, -2.48, -33.46)
+[Info   : Unity Log] Setting lastHeardNoisePosition to (43.85, -2.48, -33.46)
+[Info   : Unity Log] Setting lastHeardNoisePosition to (43.85, -2.48, -33.46)
+[Info   : Unity Log] Setting lastHeardNoisePosition to (43.85, -2.48, -33.46)
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Current behaviour state: 3
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Ending lunge
+[Info   : Unity Log] Current behaviour state: 3
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Ending lunge
+[Info   : Unity Log] Current behaviour state: 3
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Ending lunge
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 1
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 1
+[Info   : Unity Log] Setting animation on client
+[Info   : Unity Log] Current behaviour state: 1
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Current behaviour state: 1
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Setting lastHeardNoisePosition to (30.48, -4.13, -29.17)
+[Info   : Unity Log] Setting lastHeardNoisePosition to (30.48, -4.13, -29.17)
+[Info   : Unity Log] Setting lastHeardNoisePosition to (30.48, -4.13, -29.17)
+[Info   : Unity Log] Setting lastHeardNoisePosition to (30.48, -4.13, -29.17)
+[Info   : Unity Log] Setting lastHeardNoisePosition to (30.48, -4.13, -29.17)
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Current behaviour state: 3
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Ending lunge
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Current behaviour state: 3
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Ending lunge
+[Info   : Unity Log] Current behaviour state: 3
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Ending lunge
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Current behaviour state: 3
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Ending lunge
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 1
+[Info   : Unity Log] Current behaviour state: 3
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Ending lunge
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 1
+[Info   : Unity Log] Setting animation on client
+[Info   : Unity Log] Current behaviour state: 3
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Ending lunge
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Current behaviour state: 3
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Ending lunge
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Setting animation on client
+[Info   : Unity Log] Kill enemy server rpc called with destroy False
+[Info   : Unity Log] Kill enemy client rpc called; False
+[Info   : Unity Log] Current behaviour state: 3
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Kill enemy called; destroy: False
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] Current behaviour state: 1
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Current behaviour state: 1
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Setting lastHeardNoisePosition to (34.01, -0.33, -39.53)
+[Info   : Unity Log] Setting lastHeardNoisePosition to (34.01, -0.33, -39.53)
+[Info   : Unity Log] Setting lastHeardNoisePosition to (34.01, -0.33, -39.53)
+[Info   : Unity Log] Setting lastHeardNoisePosition to (34.01, -0.33, -39.53)
+[Info   : Unity Log] Setting lastHeardNoisePosition to (34.01, -0.33, -39.53)
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Current behaviour state: 3
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Ending lunge
+[Info   : Unity Log] Current behaviour state: 3
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Ending lunge
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Current behaviour state: 3
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Ending lunge
+[Info   : Unity Log] Current behaviour state: 3
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Ending lunge
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Current behaviour state: 3
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Ending lunge
+[Info   : Unity Log] Current behaviour state: 3
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Ending lunge
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Current behaviour state: 3
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Ending lunge
+[Info   : Unity Log] Current behaviour state: 3
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Ending lunge
+[Info   : Unity Log] Setting animation on client
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Setting animation on client
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Setting animation on client
+[Info   : Unity Log] Kill enemy server rpc called with destroy False
+[Info   : Unity Log] Kill enemy client rpc called; False
+[Info   : Unity Log] Current behaviour state: 3
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Kill enemy called; destroy: False
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] Current behaviour state: 3
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Ending lunge
+[Info   : Unity Log] Setting animation on client
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Current behaviour state: 3
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Ending lunge
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Setting animation on client
+[Info   : Unity Log] Setting animation on client
+[Info   : Unity Log] Kill enemy server rpc called with destroy False
+[Info   : Unity Log] Kill enemy client rpc called; False
+[Info   : Unity Log] Current behaviour state: 3
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Kill enemy called; destroy: False
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   :ainavt.lc.lethalconfig] Saved config values for 2 items.
+[Info   :ainavt.lc.lethalconfig] Modified 0 item(s) that requires a restart.
+[Info   : Unity Log] ENEMIE FOUND MouthDog(Clone) NEW SCALE IS (0.10, 0.10, 0.10) WITH A MULTIPLIER OF 0,1
+[Info   : Unity Log] ENEMY (MouthDog(Clone)) SPAWNED WITH RANDOM SIZE (0.10, 0.10, 0.10)
+[Info   : Unity Log] Current behaviour state: 0
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 1
+[Info   : Unity Log] Setting animation on client
+[Info   : Unity Log] Kill enemy server rpc called with destroy False
+[Info   : Unity Log] Kill enemy client rpc called; False
+[Info   : Unity Log] Current behaviour state: 1
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Kill enemy called; destroy: False
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   :ainavt.lc.lethalconfig] Saved config values for 2 items.
+[Info   :ainavt.lc.lethalconfig] Modified 0 item(s) that requires a restart.
+[Info   :ainavt.lc.lethalconfig] Saved config values for 0 items.
+[Info   :ainavt.lc.lethalconfig] Modified 0 item(s) that requires a restart.
+[Info   :ainavt.lc.lethalconfig] Saved config values for 0 items.
+[Info   :ainavt.lc.lethalconfig] Modified 0 item(s) that requires a restart.
+[Info   : Unity Log] ENEMIE FOUND MouthDog(Clone) NEW SCALE IS (0.50, 0.50, 0.50) WITH A MULTIPLIER OF 0,5
+[Info   : Unity Log] ENEMY (MouthDog(Clone)) SPAWNED WITH RANDOM SIZE (0.50, 0.50, 0.50)
+[Info   : Unity Log] Setting animation on client
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] Current behaviour state: 0
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Setting animation on client
+[Info   : Unity Log] Setting lastHeardNoisePosition to (48.20, -1.44, -39.67)
+[Info   : Unity Log] Setting lastHeardNoisePosition to (48.20, -1.44, -39.67)
+[Info   : Unity Log] Setting lastHeardNoisePosition to (48.20, -1.44, -39.67)
+[Info   : Unity Log] Setting lastHeardNoisePosition to (48.20, -1.44, -39.67)
+[Info   : Unity Log] Setting lastHeardNoisePosition to (48.20, -1.44, -39.67)
+[Info   : Unity Log] Setting lastHeardNoisePosition to (48.20, -1.44, -39.67)
+[Info   : Unity Log] Setting lastHeardNoisePosition to (48.20, -1.44, -39.67)
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Current behaviour state: 3
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Ending lunge
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Setting animation on client
+[Info   : Unity Log] Setting animation on client
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] Current behaviour state: 3
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Ending lunge
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Setting animation on client
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] Current behaviour state: 3
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Ending lunge
+[Info   : Unity Log] Setting animation on client
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] Setting animation on client
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] Setting animation on client
+[Info   : Unity Log] Current behaviour state: 3
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Ending lunge
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Setting animation on client
+[Info   : Unity Log] Kill enemy server rpc called with destroy False
+[Info   : Unity Log] Kill enemy client rpc called; False
+[Info   : Unity Log] Current behaviour state: 3
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Kill enemy called; destroy: False
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
 [Info   : Unity Log] Discarding changed settings
-[Info   : Unity Log] Leaving current lobby
+[Info   :ainavt.lc.lethalconfig] Saved config values for 2 items.
+[Info   :ainavt.lc.lethalconfig] Modified 0 item(s) that requires a restart.
+[Info   :ainavt.lc.lethalconfig] Saved config values for 0 items.
+[Info   :ainavt.lc.lethalconfig] Modified 0 item(s) that requires a restart.
+[Info   :ainavt.lc.lethalconfig] Saved config values for 0 items.
+[Info   :ainavt.lc.lethalconfig] Modified 0 item(s) that requires a restart.
+[Info   : Unity Log] ENEMIE FOUND MouthDog(Clone) NEW SCALE IS (1.00, 1.00, 1.00) WITH A MULTIPLIER OF 1
+[Info   : Unity Log] ENEMY (MouthDog(Clone)) SPAWNED WITH RANDOM SIZE (1.00, 1.00, 1.00)
+[Info   : Unity Log] Current behaviour state: 0
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 1
+[Info   : Unity Log] Setting animation on client
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] Current behaviour state: 1
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Setting lastHeardNoisePosition to (38.34, -1.27, -40.88)
+[Info   : Unity Log] Setting lastHeardNoisePosition to (38.34, -1.27, -40.88)
+[Info   : Unity Log] Setting lastHeardNoisePosition to (38.34, -1.27, -40.88)
+[Info   : Unity Log] Setting lastHeardNoisePosition to (38.34, -1.27, -40.88)
+[Info   : Unity Log] Setting lastHeardNoisePosition to (38.34, -1.27, -40.88)
+[Info   : Unity Log] Setting lastHeardNoisePosition to (38.34, -1.27, -40.88)
+[Info   : Unity Log] Setting lastHeardNoisePosition to (38.34, -1.27, -40.88)
+[Info   : Unity Log] Setting lastHeardNoisePosition to (38.34, -1.27, -40.88)
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Setting animation on client
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] Current behaviour state: 3
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Ending lunge
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Setting animation on client
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] Setting animation on client
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] Setting animation on client
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] Current behaviour state: 3
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Ending lunge
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Setting animation on client
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] Setting animation on client
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] Setting animation on client
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] Current behaviour state: 3
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Ending lunge
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Setting animation on client
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] Setting animation on client
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] Setting animation on client
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] Current behaviour state: 3
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Ending lunge
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Setting animation on client
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] Setting animation on client
+[Info   : Unity Log] Kill enemy server rpc called with destroy False
+[Info   : Unity Log] Kill enemy client rpc called; False
+[Info   : Unity Log] Current behaviour state: 3
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Kill enemy called; destroy: False
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
+[Warning: Unity Log] [Dissonance:Recording] (19:53:58.262) BasePreprocessingPipeline: Lost 960 samples in the preprocessor (buffer full), injecting silence to compensate
+[Warning: Unity Log] [Dissonance:Recording] (19:53:58.286) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:0,191966)
+[Info   :ainavt.lc.lethalconfig] Saved config values for 2 items.
+[Info   :ainavt.lc.lethalconfig] Modified 0 item(s) that requires a restart.
+[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 14,18281 meters
+[Info   : Unity Log] Mouth dog targetPos 1: (-7.83, 0.26, -15.90); distanceToNoise: 14,18281
+[Info   : Unity Log] Mouth dog targetPos 2: (-9.25, 0.17, -15.32)
+[Info   : Unity Log] Switching ownership of MouthDog #0 to player #0 (Player #0)
+[Info   : Unity Log] Dog lastheardnoisePosition: (-9.25, 0.17, -15.32)
+[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 20,05759 meters
+[Info   : Unity Log] Mouth dog targetPos 1: (1.19, -5.37, -21.40); distanceToNoise: 20,05759
+[Info   : Unity Log] Unable to get random nav mesh position in radius! Returning old pos
+[Info   : Unity Log] Mouth dog targetPos 2: (0.51, -5.37, -23.89)
+[Info   : Unity Log] Switching ownership of MouthDog #1 to player #0 (Player #0)
+[Info   : Unity Log] Dog lastheardnoisePosition: (0.51, -5.37, -23.89)
+[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 22,53975 meters
+[Info   : Unity Log] Mouth dog targetPos 1: (7.42, -4.95, -19.48); distanceToNoise: 22,53975
+[Info   : Unity Log] Mouth dog targetPos 2: (8.72, -4.19, -18.69)
+[Info   : Unity Log] Switching ownership of MouthDog #2 to player #0 (Player #0)
+[Info   : Unity Log] Dog lastheardnoisePosition: (8.72, -4.19, -18.69)
+[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 22,56843 meters
+[Info   : Unity Log] Mouth dog targetPos 1: (13.41, -4.37, -5.31); distanceToNoise: 22,56843
+[Info   : Unity Log] Mouth dog targetPos 2: (13.31, -4.35, -7.37)
+[Info   : Unity Log] Switching ownership of MouthDog #4 to player #0 (Player #0)
+[Info   : Unity Log] Dog lastheardnoisePosition: (13.31, -4.35, -7.37)
+[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 16,46869 meters
+[Info   : Unity Log] Mouth dog targetPos 1: (39.52, -4.80, -18.94); distanceToNoise: 16,46869
+[Info   : Unity Log] Mouth dog targetPos 2: (39.52, -4.83, -17.14)
+[Info   : Unity Log] Switching ownership of MouthDog #6 to player #0 (Player #0)
+[Info   : Unity Log] Dog lastheardnoisePosition: (39.52, -4.83, -17.14)
+[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 19,5596 meters
+[Info   : Unity Log] Mouth dog targetPos 1: (39.52, -4.80, -18.94); distanceToNoise: 19,5596
+[Info   : Unity Log] Mouth dog targetPos 2: (41.38, -4.71, -19.55)
+[Info   : Unity Log] Switching ownership of MouthDog #5 to player #0 (Player #0)
+[Info   : Unity Log] Dog lastheardnoisePosition: (41.38, -4.71, -19.55)
+[Info   : Unity Log] ENEMIE FOUND MouthDog(Clone) NEW SCALE IS (0.10, 0.10, 0.10) WITH A MULTIPLIER OF 0,1
+[Info   : Unity Log] ENEMY (MouthDog(Clone)) SPAWNED WITH RANDOM SIZE (0.10, 0.10, 0.10)
+[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 22,1524 meters
+[Info   : Unity Log] Mouth dog targetPos 1: (41.94, -4.36, -24.80); distanceToNoise: 22,1524
+[Info   : Unity Log] Mouth dog targetPos 2: (40.43, -3.86, -26.94)
+[Info   : Unity Log] Switching ownership of MouthDog #3 to player #0 (Player #0)
+[Info   : Unity Log] Dog lastheardnoisePosition: (40.43, -3.86, -26.94)
+[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 14,47652 meters
+[Info   : Unity Log] Mouth dog targetPos 1: (42.88, -3.92, -26.80); distanceToNoise: 14,47652
+[Info   : Unity Log] Mouth dog targetPos 2: (42.03, -3.87, -26.69)
+[Info   : Unity Log] Current behaviour state: 0
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 1
+[Info   : Unity Log] Dog lastheardnoisePosition: (42.03, -3.87, -26.69)
+[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 12,08924 meters
+[Info   : Unity Log] Mouth dog targetPos 1: (43.61, -3.48, -29.17); distanceToNoise: 12,08924
+[Info   : Unity Log] Mouth dog targetPos 2: (44.17, -3.56, -28.44)
+[Info   : Unity Log] Dog lastheardnoisePosition: (44.17, -3.56, -28.44)
+[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 8,813831 meters
+[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 3,711001 meters
+[Info   : Unity Log] Mouth dog targetPos 1: (43.05, -2.64, -33.40); distanceToNoise: 3,711001
+[Info   : Unity Log] Mouth dog targetPos 2: (43.11, -2.60, -32.95)
+[Info   : Unity Log] Current behaviour state: 1
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Dog lastheardnoisePosition: (43.11, -2.60, -32.95)
+[Info   : Unity Log] Setting lastHeardNoisePosition to (43.83, -2.16, -36.59)
+[Info   : Unity Log] Setting lastHeardNoisePosition to (43.83, -2.16, -36.59)
+[Info   : Unity Log] Setting lastHeardNoisePosition to (43.83, -2.16, -36.59)
+[Info   : Unity Log] Setting lastHeardNoisePosition to (43.83, -2.16, -36.59)
+[Info   : Unity Log] Setting lastHeardNoisePosition to (43.83, -2.16, -36.59)
+[Info   : Unity Log] Setting lastHeardNoisePosition to (43.83, -2.16, -36.59)
+[Info   : Unity Log] Setting lastHeardNoisePosition to (43.83, -2.16, -36.59)
+[Info   : Unity Log] Setting lastHeardNoisePosition to (43.83, -2.16, -36.59)
+[Info   : Unity Log] Setting lastHeardNoisePosition to (43.83, -2.16, -36.59)
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 3,245723 meters
+[Info   : Unity Log] Mouth dog targetPos 1: (43.37, -2.22, -34.60); distanceToNoise: 3,245723
+[Info   : Unity Log] Mouth dog targetPos 2: (43.24, -2.54, -34.24)
+[Info   : Unity Log] Dog lastheardnoisePosition: (43.24, -2.54, -34.24)
+[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 8,473726 meters
+[Info   : Unity Log] Mouth dog targetPos 1: (43.39, -3.15, -30.50); distanceToNoise: 8,473726
+[Info   : Unity Log] Mouth dog targetPos 2: (43.83, -2.94, -31.07)
+[Info   : Unity Log] Dog lastheardnoisePosition: (43.83, -2.94, -31.07)
+[Info   : Unity Log] Current behaviour state: 3
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Ending lunge
+[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 7,958245 meters
+[Info   : Unity Log] Mouth dog targetPos 1: (43.51, -3.36, -29.64); distanceToNoise: 7,958245
+[Info   : Unity Log] Mouth dog targetPos 2: (43.73, -3.36, -29.39)
+[Info   : Unity Log] Dog lastheardnoisePosition: (43.73, -3.36, -29.39)
+[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 6,812088 meters
+[Info   : Unity Log] Mouth dog targetPos 1: (43.63, -3.79, -27.65); distanceToNoise: 6,812088
+[Info   : Unity Log] Mouth dog targetPos 2: (42.78, -3.78, -27.46)
+[Info   : Unity Log] Dog lastheardnoisePosition: (42.78, -3.78, -27.46)
+[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 2,798676 meters
+[Info   : Unity Log] Mouth dog targetPos 1: (43.62, -4.16, -25.62); distanceToNoise: 2,798676
+[Info   : Unity Log] Mouth dog targetPos 2: (43.31, -4.15, -25.52)
+[Info   : Unity Log] Dog lastheardnoisePosition: (43.31, -4.15, -25.52)
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 0,7235166 meters
+[Info   : Unity Log] Mouth dog targetPos 1: (43.62, -4.29, -24.75); distanceToNoise: 0,7235166
+[Info   : Unity Log] Mouth dog targetPos 2: (43.56, -4.25, -24.75)
+[Info   : Unity Log] Dog lastheardnoisePosition: (43.56, -4.25, -24.75)
+[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 4,228134 meters
+[Info   : Unity Log] Mouth dog targetPos 1: (43.70, -4.28, -24.65); distanceToNoise: 4,228134
+[Info   : Unity Log] Mouth dog targetPos 2: (44.02, -4.34, -24.18)
+[Info   : Unity Log] Dog lastheardnoisePosition: (44.02, -4.34, -24.18)
+[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 5,819047 meters
+[Info   : Unity Log] Mouth dog targetPos 1: (43.51, -4.18, -25.50); distanceToNoise: 5,819047
+[Info   : Unity Log] Mouth dog targetPos 2: (43.58, -4.01, -26.01)
+[Info   : Unity Log] Dog lastheardnoisePosition: (43.58, -4.01, -26.01)
+[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 9,192899 meters
+[Info   : Unity Log] Mouth dog targetPos 1: (42.86, -3.80, -27.59); distanceToNoise: 9,192899
+[Info   : Unity Log] Mouth dog targetPos 2: (43.30, -3.73, -27.79)
+[Info   : Unity Log] Dog lastheardnoisePosition: (43.30, -3.73, -27.79)
+[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 10,32074 meters
+[Info   : Unity Log] Current behaviour state: 3
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Ending lunge
+[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 11,12157 meters
+[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 9,571421 meters
+[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 8,480988 meters
+[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 8,212026 meters
+[Info   : Unity Log] Mouth dog targetPos 1: (43.26, -3.95, -26.53); distanceToNoise: 8,212026
+[Info   : Unity Log] Mouth dog targetPos 2: (43.83, -3.82, -26.96)
+[Info   : Unity Log] Dog lastheardnoisePosition: (43.83, -3.82, -26.96)
+[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 4,838355 meters
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 8,111329 meters
+[Info   : Unity Log] Mouth dog targetPos 1: (42.13, -4.22, -25.63); distanceToNoise: 8,111329
+[Info   : Unity Log] Mouth dog targetPos 2: (42.73, -4.24, -25.09)
+[Info   : Unity Log] Dog lastheardnoisePosition: (42.73, -4.24, -25.09)
+[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 8,923334 meters
+[Info   : Unity Log] Mouth dog targetPos 1: (42.11, -4.18, -25.91); distanceToNoise: 8,923334
+[Info   : Unity Log] Mouth dog targetPos 2: (41.95, -4.02, -26.04)
+[Info   : Unity Log] Dog lastheardnoisePosition: (41.95, -4.02, -26.04)
+[Info   : Unity Log] Current behaviour state: 3
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Ending lunge
+[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 10,47725 meters
+[Info   : Unity Log] Mouth dog targetPos 1: (41.79, -4.01, -26.31); distanceToNoise: 10,47725
+[Info   : Unity Log] Mouth dog targetPos 2: (41.91, -4.15, -25.70)
+[Info   : Unity Log] Dog lastheardnoisePosition: (41.91, -4.15, -25.70)
+[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 10,54657 meters
+[Info   : Unity Log] Mouth dog targetPos 1: (40.74, -4.42, -24.70); distanceToNoise: 10,54657
+[Info   : Unity Log] Mouth dog targetPos 2: (41.90, -4.27, -25.17)
+[Info   : Unity Log] Dog lastheardnoisePosition: (41.90, -4.27, -25.17)
+[Info   : Unity Log] Current behaviour state: 2
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 3,375942 meters
+[Info   : Unity Log] Mouth dog targetPos 1: (40.62, -4.44, -24.62); distanceToNoise: 3,375942
+[Info   : Unity Log] Mouth dog targetPos 2: (40.38, -4.38, -24.82)
+[Info   : Unity Log] Dog lastheardnoisePosition: (40.38, -4.38, -24.82)
+[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 4,423306 meters
+[Info   : Unity Log] Mouth dog targetPos 1: (40.93, -4.35, -25.10); distanceToNoise: 4,423306
+[Info   : Unity Log] Mouth dog targetPos 2: (41.33, -4.30, -25.20)
+[Info   : Unity Log] Dog lastheardnoisePosition: (41.33, -4.30, -25.20)
+[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 3,453492 meters
+[Info   : Unity Log] Mouth dog targetPos 1: (42.47, -3.95, -26.61); distanceToNoise: 3,453492
+[Info   : Unity Log] Mouth dog targetPos 2: (42.40, -3.84, -26.93)
+[Info   : Unity Log] Dog lastheardnoisePosition: (42.40, -3.84, -26.93)
+[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 1,492635 meters
+[Info   : Unity Log] Mouth dog targetPos 1: (44.24, -3.77, -27.74); distanceToNoise: 1,492635
+[Info   : Unity Log] Mouth dog targetPos 2: (44.17, -3.69, -27.86)
+[Info   : Unity Log] Dog lastheardnoisePosition: (44.17, -3.69, -27.86)
+[Info   : Unity Log] Local client hit enemy MouthDog(Clone) #9 with force of 1.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #0 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] Kill enemy called! destroy: False
+[Info   : Unity Log] Current behaviour state: 3
+[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
+[Info   : Unity Log] Kill enemy called; destroy: False
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Kill enemy server rpc called with destroy False
+[Info   : Unity Log] Kill enemy client rpc called; False
+[Info   : Unity Log] Local client hit enemy MouthDog(Clone) #9 with force of 1.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Client #0 hit enemy MouthDog(Clone) with force of 1.
+[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 1,825165 meters
+[Info   : Unity Log] Mouth dog targetPos 1: (44.64, -2.13, -27.95); distanceToNoise: 1,825165
+[Info   : Unity Log] Unable to get random nav mesh position in radius! Returning old pos
+[Info   : Unity Log] Mouth dog targetPos 2: (44.42, -2.13, -27.90)
+[Info   : Unity Log] Dog lastheardnoisePosition: (44.42, -2.13, -27.90)
+[Error  : Unity Log] NullReferenceException: Object reference not set to an instance of an object
+Stack trace:
+Unity.Netcode.NetworkSpawnManager.ChangeOwnership (Unity.Netcode.NetworkObject networkObject, System.UInt64 clientId) (at <895801699cfc4b4ab52267f31e2a4998>:IL_004A)
+Unity.Netcode.NetworkSpawnManager.RemoveOwnership (Unity.Netcode.NetworkObject networkObject) (at <895801699cfc4b4ab52267f31e2a4998>:IL_0000)
+Unity.Netcode.NetworkObject.RemoveOwnership () (at <895801699cfc4b4ab52267f31e2a4998>:IL_000B)
+Unity.Netcode.NetworkConnectionManager.OnClientDisconnectFromServer (System.UInt64 clientId) (at <895801699cfc4b4ab52267f31e2a4998>:IL_0169)
+Unity.Netcode.NetworkConnectionManager.DisconnectRemoteClient (System.UInt64 clientId) (at <895801699cfc4b4ab52267f31e2a4998>:IL_000B)
+Unity.Netcode.NetworkConnectionManager.Shutdown () (at <895801699cfc4b4ab52267f31e2a4998>:IL_0114)
+Unity.Netcode.NetworkManager.ShutdownInternal () (at <895801699cfc4b4ab52267f31e2a4998>:IL_0048)
+Unity.Netcode.NetworkManager.OnDestroy () (at <895801699cfc4b4ab52267f31e2a4998>:IL_0000)
+Unity.Netcode.NetworkManager.OnApplicationQuit () (at <895801699cfc4b4ab52267f31e2a4998>:IL_0007)
+
 [Info   : Unity Log] Disconnecting and setting networkobjects to destroy with owner
-[Info   : Unity Log] Got no ship grabbable items to save.
 [Info   : Unity Log] Shutting down and disconnecting from server. Is host?: True
-[Warning: Unity Log] [Dissonance:Recording] (20:08:35.842) BasePreprocessingPipeline: Lost 960 samples in the preprocessor (buffer full), injecting silence to compensate
-[Warning: Unity Log] [Dissonance:Recording] (20:08:35.843) BasePreprocessingPipeline: Lost 960 samples in the preprocessor (buffer full), injecting silence to compensate
-[Warning: Unity Log] [Dissonance:Recording] (20:08:35.844) BasePreprocessingPipeline: Lost 960 samples in the preprocessor (buffer full), injecting silence to compensate
-[Info   : Unity Log] Resetting unlockables list!
-[Info   : Unity Log] Scene manager is null
 [Info   : Unity Log] Terminal disabled, disabling ESC key listener
+[Error  : Unity Log] NullReferenceException
+Stack trace:
+UnityEngine.InputSystem.PlayerInput.get_actions () (at <dbb0ce7b96144bd8bcbcb8b0d765f970>:IL_0008)
+GameNetcodeStuff.PlayerControllerB.OnDisable () (at <255c0877f9414c3aa6f1fe5079ac13f3>:IL_0005)
+
+[Error  : Unity Log] NullReferenceException
+Stack trace:
+UnityEngine.InputSystem.PlayerInput.get_actions () (at <dbb0ce7b96144bd8bcbcb8b0d765f970>:IL_0008)
+GameNetcodeStuff.PlayerControllerB.OnDisable () (at <255c0877f9414c3aa6f1fe5079ac13f3>:IL_0005)
+
 [Info   : Unity Log] DISABLING connection callbacks in round manager
-[Info   : Unity Log] Returning week num: 22
-[Info   : Unity Log] week num: 22
-[Info   :ainavt.lc.lethalconfig] Injecting mod config menu into main menu...
-[Info   : Unity Log] host button pressed
-[Info   : Unity Log] Returning week num: 22
-[Info   : Unity Log] Displaying menu message
-[Info   : Unity Log] Connection approval callback! Game version of client request: 
-[Info   : Unity Log] Joining client id: 0; Local/host client id: 0
-[Info   : Unity Log] Stopped connection approval callback, as the client in question was the host!
-[Warning: Unity Log] [Netcode] You cannot decline the host connection. The connection was automatically approved.
-[Info   : Unity Log] started host!
-[Info   : Unity Log] are we in a server?: True
-[Info   : Unity Log] Lobby has been created
-[Warning: Unity Log] [Dissonance:Recording] (20:08:53.727) BasicMicrophoneCapture: Insufficient buffer space, requested 18240, clamped to 16383 (dropping 1857 samples)
-[Warning: Unity Log] [Dissonance:Recording] (20:08:53.980) BasePreprocessingPipeline: Lost 960 samples in the preprocessor (buffer full), injecting silence to compensate
-[Warning: Unity Log] [Dissonance:Recording] (20:08:54.011) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:0,4064163)
-[Debug  :MaxWasUnavailable.LethalModDataLib] Loading data from file LCSaveFile1.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile1.customItemDictionary...
-[Debug  :MaxWasUnavailable.LethalModDataLib] Loading data from file LCSaveFile1.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile1.allItemsList...
-[Debug  :MaxWasUnavailable.LethalModDataLib] Loading data from file LCSaveFile1.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile1.itemSaveDataList...
-[Debug  :MaxWasUnavailable.LethalModDataLib] Loading data from file LCSaveFile1.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile1.itemSaveData...
-[Debug  :MaxWasUnavailable.LethalModDataLib] Loading data from file LCSaveFile1.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile1.CurrentLevelName...
-[Info   :LethalLevelLoader] Initialized LLL Save File, Current Level Was: ExperimentationLevel, Current Vanilla Save Is: LCSaveFile1
-[Info   : Unity Log] Enabling connection callbacks in StartOfRound
-[Info   : Unity Log] Began listening to SceneManager_OnLoadComplete1 on this client
-[Info   : LethalLib] Adding 0 unlockables to unlockables list
-[Info   : LethalLib] Adding 0 items to terminal
-[Warning: Unity Log] damageTrigger is disabled! Netcode for GameObjects does not support spawning disabled NetworkBehaviours! The InteractTrigger component was skipped during spawn!
-[Info   : LethalLib] Found 0 prefabs to fix
-[Info   : Unity Log] level id: 0
-[Info   : Unity Log] Changing level
-[Info   :LethalLevelLoader] Saving Current SelectableLevel: 41 Experimentation
-[Debug  :MaxWasUnavailable.LethalModDataLib] Saving data to file LCSaveFile1.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile1.customItemDictionary...
-[Debug  :MaxWasUnavailable.LethalModDataLib] Saving data to file LCSaveFile1.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile1.allItemsList...
-[Debug  :MaxWasUnavailable.LethalModDataLib] Saving data to file LCSaveFile1.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile1.itemSaveDataList...
-[Debug  :MaxWasUnavailable.LethalModDataLib] Saving data to file LCSaveFile1.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile1.itemSaveData...
-[Debug  :MaxWasUnavailable.LethalModDataLib] Saving data to file LCSaveFile1.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile1.CurrentLevelName...
-[Info   : Unity Log] Item sales percentages #0: 0
-[Info   : Unity Log] Item sales percentages #1: 0
-[Info   : Unity Log] Item sales percentages #2: 0
-[Info   : Unity Log] Item sales percentages #3: 0
-[Info   : Unity Log] Item sales percentages #4: 0
-[Info   : Unity Log] Item sales percentages #5: 0
-[Info   : Unity Log] Item sales percentages #6: 0
-[Info   : Unity Log] Item sales percentages #7: 0
-[Info   : Unity Log] Item sales percentages #8: 0
-[Info   : Unity Log] Item sales percentages #9: 0
-[Info   : Unity Log] Item sales percentages #10: 0
-[Info   : Unity Log] Item sales percentages #11: 0
-[Info   : Unity Log] Item sales percentages #12: 0
-[Warning: Unity Log] NetworkVariable is written to, but doesn't know its NetworkBehaviour yet. Are you modifying a NetworkVariable before the NetworkObject is spawned?
-[Info   : Unity Log] Suits: 1
-[Info   : Unity Log] Suit #0: 0
-[Info   : Unity Log] pos: (-2.45, 2.75, -8.41); rot: (0.00, 90.00, 0.00)
-[Info   : Unity Log] Key 'shipGrabbableItems' does not exist
-[Info   : Unity Log] Item sales percentages #0: 0
-[Info   : Unity Log] Item sales percentages #1: 0
-[Info   : Unity Log] Item sales percentages #2: 0
-[Info   : Unity Log] Item sales percentages #3: 0
-[Info   : Unity Log] Item sales percentages #4: 0
-[Info   : Unity Log] Item sales percentages #5: 0
-[Info   : Unity Log] Item sales percentages #6: 0
-[Info   : Unity Log] Item sales percentages #7: 0
-[Info   : Unity Log] Item sales percentages #8: 0
-[Info   : Unity Log] Item sales percentages #9: 0
-[Info   : Unity Log] Item sales percentages #10: 0
-[Info   : Unity Log] Item sales percentages #11: 0
-[Info   : Unity Log] Item sales percentages #12: 0
-[Info   : Unity Log] Group credits: 60
-[Info   :ainavt.lc.lethalconfig] Injecting mod config menu into quick menu...
-[Warning:LethalLevelLoader] Disabling LethalLib Dungeon.RoundManager_Start() Function To Prevent Conflicts
-[Info   : Unity Log] Called teleport function on Player
-[Info   : Unity Log] Taking control of player Player and enabling camera!
-[Info   : Unity Log] Called teleport function on Player (1)
-[Info   : Unity Log] Called teleport function on Player (2)
-[Info   : Unity Log] Called teleport function on Player (3)
-[Info   : Unity Log] Starting voice tracking for player: Wexop
-[Info   : Unity Log] !!!! ENABLING CAMERA FOR PLAYER: Player
-[Info   : Unity Log] !!!! connectedPlayersAmount: 0
-[Warning: Unity Log] dxgi: swapchain SetFullscreenState failed (887a0022).
-[Info   : Unity Log] Has beta?: {hasBeta}
-[Info   : Unity Log] Has beta save data: True
-[Warning: Unity Log] dxgi: swapchain SetFullscreenState failed (887a0022).
-[Warning: Unity Log] BoxColliders does not support negative scale or size.
-The effective box size has been forced positive and is likely to give unexpected collision geometry.
-If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Environment/HangarShip/LightSwitchContainer/PlacementCollider"
-[Warning: Unity Log] BoxColliders does not support negative scale or size.
-The effective box size has been forced positive and is likely to give unexpected collision geometry.
-If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Environment/HangarShip/Cube"
-[Warning: Unity Log] BoxColliders does not support negative scale or size.
-The effective box size has been forced positive and is likely to give unexpected collision geometry.
-If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Environment/HangarShip/AnimatedShipDoor/HangarDoorLeft (1)"
-[Warning: Unity Log] BoxColliders does not support negative scale or size.
-The effective box size has been forced positive and is likely to give unexpected collision geometry.
-If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Environment/HangarShip/ShipBottomColliders/Cube (1)"
-[Warning: Unity Log] BoxColliders does not support negative scale or size.
-The effective box size has been forced positive and is likely to give unexpected collision geometry.
-If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Environment/HangarShip/ControlDesk.001"
-[Warning: Unity Log] BoxColliders does not support negative scale or size.
-The effective box size has been forced positive and is likely to give unexpected collision geometry.
-If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Environment/HangarShip/ShipBottomColliders/Cube (3)"
-[Warning: Unity Log] BoxColliders does not support negative scale or size.
-The effective box size has been forced positive and is likely to give unexpected collision geometry.
-If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Environment/HangarShip/ShipBottomColliders/Cube (7)"
-[Warning: Unity Log] BoxColliders does not support negative scale or size.
-The effective box size has been forced positive and is likely to give unexpected collision geometry.
-If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Environment/HangarShip/ShipBottomColliders/Cube (6)"
-[Warning: Unity Log] BoxColliders does not support negative scale or size.
-The effective box size has been forced positive and is likely to give unexpected collision geometry.
-If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Environment/HangarShip/ShipBottomColliders/Cube (8)"
-[Warning: Unity Log] BoxColliders does not support negative scale or size.
-The effective box size has been forced positive and is likely to give unexpected collision geometry.
-If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Environment/HangarShip/ShipBottomColliders/Cube (5)"
-[Warning: Unity Log] BoxColliders does not support negative scale or size.
-The effective box size has been forced positive and is likely to give unexpected collision geometry.
-If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Environment/HangarShip/ShipBottomColliders/Cube (4)"
-[Warning: Unity Log] Failed to change display to ExclusiveFullscreen...reverting to FullscreenWindow
-[Warning: Unity Log] [Dissonance:Recording] (20:08:56.641) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:0,2031061)
-[Warning: Unity Log] BoxColliders does not support negative scale or size.
-The effective box size has been forced positive and is likely to give unexpected collision geometry.
-If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Environment/HangarShip/StorageCloset/Cube.000/Cube"
-[Info   : Unity Log] Player joined w steamId: 76561198114494746
-[Warning: Unity Log] [Dissonance:Recording] (20:09:41.171) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:0,4928632)
-[Warning: Unity Log] [Netcode] NetworkConfig mismatch. The configuration between the server and client does not match
-[Info   : Unity Log] Disconnect callback called
-[Info   : Unity Log] Is server: True; ishost: True; isConnectedClient: True
-[Info   : Unity Log] Disconnect callback called in gamenetworkmanager; disconnecting clientId: 1
-[Info   : Unity Log] A Player disconnected but they were not in clientplayerlist
-[Info   : Unity Log] Player joined w steamId: 76561198114494746
-[Warning: Unity Log] [Netcode] NetworkConfig mismatch. The configuration between the server and client does not match
-[Info   : Unity Log] Disconnect callback called
-[Info   : Unity Log] Is server: True; ishost: True; isConnectedClient: True
-[Info   : Unity Log] Disconnect callback called in gamenetworkmanager; disconnecting clientId: 2
-[Info   : Unity Log] A Player disconnected but they were not in clientplayerlist
-[Info   : Unity Log] Leaving current lobby
-[Info   : Unity Log] Disconnecting and setting networkobjects to destroy with owner
-[Info   : Unity Log] Got no ship grabbable items to save.
-[Info   : Unity Log] Shutting down and disconnecting from server. Is host?: True
-[Warning: Unity Log] [Dissonance:Recording] (20:10:08.738) BasePreprocessingPipeline: Lost 960 samples in the preprocessor (buffer full), injecting silence to compensate
-[Warning: Unity Log] [Dissonance:Recording] (20:10:08.738) BasePreprocessingPipeline: Lost 480 samples in the preprocessor (buffer full), injecting silence to compensate
-[Warning: Unity Log] [Dissonance:Recording] (20:10:08.739) BasePreprocessingPipeline: Lost 960 samples in the preprocessor (buffer full), injecting silence to compensate
-[Info   : Unity Log] Resetting unlockables list!
-[Info   : Unity Log] Scene manager is null
-[Info   : Unity Log] Terminal disabled, disabling ESC key listener
-[Info   : Unity Log] DISABLING connection callbacks in round manager
-[Info   : Unity Log] Returning week num: 22
-[Info   : Unity Log] week num: 22
-[Info   :ainavt.lc.lethalconfig] Injecting mod config menu into main menu...
-[Info   : Unity Log] host button pressed
-[Info   : Unity Log] Returning week num: 22
-[Info   : Unity Log] AAAAAA
-[Info   : Unity Log] 0
-[Info   : Unity Log] 0
-[Info   : Unity Log] AAAAAA
-[Info   : Unity Log] 0
-[Info   : Unity Log] 1
-[Info   : Unity Log] AAAAAA
-[Info   : Unity Log] 0
-[Info   : Unity Log] 2
-[Info   : Unity Log] AAAAAA
-[Info   : Unity Log] 0
-[Info   : Unity Log] -1
-[Info   : Unity Log] Returning week num: 22
-[Info   : Unity Log] host button pressed
-[Info   : Unity Log] Displaying menu message
-[Info   : Unity Log] Connection approval callback! Game version of client request: 
-[Info   : Unity Log] Joining client id: 0; Local/host client id: 0
-[Info   : Unity Log] Stopped connection approval callback, as the client in question was the host!
-[Warning: Unity Log] [Netcode] You cannot decline the host connection. The connection was automatically approved.
-[Info   : Unity Log] started host!
-[Info   : Unity Log] are we in a server?: True
-[Info   : Unity Log] Lobby has been created
-[Warning: Unity Log] [Dissonance:Recording] (20:10:14.081) BasicMicrophoneCapture: Insufficient buffer space, requested 20160, clamped to 16383 (dropping 3777 samples)
-[Warning: Unity Log] [Dissonance:Recording] (20:10:14.123) BasePreprocessingPipeline: Lost 480 samples in the preprocessor (buffer full), injecting silence to compensate
-[Warning: Unity Log] [Dissonance:Recording] (20:10:14.130) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:0,3214913)
-[Debug  :MaxWasUnavailable.LethalModDataLib] Loading data from file LCSaveFile1.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile1.customItemDictionary...
-[Debug  :MaxWasUnavailable.LethalModDataLib] Loading data from file LCSaveFile1.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile1.allItemsList...
-[Debug  :MaxWasUnavailable.LethalModDataLib] Loading data from file LCSaveFile1.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile1.itemSaveDataList...
-[Debug  :MaxWasUnavailable.LethalModDataLib] Loading data from file LCSaveFile1.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile1.itemSaveData...
-[Debug  :MaxWasUnavailable.LethalModDataLib] Loading data from file LCSaveFile1.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile1.CurrentLevelName...
-[Info   :LethalLevelLoader] Initialized LLL Save File, Current Level Was: , Current Vanilla Save Is: LCSaveFile1
-[Info   : Unity Log] Enabling connection callbacks in StartOfRound
-[Info   : Unity Log] Began listening to SceneManager_OnLoadComplete1 on this client
-[Info   : LethalLib] Adding 0 unlockables to unlockables list
-[Info   : LethalLib] Adding 0 items to terminal
-[Warning: Unity Log] damageTrigger is disabled! Netcode for GameObjects does not support spawning disabled NetworkBehaviours! The InteractTrigger component was skipped during spawn!
-[Info   : LethalLib] Found 0 prefabs to fix
-[Info   : Unity Log] level id: 0
-[Info   : Unity Log] Changing level
-[Info   :LethalLevelLoader] Saving Current SelectableLevel: 41 Experimentation
-[Debug  :MaxWasUnavailable.LethalModDataLib] Saving data to file LCSaveFile1.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile1.customItemDictionary...
-[Debug  :MaxWasUnavailable.LethalModDataLib] Saving data to file LCSaveFile1.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile1.allItemsList...
-[Debug  :MaxWasUnavailable.LethalModDataLib] Saving data to file LCSaveFile1.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile1.itemSaveDataList...
-[Debug  :MaxWasUnavailable.LethalModDataLib] Saving data to file LCSaveFile1.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile1.itemSaveData...
-[Debug  :MaxWasUnavailable.LethalModDataLib] Saving data to file LCSaveFile1.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile1.CurrentLevelName...
-[Info   : Unity Log] Item sales percentages #0: 0
-[Info   : Unity Log] Item sales percentages #1: 0
-[Info   : Unity Log] Item sales percentages #2: 0
-[Info   : Unity Log] Item sales percentages #3: 0
-[Info   : Unity Log] Item sales percentages #4: 0
-[Info   : Unity Log] Item sales percentages #5: 0
-[Info   : Unity Log] Item sales percentages #6: 0
-[Info   : Unity Log] Item sales percentages #7: 0
-[Info   : Unity Log] Item sales percentages #8: 0
-[Info   : Unity Log] Item sales percentages #9: 0
-[Info   : Unity Log] Item sales percentages #10: 0
-[Info   : Unity Log] Item sales percentages #11: 0
-[Info   : Unity Log] Item sales percentages #12: 0
-[Warning: Unity Log] NetworkVariable is written to, but doesn't know its NetworkBehaviour yet. Are you modifying a NetworkVariable before the NetworkObject is spawned?
-[Info   : Unity Log] Suits: 1
-[Info   : Unity Log] Suit #0: 0
-[Info   : Unity Log] pos: (-2.45, 2.75, -8.41); rot: (0.00, 90.00, 0.00)
-[Info   : Unity Log] Key 'shipGrabbableItems' does not exist
-[Info   : Unity Log] Item sales percentages #0: 0
-[Info   : Unity Log] Item sales percentages #1: 0
-[Info   : Unity Log] Item sales percentages #2: 0
-[Info   : Unity Log] Item sales percentages #3: 0
-[Info   : Unity Log] Item sales percentages #4: 0
-[Info   : Unity Log] Item sales percentages #5: 0
-[Info   : Unity Log] Item sales percentages #6: 0
-[Info   : Unity Log] Item sales percentages #7: 0
-[Info   : Unity Log] Item sales percentages #8: 0
-[Info   : Unity Log] Item sales percentages #9: 0
-[Info   : Unity Log] Item sales percentages #10: 0
-[Info   : Unity Log] Item sales percentages #11: 0
-[Info   : Unity Log] Item sales percentages #12: 0
-[Info   : Unity Log] Group credits: 60
-[Info   :ainavt.lc.lethalconfig] Injecting mod config menu into quick menu...
-[Warning:LethalLevelLoader] Disabling LethalLib Dungeon.RoundManager_Start() Function To Prevent Conflicts
-[Warning: Unity Log] BoxColliders does not support negative scale or size.
-The effective box size has been forced positive and is likely to give unexpected collision geometry.
-If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Environment/HangarShip/LightSwitchContainer/PlacementCollider"
-[Warning: Unity Log] BoxColliders does not support negative scale or size.
-The effective box size has been forced positive and is likely to give unexpected collision geometry.
-If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Environment/HangarShip/Cube"
-[Warning: Unity Log] BoxColliders does not support negative scale or size.
-The effective box size has been forced positive and is likely to give unexpected collision geometry.
-If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Environment/HangarShip/AnimatedShipDoor/HangarDoorLeft (1)"
-[Warning: Unity Log] BoxColliders does not support negative scale or size.
-The effective box size has been forced positive and is likely to give unexpected collision geometry.
-If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Environment/HangarShip/ShipBottomColliders/Cube (1)"
-[Warning: Unity Log] BoxColliders does not support negative scale or size.
-The effective box size has been forced positive and is likely to give unexpected collision geometry.
-If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Environment/HangarShip/ControlDesk.001"
-[Warning: Unity Log] BoxColliders does not support negative scale or size.
-The effective box size has been forced positive and is likely to give unexpected collision geometry.
-If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Environment/HangarShip/ShipBottomColliders/Cube (3)"
-[Warning: Unity Log] BoxColliders does not support negative scale or size.
-The effective box size has been forced positive and is likely to give unexpected collision geometry.
-If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Environment/HangarShip/ShipBottomColliders/Cube (7)"
-[Warning: Unity Log] BoxColliders does not support negative scale or size.
-The effective box size has been forced positive and is likely to give unexpected collision geometry.
-If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Environment/HangarShip/StorageCloset/Cube.000/Cube"
-[Warning: Unity Log] BoxColliders does not support negative scale or size.
-The effective box size has been forced positive and is likely to give unexpected collision geometry.
-If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Environment/HangarShip/ShipBottomColliders/Cube (6)"
-[Warning: Unity Log] BoxColliders does not support negative scale or size.
-The effective box size has been forced positive and is likely to give unexpected collision geometry.
-If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Environment/HangarShip/ShipBottomColliders/Cube (8)"
-[Warning: Unity Log] BoxColliders does not support negative scale or size.
-The effective box size has been forced positive and is likely to give unexpected collision geometry.
-If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Environment/HangarShip/ShipBottomColliders/Cube (5)"
-[Warning: Unity Log] BoxColliders does not support negative scale or size.
-The effective box size has been forced positive and is likely to give unexpected collision geometry.
-If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Environment/HangarShip/ShipBottomColliders/Cube (4)"
-[Info   : Unity Log] Called teleport function on Player
-[Info   : Unity Log] Taking control of player Player and enabling camera!
-[Info   : Unity Log] Called teleport function on Player (1)
-[Info   : Unity Log] Called teleport function on Player (2)
-[Info   : Unity Log] Called teleport function on Player (3)
-[Info   : Unity Log] Starting voice tracking for player: Wexop
-[Info   : Unity Log] !!!! ENABLING CAMERA FOR PLAYER: Player
-[Info   : Unity Log] !!!! connectedPlayersAmount: 0
-[Info   : Unity Log] Has beta?: {hasBeta}
-[Info   : Unity Log] Has beta save data: True
-[Warning: Unity Log] [Dissonance:Recording] (20:10:17.508) BasePreprocessingPipeline: Lost 960 samples in the preprocessor (buffer full), injecting silence to compensate
-[Warning: Unity Log] [Dissonance:Recording] (20:10:17.534) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:0,3203057)
-[Warning: Unity Log] [Dissonance:Recording] (20:10:27.870) BasePreprocessingPipeline: Lost 960 samples in the preprocessor (buffer full), injecting silence to compensate
-[Warning: Unity Log] [Dissonance:Recording] (20:10:27.877) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:0,3228778)
-[Warning: Unity Log] [Dissonance:Recording] (20:10:38.123) BasePreprocessingPipeline: Lost 960 samples in the preprocessor (buffer full), injecting silence to compensate
-[Warning: Unity Log] [Dissonance:Recording] (20:10:38.140) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:0,2454935)
-[Info   : Unity Log] Player joined w steamId: 76561198114494746
-[Warning: Unity Log] [Netcode] NetworkConfig mismatch. The configuration between the server and client does not match
-[Info   : Unity Log] Disconnect callback called
-[Info   : Unity Log] Is server: True; ishost: True; isConnectedClient: True
-[Info   : Unity Log] Disconnect callback called in gamenetworkmanager; disconnecting clientId: 3
-[Info   : Unity Log] A Player disconnected but they were not in clientplayerlist
-[Info   : Unity Log] Player joined w steamId: 76561198114494746
-[Warning: Unity Log] [Netcode] NetworkConfig mismatch. The configuration between the server and client does not match
-[Info   : Unity Log] Disconnect callback called
-[Info   : Unity Log] Is server: True; ishost: True; isConnectedClient: True
-[Info   : Unity Log] Disconnect callback called in gamenetworkmanager; disconnecting clientId: 4
-[Info   : Unity Log] A Player disconnected but they were not in clientplayerlist
-[Warning: Unity Log] [Dissonance:Recording] (20:11:13.941) BasePreprocessingPipeline: Lost 960 samples in the preprocessor (buffer full), injecting silence to compensate
-[Warning: Unity Log] [Dissonance:Recording] (20:11:13.948) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:0,2996201)
-[Warning: Unity Log] [Dissonance:Recording] (20:11:16.342) BasePreprocessingPipeline: Lost 960 samples in the preprocessor (buffer full), injecting silence to compensate
-[Warning: Unity Log] [Dissonance:Recording] (20:11:16.358) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:0,2457394)
-[Warning: Unity Log] [Dissonance:Recording] (20:11:49.747) BasePreprocessingPipeline: Lost 960 samples in the preprocessor (buffer full), injecting silence to compensate
-[Warning: Unity Log] [Dissonance:Recording] (20:11:49.756) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:0,3098169)
-[Warning: Unity Log] [Dissonance:Recording] (20:11:52.337) BasePreprocessingPipeline: Lost 960 samples in the preprocessor (buffer full), injecting silence to compensate
-[Warning: Unity Log] [Dissonance:Recording] (20:11:52.436) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:0,3594334)
-[Info   : Unity Log] Player joined w steamId: 76561198114494746
-[Warning: Unity Log] [Netcode] NetworkConfig mismatch. The configuration between the server and client does not match
-[Info   : Unity Log] Disconnect callback called
-[Info   : Unity Log] Is server: True; ishost: True; isConnectedClient: True
-[Info   : Unity Log] Disconnect callback called in gamenetworkmanager; disconnecting clientId: 5
-[Info   : Unity Log] A Player disconnected but they were not in clientplayerlist
-[Warning: Unity Log] [Dissonance:Recording] (20:12:00.731) BasePreprocessingPipeline: Lost 480 samples in the preprocessor (buffer full), injecting silence to compensate
-[Warning: Unity Log] [Dissonance:Recording] (20:12:00.733) BasePreprocessingPipeline: Lost 480 samples in the preprocessor (buffer full), injecting silence to compensate
-[Warning: Unity Log] [Dissonance:Recording] (20:12:00.734) BasePreprocessingPipeline: Lost 960 samples in the preprocessor (buffer full), injecting silence to compensate
-[Warning: Unity Log] [Dissonance:Recording] (20:12:00.735) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:0,2956928)
-[Info   : Unity Log] Leaving current lobby
-[Info   : Unity Log] Disconnecting and setting networkobjects to destroy with owner
-[Info   : Unity Log] Got no ship grabbable items to save.
-[Info   : Unity Log] Shutting down and disconnecting from server. Is host?: True
-[Warning: Unity Log] [Dissonance:Recording] (20:12:02.251) BasePreprocessingPipeline: Lost 480 samples in the preprocessor (buffer full), injecting silence to compensate
-[Warning: Unity Log] [Dissonance:Recording] (20:12:02.251) BasePreprocessingPipeline: Lost 960 samples in the preprocessor (buffer full), injecting silence to compensate
-[Warning: Unity Log] [Dissonance:Recording] (20:12:02.252) BasePreprocessingPipeline: Lost 480 samples in the preprocessor (buffer full), injecting silence to compensate
-[Info   : Unity Log] Resetting unlockables list!
-[Info   : Unity Log] Scene manager is null
-[Info   : Unity Log] DISABLING connection callbacks in round manager
-[Info   : Unity Log] Terminal disabled, disabling ESC key listener
-[Info   : Unity Log] Returning week num: 22
-[Info   : Unity Log] week num: 22
-[Info   :ainavt.lc.lethalconfig] Injecting mod config menu into main menu...
-[Info   : Unity Log] Requested server list
-[Info   : Unity Log] Got lobby list!
-[Info   : Unity Log] Lobby #0 id: 109775242502885755; members: 1
-[Info   : Unity Log] Is lobby #0 valid?: False
-[Info   : Unity Log] Lobby #1 id: 109775242501503711; members: 1
-[Info   : Unity Log] Is lobby #1 valid?: False
-[Info   : Unity Log] Lobby #2 id: 109775242502340145; members: 3
-[Info   : Unity Log] Is lobby #2 valid?: False
-[Info   : Unity Log] Lobby #3 id: 109775242489409964; members: 1
-[Info   : Unity Log] Is lobby #3 valid?: False
-[Info   : Unity Log] Lobby #4 id: 109775242496086198; members: 2
-[Info   : Unity Log] Is lobby #4 valid?: False
-[Info   : Unity Log] Lobby #5 id: 109775242501503528; members: 2
-[Info   : Unity Log] Is lobby #5 valid?: False
-[Info   : Unity Log] Lobby #6 id: 109775242498422657; members: 1
-[Info   : Unity Log] Is lobby #6 valid?: False
-[Info   : Unity Log] Lobby #7 id: 109775242501501304; members: 3
-[Info   : Unity Log] Is lobby #7 valid?: False
-[Info   : Unity Log] Lobby #8 id: 109775242491484808; members: 1
-[Info   : Unity Log] Is lobby #8 valid?: False
-[Info   : Unity Log] Lobby #9 id: 109775242502885614; members: 1
-[Info   : Unity Log] Is lobby #9 valid?: False
-[Info   : Unity Log] Lobby #10 id: 109775242500610238; members: 2
-[Info   : Unity Log] Is lobby #10 valid?: False
-[Info   : Unity Log] Lobby #11 id: 109775242500611329; members: 2
-[Info   : Unity Log] Is lobby #11 valid?: False
-[Info   : Unity Log] Lobby #12 id: 109775242502885679; members: 1
-[Info   : Unity Log] Is lobby #12 valid?: False
-[Info   : Unity Log] Lobby #13 id: 109775242500609027; members: 3
-[Info   : Unity Log] Is lobby #13 valid?: False
-[Info   : Unity Log] Lobby #14 id: 109775242499788954; members: 1
-[Info   : Unity Log] Is lobby #14 valid?: False
-[Info   : Unity Log] Lobby #15 id: 109775242502339940; members: 3
-[Info   : Unity Log] Is lobby #15 valid?: False
-[Info   : Unity Log] Lobby #16 id: 109775242482783141; members: 1
-[Info   : Unity Log] Is lobby #16 valid?: False
-[Info   : Unity Log] Lobby #17 id: 109775242501501061; members: 2
-[Info   : Unity Log] Is lobby #17 valid?: False
-[Info   : Unity Log] Lobby #18 id: 109775242500609262; members: 2
-[Info   : Unity Log] Is lobby #18 valid?: False
-[Info   : Unity Log] Lobby #19 id: 109775242499792823; members: 1
-[Info   : Unity Log] Is lobby #19 valid?: False
-[Info   : Unity Log] Lobby #20 id: 109775242492328492; members: 3
-[Info   : Unity Log] Is lobby #20 valid?: False
-[Info   : Unity Log] Lobby #21 id: 109775242501503226; members: 3
-[Info   : Unity Log] Is lobby #21 valid?: False
-[Info   : Unity Log] Lobby #22 id: 109775242502339053; members: 2
-[Info   : Unity Log] Is lobby #22 valid?: False
-[Info   : Unity Log] Lobby #23 id: 109775242501503549; members: 1
-[Info   : Unity Log] Is lobby #23 valid?: False
-[Info   : Unity Log] Lobby #24 id: 109775242496990350; members: 2
-[Info   : Unity Log] Is lobby #24 valid?: False
-[Info   : Unity Log] Lobby #25 id: 109775242502885444; members: 3
-[Info   : Unity Log] Is lobby #25 valid?: False
-[Info   : Unity Log] Lobby #26 id: 109775242502340467; members: 1
-[Info   : Unity Log] Is lobby #26 valid?: False
-[Info   : Unity Log] Lobby #27 id: 109775242501501745; members: 3
-[Info   : Unity Log] Is lobby #27 valid?: False
-[Info   : Unity Log] Lobby #28 id: 109775242483572357; members: 1
-[Info   : Unity Log] Is lobby #28 valid?: False
-[Info   : Unity Log] Lobby #29 id: 109775242499060729; members: 3
-[Info   : Unity Log] Is lobby #29 valid?: False
-[Info   : Unity Log] Lobby #30 id: 109775242502338620; members: 2
-[Info   : Unity Log] Is lobby #30 valid?: False
-[Info   : Unity Log] Lobby #31 id: 109775242492607992; members: 1
-[Info   : Unity Log] Is lobby #31 valid?: False
-[Info   : Unity Log] Lobby #32 id: 109775242486225059; members: 2
-[Info   : Unity Log] Is lobby #32 valid?: False
-[Info   : Unity Log] Lobby #33 id: 109775242494599109; members: 2
-[Info   : Unity Log] Is lobby #33 valid?: False
-[Info   : Unity Log] Lobby #34 id: 109775242498421920; members: 1
-[Info   : Unity Log] Is lobby #34 valid?: False
-[Info   : Unity Log] Lobby #35 id: 109775242502337858; members: 1
-[Info   : Unity Log] Is lobby #35 valid?: False
-[Info   : Unity Log] Lobby #36 id: 109775242493654940; members: 1
-[Info   : Unity Log] Is lobby #36 valid?: False
-[Info   : Unity Log] Lobby #37 id: 109775242474608805; members: 2
-[Info   : Unity Log] Is lobby #37 valid?: False
-[Info   : Unity Log] Lobby #38 id: 109775242501504876; members: 3
-[Info   : Unity Log] Is lobby #38 valid?: False
-[Info   : Unity Log] Lobby #39 id: 109775242498423208; members: 3
-[Info   : Unity Log] Is lobby #39 valid?: False
-[Info   : Unity Log] Lobby #40 id: 109775242498423035; members: 1
-[Info   : Unity Log] Is lobby #40 valid?: False
-[Info   : Unity Log] Lobby #41 id: 109775242502339495; members: 1
-[Info   : Unity Log] Is lobby #41 valid?: False
-[Info   : Unity Log] Lobby #42 id: 109775242500609544; members: 2
-[Info   : Unity Log] Is lobby #42 valid?: False
-[Info   : Unity Log] Lobby #43 id: 109775242499063699; members: 3
-[Info   : Unity Log] Is lobby #43 valid?: False
-[Info   : Unity Log] Lobby #44 id: 109775242502338389; members: 2
-[Info   : Unity Log] Is lobby #44 valid?: False
-[Info   : Unity Log] Lobby #45 id: 109775242502885834; members: 1
-[Info   : Unity Log] Is lobby #45 valid?: False
-[Info   : Unity Log] Lobby #46 id: 109775242500611186; members: 1
-[Info   : Unity Log] Is lobby #46 valid?: False
-[Info   : Unity Log] Lobby #47 id: 109775242502339562; members: 1
-[Info   : Unity Log] Is lobby #47 valid?: False
-[Info   : Unity Log] Lobby #48 id: 109775242490862618; members: 2
-[Info   : Unity Log] Is lobby #48 valid?: False
-[Info   : Unity Log] Lobby #49 id: 109775242496088504; members: 3
-[Info   : Unity Log] Is lobby #49 valid?: False
-[Info   : Unity Log] unsubscribing from steam callbacks
-[Info   :FixPluginTypesSerialization] Restored original AssemblyNames list
+[Error  : Unity Log] NullReferenceException
+Stack trace:
+UnityEngine.InputSystem.PlayerInput.get_actions () (at <dbb0ce7b96144bd8bcbcb8b0d765f970>:IL_0008)
+HUDManager.OnDisable () (at <255c0877f9414c3aa6f1fe5079ac13f3>:IL_0005)
+
+[Error  : Unity Log] NullReferenceException
+Stack trace:
+UnityEngi
