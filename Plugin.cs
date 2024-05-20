@@ -15,7 +15,7 @@ namespace RandomEnemiesSize
     {
         private const string GUID = "wexop.random_enemies_size";
         private const string NAME = "RandomEnemiesSize";
-        private const string VERSION = "1.0.7";
+        private const string VERSION = "1.1.0";
 
         public static RandomEnemiesSize instance;
         public ConfigEntry<string> customEnemyEntry;
