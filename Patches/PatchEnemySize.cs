@@ -24,11 +24,15 @@ namespace RandomEnemiesSize.Patches
             var customEnemy = RandomEnemiesSize.instance.GetCustomEnemySize(__instance.enemyType.enemyName);
             if (customEnemy.found) scale = Random.Range(customEnemy.minValue, customEnemy.maxValue);
 
-            if (!__instance.isOutside && DungeonManager.CurrentExtendedDungeonFlow?.DungeonName != null)
+            var interiorName = "Facility";
+            if (DungeonManager.CurrentExtendedDungeonFlow?.DungeonName != null)
+                interiorName = DungeonManager.CurrentExtendedDungeonFlow?.DungeonName;
+
+            if (!__instance.isOutside && interiorName != null)
                 //Debug.Log($"ACTUAL DUNGEON NAME {DungeonManager.CurrentExtendedDungeonFlow.DungeonName}");
 
                 scale *= RandomEnemiesSize.instance.GetInteriorMultiplier(__instance.enemyType.enemyName,
-                    DungeonManager.CurrentExtendedDungeonFlow.DungeonName);
+                    interiorName);
 
             //server dispawn gameobject, change scale, and respawn it to sync with clients
 
