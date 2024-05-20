@@ -51,3 +51,4 @@ C:\Users\Matthieu\Desktop\DEV\LethalCompanyMods\RandomEnemiesSize\bin\Debug\nets
 C:\Users\Matthieu\Desktop\DEV\LethalCompanyMods\RandomEnemiesSize\bin\Debug\netstandard2.1\LethalConfig.dll
 C:\Users\Matthieu\Desktop\DEV\LethalCompanyMods\RandomEnemiesSize\bin\Debug\netstandard2.1\LethalConfig.pdb
 C:\Users\Matthieu\Desktop\DEV\LethalCompanyMods\RandomEnemiesSize\bin\Debug\netstandard2.1\Xilophor.StaticNetcodeLib.dll
+C:\Users\Matthieu\Desktop\DEV\LethalCompanyMods\RandomEnemiesSize\bin\Debug\netstandard2.1\OdinSerializer.dll
