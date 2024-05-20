@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace RandomEnemiesSize.Patches
 {
-    [HarmonyPatch(typeof(EnemyAI) )]
+    [HarmonyPatch(typeof(EnemyAI))]
     internal class PatchEnemySize
     {
 
@@ -17,26 +17,30 @@ namespace RandomEnemiesSize.Patches
 
             var originalMonsters = RandomEnemiesSize.instance.OriginalMonsters;
             var originalScale = __instance.gameObject.transform.localScale;
-            
+
             //if we are client
-            if (!__instance.IsServer || !__instance.IsOwner)
+            if (false)
             {
-                var multiplier = originalMonsters.GetMultiplierFromScale(__instance.enemyType.enemyName, originalScale.x);
+                var multiplier =
+                    originalMonsters.GetMultiplierFromScale(__instance.enemyType.enemyName, originalScale.x);
 
                 if (multiplier.HasValue)
                 {
                     __instance.enemyHP = originalMonsters.GetMonsterHpInfluenced(multiplier.Value, __instance.enemyHP);
                 }
+
                 Debug.Log($"CLIENT GET ENEMY HP {__instance.enemyHP}");
                 return;
             }
-                
 
-            var scale = Random.Range(RandomEnemiesSize.instance.minSizeOutdoorEntry.Value, RandomEnemiesSize.instance.maxSizeOutdoorEntry.Value);
+
+            var scale = Random.Range(RandomEnemiesSize.instance.minSizeOutdoorEntry.Value,
+                RandomEnemiesSize.instance.maxSizeOutdoorEntry.Value);
 
             if (!__instance.isOutside)
             {
-                scale = Random.Range(RandomEnemiesSize.instance.minSizeIndoorEntry.Value, RandomEnemiesSize.instance.maxSizeIndoorEntry.Value);
+                scale = Random.Range(RandomEnemiesSize.instance.minSizeIndoorEntry.Value,
+                    RandomEnemiesSize.instance.maxSizeIndoorEntry.Value);
             }
 
             var customEnemy = RandomEnemiesSize.instance.GetCustomEnemySize(__instance.enemyType.enemyName);
@@ -44,7 +48,7 @@ namespace RandomEnemiesSize.Patches
             {
                 scale = Random.Range(customEnemy.minValue, customEnemy.maxValue);
             }
-            
+
             //server dispawn gameobject, change scale, and respawn it to sync with clients
 
 
@@ -52,18 +56,20 @@ namespace RandomEnemiesSize.Patches
 
             if (RandomEnemiesSize.instance.funModeEntry.Value)
             {
-                
-                var funXSize = Random.Range(RandomEnemiesSize.instance.funModeHorizontalMinEntry.Value, RandomEnemiesSize.instance.funModeHorizontalMaxEntry.Value);
-                var funZSize = Random.Range(RandomEnemiesSize.instance.funModeHorizontalMinEntry.Value, RandomEnemiesSize.instance.funModeHorizontalMaxEntry.Value);
-                
+
+                var funXSize = Random.Range(RandomEnemiesSize.instance.funModeHorizontalMinEntry.Value,
+                    RandomEnemiesSize.instance.funModeHorizontalMaxEntry.Value);
+                var funZSize = Random.Range(RandomEnemiesSize.instance.funModeHorizontalMinEntry.Value,
+                    RandomEnemiesSize.instance.funModeHorizontalMaxEntry.Value);
+
                 newScale = new Vector3(newScale.x * funXSize, newScale.y, newScale.z * funZSize);
             }
-            
+
             __instance.gameObject.GetComponent<NetworkObject>().Despawn(destroy: false);
-            
+
             //change size
-            __instance.gameObject.transform.localScale = newScale ;
-            
+            __instance.gameObject.transform.localScale = newScale;
+
             //change hp
             if (RandomEnemiesSize.instance.influenceHpConfig.Value)
             {
@@ -76,7 +82,7 @@ namespace RandomEnemiesSize.Patches
 
                 if (!__instance.isOutside)
                 {
-                    
+
                     //Debug.Log($"ACTUAL DUNGEON NAME {DungeonManager.CurrentExtendedDungeonFlow.DungeonName}");
 
                     scale *= RandomEnemiesSize.instance.GetInteriorMultiplier(__instance.enemyType.enemyName,
@@ -88,30 +94,33 @@ namespace RandomEnemiesSize.Patches
 
                 if (RandomEnemiesSize.instance.funModeEntry.Value)
                 {
-                    
-                    var funXSize = Random.Range(RandomEnemiesSize.instance.funModeHorizontalMinEntry.Value, RandomEnemiesSize.instance.funModeHorizontalMaxEntry.Value);
-                    var funZSize = Random.Range(RandomEnemiesSize.instance.funModeHorizontalMinEntry.Value, RandomEnemiesSize.instance.funModeHorizontalMaxEntry.Value);
+
+                    var funXSize = Random.Range(RandomEnemiesSize.instance.funModeHorizontalMinEntry.Value,
+                        RandomEnemiesSize.instance.funModeHorizontalMaxEntry.Value);
+                    var funZSize = Random.Range(RandomEnemiesSize.instance.funModeHorizontalMinEntry.Value,
+                        RandomEnemiesSize.instance.funModeHorizontalMaxEntry.Value);
 
                     if (RandomEnemiesSize.instance.lockFunModeHorizontalEnrty.Value)
                     {
                         funZSize = funXSize;
                     }
-                    
+
                     newScale = new Vector3(newScale.x * funXSize, newScale.y, newScale.z * funZSize);
                 }
-                
+
                 __instance.gameObject.GetComponent<NetworkObject>().Despawn(destroy: false);
-                
+
                 //change size
-                __instance.gameObject.transform.localScale = newScale ;
+                __instance.gameObject.transform.localScale = newScale;
 
                 __instance.gameObject.GetComponent<NetworkObject>().Spawn();
-                
 
-                
+
+
                 Debug.Log($"ENEMY ({__instance.gameObject.name}) SPAWNED WITH RANDOM SIZE {newScale.ToString()}");
+            }
+
         }
-        
+
     }
-    
 }
