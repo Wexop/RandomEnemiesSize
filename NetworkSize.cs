@@ -1,4 +1,5 @@
-﻿using StaticNetcodeLib;
+﻿using System.Linq;
+using StaticNetcodeLib;
 using Unity.Netcode;
 using UnityEngine;
 
@@ -8,9 +9,20 @@ namespace RandomEnemiesSize
     public class NetworkSize
     {
         [ClientRpc]
-        public static void ExampleClientRpc(string exampleString)
+        public static void UpdateEnemyClientRpc(ulong networkId, Vector3 newScale, float scaleMultiplier)
         {
-            Debug.Log(exampleString);
+            var enemies = Object.FindObjectsByType<EnemyAI>(FindObjectsSortMode.None).ToList();
+            var enemieFound = enemies.Find(e => e.NetworkObjectId == networkId);
+
+            if (enemieFound == null)
+            {
+                Debug.Log($"ENEMIE NOT FOUND {networkId}");
+            }
+            else
+            {
+                Debug.Log($"ENEMIE FOUND {enemieFound.gameObject.name} NEW SCALE IS {newScale}");
+                enemieFound.transform.localScale = newScale;
+            }
         }
     }
 }

@@ -1,6 +1,5 @@
 ﻿using HarmonyLib;
 using LethalLevelLoader;
-using Unity.Netcode;
 using UnityEngine;
 
 namespace RandomEnemiesSize.Patches
@@ -13,8 +12,6 @@ namespace RandomEnemiesSize.Patches
         private static void PatchStart(EnemyAI __instance)
         {
             if (!__instance.IsServer || !__instance.IsOwner) return;
-
-            NetworkSize.ExampleClientRpc("TEST STRING");
 
 
             var scale = Random.Range(RandomEnemiesSize.instance.minSizeOutdoorEntry.Value,
@@ -50,12 +47,9 @@ namespace RandomEnemiesSize.Patches
                 newScale = new Vector3(newScale.x * funXSize, newScale.y, newScale.z * funZSize);
             }
 
-            __instance.gameObject.GetComponent<NetworkObject>().Despawn(false);
+            //changes on every client
 
-            //change size
-            __instance.gameObject.transform.localScale = newScale;
-
-            __instance.gameObject.GetComponent<NetworkObject>().Spawn();
+            NetworkSize.UpdateEnemyClientRpc(__instance.NetworkObjectId, newScale, scale);
 
 
             Debug.Log($"ENEMY ({__instance.gameObject.name}) SPAWNED WITH RANDOM SIZE {newScale.ToString()}");
