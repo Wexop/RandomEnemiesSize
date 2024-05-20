@@ -56,3 +56,10 @@ You can lock the horizontal axis (x and z) to have the same value.
 This normaly should work with modded enemies. For any issues, create an issue on the git page :)
 
 Have fun :)
+
+**QUESTIONS**
+
+- Why LethalLevelLoader as dependence ?
+
+LLL give an easy way to know the dungeon name (for custom interiors multiplier), and most of the mods use this api to
+create custom dungeon, so can find the interior name easily !
