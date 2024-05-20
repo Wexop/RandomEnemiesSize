@@ -50,3 +50,4 @@ C:\Users\Matthieu\Desktop\DEV\LethalCompanyMods\RandomEnemiesSize\bin\Debug\nets
 C:\Users\Matthieu\Desktop\DEV\LethalCompanyMods\RandomEnemiesSize\bin\Debug\netstandard2.1\MMHOOK_Assembly-CSharp.dll
 C:\Users\Matthieu\Desktop\DEV\LethalCompanyMods\RandomEnemiesSize\bin\Debug\netstandard2.1\LethalConfig.dll
 C:\Users\Matthieu\Desktop\DEV\LethalCompanyMods\RandomEnemiesSize\bin\Debug\netstandard2.1\LethalConfig.pdb
+C:\Users\Matthieu\Desktop\DEV\LethalCompanyMods\RandomEnemiesSize\bin\Debug\netstandard2.1\Xilophor.StaticNetcodeLib.dll

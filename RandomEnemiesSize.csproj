@@ -40,6 +40,9 @@
       <Reference Include="Unity.Netcode.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
         <HintPath>D:\SteamLibrary\steamapps\common\Lethal Company\Lethal Company_Data\Managed\Unity.Netcode.Runtime.dll</HintPath>
       </Reference>
+      <Reference Include="Xilophor.StaticNetcodeLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\DEPENDENCES\STATICNETCODELIB\BepInEx\plugins\StaticNetcodeLib\Xilophor.StaticNetcodeLib.dll</HintPath>
+      </Reference>
     </ItemGroup>
 
 </Project>
