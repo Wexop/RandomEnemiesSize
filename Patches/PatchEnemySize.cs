@@ -1,5 +1,4 @@
 ﻿using HarmonyLib;
-using LethalLevelLoader;
 using UnityEngine;
 
 namespace RandomEnemiesSize.Patches
@@ -24,15 +23,16 @@ namespace RandomEnemiesSize.Patches
             var customEnemy = RandomEnemiesSize.instance.GetCustomEnemySize(__instance.enemyType.enemyName);
             if (customEnemy.found) scale = Random.Range(customEnemy.minValue, customEnemy.maxValue);
 
-            var interiorName = "Facility";
-            if (DungeonManager.CurrentExtendedDungeonFlow?.DungeonName != null)
-                interiorName = DungeonManager.CurrentExtendedDungeonFlow?.DungeonName;
 
-            if (!__instance.isOutside && interiorName != null)
-                //Debug.Log($"ACTUAL DUNGEON NAME {DungeonManager.CurrentExtendedDungeonFlow.DungeonName}");
+            if (RandomEnemiesSize.instance.LethalLevelLoaderIsHere)
+            {
+                var interiorName = RandomEnemiesSize.GetDungeonName();
+                //Debug.Log($"ACTUAL DUNGEON NAME {interiorName}");
+                if (!__instance.isOutside && interiorName != null)
+                    scale *= RandomEnemiesSize.instance.GetInteriorMultiplier(__instance.enemyType.enemyName,
+                        interiorName);
+            }
 
-                scale *= RandomEnemiesSize.instance.GetInteriorMultiplier(__instance.enemyType.enemyName,
-                    interiorName);
 
             //server dispawn gameobject, change scale, and respawn it to sync with clients
 

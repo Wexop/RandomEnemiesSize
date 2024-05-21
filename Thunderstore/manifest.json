@@ -1,6 +1,6 @@
 {
   "name": "RandomEnemiesSize",
-  "version_number": "1.1.0",
+  "version_number": "1.1.1",
   "website_url": "https://github.com/Wexop/RandomEnemiesSize",
   "description": "[V50] Monsters now spawn with a random size. Configurable with LethalConfig: Outside, Indoor and Custom enemies !",
   "dependencies": [
@@ -8,7 +8,6 @@
     "Evaisa-HookGenPatcher-0.0.5",
     "Evaisa-LethalLib-0.15.1",
     "AinaVT-LethalConfig-1.4.2",
-    "xilophor-StaticNetcodeLib-1.0.3",
-    "IAmBatby-LethalLevelLoader-1.2.4"
+    "xilophor-StaticNetcodeLib-1.0.3"
   ]
 }

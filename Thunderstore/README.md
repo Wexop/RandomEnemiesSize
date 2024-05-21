@@ -27,6 +27,8 @@ monsters, even if you have only one custom enemies !
 
 **FOR CUSTOM INTERIORS**
 
+To use this feature **you need install the mod LethalLevelLoader**.
+
 You can multiply the previous configs size for every interiors (and every monster in every interior !)
 
 **Recommended:**

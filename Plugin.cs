@@ -1,23 +1,30 @@
 ﻿using System.Globalization;
 using BepInEx;
+using BepInEx.Bootstrap;
 using BepInEx.Configuration;
 using HarmonyLib;
 using LethalConfig;
 using LethalConfig.ConfigItems;
 using LethalConfig.ConfigItems.Options;
+using LethalLevelLoader;
 using RandomEnemiesSize.Patches;
+using UnityEngine;
 
 namespace RandomEnemiesSize
 {
     [BepInDependency(StaticNetcodeLib.StaticNetcodeLib.Guid)]
+    [BepInDependency(Plugin.ModGUID, BepInDependency.DependencyFlags.SoftDependency)]
     [BepInPlugin(GUID, NAME, VERSION)]
     public class RandomEnemiesSize : BaseUnityPlugin
     {
         private const string GUID = "wexop.random_enemies_size";
         private const string NAME = "RandomEnemiesSize";
-        private const string VERSION = "1.1.0";
+        private const string VERSION = "1.1.1";
+
+        public static string LethalLevelLoaderReferenceChain = "imabatby.lethallevelloader";
 
         public static RandomEnemiesSize instance;
+        public bool LethalLevelLoaderIsHere;
         public ConfigEntry<string> customEnemyEntry;
         public ConfigEntry<string> customInteriorEntry;
 
@@ -40,6 +47,12 @@ namespace RandomEnemiesSize
 
             Logger.LogInfo("RandomEnemiesSize starting....");
 
+            if (Chainloader.PluginInfos.ContainsKey(LethalLevelLoaderReferenceChain))
+            {
+                Debug.Log("LethalLevelLoader found !");
+                LethalLevelLoaderIsHere = true;
+            }
+
             minSizeIndoorEntry = Config.Bind("General", "MinMonstersSizeIndoor", 0.4f,
                 "Change the minimum size of monsters in the factory. No need to restart the game :)");
             CreateFloatConfig(minSizeIndoorEntry);
@@ -61,8 +74,8 @@ namespace RandomEnemiesSize
             CreateStringConfig(customEnemyEntry);
 
             customInteriorEntry = Config.Bind("Custom", "CustomInteriorsSize", "",
-                "Multiply the base size for an indoor enemy in an interior wanted with his EXACT name. RECOMMENDED: Go to the thunderstore mod page, you can find a generator to make easier this config. Manual example -> mansion#any:1.5,NutCracker:2;customInterior#any:3; No need to restart the game :)");
-            CreateStringConfig(customInteriorEntry);
+                "THE MOD LethalLevelLoader IS REQUIRED FOR THIS FEATURE. Multiply the base size for an indoor enemy in an interior wanted with his EXACT name. RECOMMENDED: Go to the thunderstore mod page, you can find a generator to make easier this config. Manual example -> mansion#any:1.5,NutCracker:2;customInterior#any:3; No need to restart the game :)");
+            CreateInteriorStringConfig(customInteriorEntry);
 
             influenceHpConfig = Config.Bind("Influences", "InfluenceHp", true,
                 "Activate to make size influence monsters HP. No need to restart the game :)");
@@ -89,6 +102,31 @@ namespace RandomEnemiesSize
             Logger.LogInfo("RandomEnemiesSize Patched !!");
         }
 
+        public static string GetDungeonName()
+        {
+            var interiorName = "Facility";
+            if (!Chainloader.PluginInfos.ContainsKey(LethalLevelLoaderReferenceChain)) return interiorName;
+            try
+            {
+                if (DungeonManager.CurrentExtendedDungeonFlow?.DungeonName != null)
+                    interiorName = DungeonManager.CurrentExtendedDungeonFlow?.DungeonName;
+            }
+            catch
+            {
+                return interiorName;
+            }
+
+            Debug.Log($"INTERIOR FOUND: {interiorName}");
+            return interiorName;
+        }
+
+        private CanModifyResult CanModifyInterior()
+        {
+            if (!LethalLevelLoaderIsHere) return (false, "You need the mod LethalLevelLoader to use this feature !");
+
+            return true;
+        }
+
         private void CreateFloatConfig(ConfigEntry<float> configEntry)
         {
             var exampleSlider = new FloatSliderConfigItem(configEntry, new FloatSliderOptions
@@ -105,6 +143,16 @@ namespace RandomEnemiesSize
             var exampleSlider = new TextInputFieldConfigItem(configEntry, new TextInputFieldOptions
             {
                 RequiresRestart = false
+            });
+            LethalConfigManager.AddConfigItem(exampleSlider);
+        }
+
+        private void CreateInteriorStringConfig(ConfigEntry<string> configEntry)
+        {
+            var exampleSlider = new TextInputFieldConfigItem(configEntry, new TextInputFieldOptions
+            {
+                RequiresRestart = false,
+                CanModifyCallback = CanModifyInterior
             });
             LethalConfigManager.AddConfigItem(exampleSlider);
         }
