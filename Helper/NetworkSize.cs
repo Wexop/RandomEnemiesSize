@@ -21,12 +21,13 @@ namespace RandomEnemiesSize
             }
             else
             {
-                Debug.Log(
-                    $"ENEMIE FOUND {enemieFound.gameObject.name} NEW SCALE IS {newScale} WITH A MULTIPLIER OF {scaleMultiplier}");
+                //Debug.Log($"ENEMIE FOUND {enemieFound.gameObject.name} NEW SCALE IS {newScale} WITH A MULTIPLIER OF {scaleMultiplier}");
                 //change scale
                 enemieFound.transform.localScale = newScale;
                 //change hp
                 enemieFound.enemyHP = influences.InfluenceHp(enemieFound.enemyHP, scaleMultiplier);
+                //change pitch
+                influences.InfluenceSound(enemieFound, scaleMultiplier);
             }
         }
     }

@@ -19,7 +19,7 @@ namespace RandomEnemiesSize
     {
         private const string GUID = "wexop.random_enemies_size";
         private const string NAME = "RandomEnemiesSize";
-        private const string VERSION = "1.1.2";
+        private const string VERSION = "1.1.3";
 
         public static string LethalLevelLoaderReferenceChain = "imabatby.lethallevelloader";
 
@@ -28,13 +28,15 @@ namespace RandomEnemiesSize
         public ConfigEntry<string> customEnemyEntry;
         public ConfigEntry<string> customInteriorEntry;
 
-
         public ConfigEntry<bool> funModeEntry;
         public ConfigEntry<float> funModeHorizontalMaxEntry;
         public ConfigEntry<float> funModeHorizontalMinEntry;
+        public ConfigEntry<bool> funModeLockHorizontalEnrty;
 
         public ConfigEntry<bool> influenceHpConfig;
-        public ConfigEntry<bool> lockFunModeHorizontalEnrty;
+        public ConfigEntry<bool> influenceSoundConfig;
+        public ConfigEntry<float> influenceSoundMaxEntry;
+        public ConfigEntry<float> influenceSoundMinEntry;
 
         public ConfigEntry<float> maxSizeIndoorEntry;
         public ConfigEntry<float> maxSizeOutdoorEntry;
@@ -81,6 +83,18 @@ namespace RandomEnemiesSize
                 "Activate to make size influence monsters HP. No need to restart the game :)");
             CreateBoolConfig(influenceHpConfig);
 
+            influenceSoundConfig = Config.Bind("Influences", "InfluenceSound", true,
+                "Activate to make size influence monsters sounds pitch. No need to restart the game :)");
+            CreateBoolConfig(influenceSoundConfig);
+
+            influenceSoundMinEntry = Config.Bind("Influences", "InfluenceSoundMinPitch", 0.6f,
+                "If InfluenceSound is activated, this define the minimum pitch of monsters audio sources. No need to restart the game :)");
+            CreateFloatConfig(influenceSoundMinEntry, 0f, 3f);
+
+            influenceSoundMaxEntry = Config.Bind("Influences", "InfluenceSoundMaxPitch", 2.5f,
+                "If InfluenceSound is activated, this define the maximum pitch of monsters audio sources. No need to restart the game :)");
+            CreateFloatConfig(influenceSoundMaxEntry, 0f, 3f);
+
             funModeEntry = Config.Bind("FunMode", "FunMode", false,
                 "Activate the fun mode to randomize the size in every space directions (verticaly, horizontaly). No need to restart the game :)");
             CreateBoolConfig(funModeEntry);
@@ -93,9 +107,9 @@ namespace RandomEnemiesSize
                 "If fun mode is activated, it will change the maximum horizontal size of monsters (axis x and z). No need to restart the game :)");
             CreateFloatConfig(funModeHorizontalMaxEntry);
 
-            lockFunModeHorizontalEnrty = Config.Bind("FunMode", "LockHorizontalAxis", false,
+            funModeLockHorizontalEnrty = Config.Bind("FunMode", "LockHorizontalAxis", false,
                 "If fun mode is activated, it will change the horizontal axis (x and z) with the same value. No need to restart the game :)");
-            CreateBoolConfig(lockFunModeHorizontalEnrty);
+            CreateBoolConfig(funModeLockHorizontalEnrty);
 
             Harmony.CreateAndPatchAll(typeof(PatchEnemySize));
 
@@ -127,12 +141,12 @@ namespace RandomEnemiesSize
             return true;
         }
 
-        private void CreateFloatConfig(ConfigEntry<float> configEntry)
+        private void CreateFloatConfig(ConfigEntry<float> configEntry, float min = 0f, float max = 30f)
         {
             var exampleSlider = new FloatSliderConfigItem(configEntry, new FloatSliderOptions
             {
-                Min = 0f,
-                Max = 30f,
+                Min = min,
+                Max = max,
                 RequiresRestart = false
             });
             LethalConfigManager.AddConfigItem(exampleSlider);

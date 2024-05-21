@@ -46,8 +46,10 @@ Make sure to have a separator ';' between interiors, even if you have only one !
 
 **INFLUENCES**
 
-- Hp influence is activated by default, the hp of enemies will be multiplie with their size (bigger enemy -> more hp,
-  smaller -> less hp)
+- **Hp influence** is activated by default, the hp of enemies will be multiplied with their size (bigger enemy -> more
+  hp, smaller -> less hp)
+- **Sound influence** is activated by default, the sound pitch of every audio sources of the monster will be multiplied
+  with their size. You can also set the minimum and maximum pitch value in configs
 
 **FUN MODE**
 You can activate the fun mode to randomize the size of every axis (x,y,z). The height range is based on initial configs,

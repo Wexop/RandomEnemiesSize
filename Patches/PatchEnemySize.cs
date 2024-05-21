@@ -52,7 +52,7 @@ namespace RandomEnemiesSize.Patches
                 var funZSize = Random.Range(RandomEnemiesSize.instance.funModeHorizontalMinEntry.Value,
                     RandomEnemiesSize.instance.funModeHorizontalMaxEntry.Value);
 
-                if (RandomEnemiesSize.instance.lockFunModeHorizontalEnrty.Value) funZSize = funXSize;
+                if (RandomEnemiesSize.instance.funModeLockHorizontalEnrty.Value) funZSize = funXSize;
 
                 newScale = new Vector3(newScale.x * funXSize, newScale.y, newScale.z * funZSize);
             }
