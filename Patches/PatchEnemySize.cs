@@ -29,8 +29,14 @@ namespace RandomEnemiesSize.Patches
                 var interiorName = RandomEnemiesSize.GetDungeonName();
                 //Debug.Log($"ACTUAL DUNGEON NAME {interiorName}");
                 if (!__instance.isOutside && interiorName != null)
-                    scale *= RandomEnemiesSize.instance.GetInteriorMultiplier(__instance.enemyType.enemyName,
+                {
+                    var interiorMult = RandomEnemiesSize.instance.GetInteriorMultiplier(__instance.enemyType.enemyName,
                         interiorName);
+                    //Debug.Log($"BEFORE INTERIOR MULT, SCALE IS {scale} AND MULT IS {interiorMult}");
+                    scale *= interiorMult;
+
+                    //Debug.Log($"AFTER INTERIOR MULT, SCALE IS {scale} ");
+                }
             }
 
 

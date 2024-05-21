@@ -19,7 +19,7 @@ namespace RandomEnemiesSize
     {
         private const string GUID = "wexop.random_enemies_size";
         private const string NAME = "RandomEnemiesSize";
-        private const string VERSION = "1.1.1";
+        private const string VERSION = "1.1.2";
 
         public static string LethalLevelLoaderReferenceChain = "imabatby.lethallevelloader";
 
@@ -216,7 +216,8 @@ namespace RandomEnemiesSize
             while (interiorsInputValue.Contains(" ")) interiorsInputValue = interiorsInputValue.Replace(" ", "");
 
             //check
-            if (interiorsInputValue.Contains(enemyName) && interiorsInputValue.Contains(interiorName))
+            if ((interiorsInputValue.Contains(enemyName) || interiorsInputValue.Contains("any")) &&
+                interiorsInputValue.Contains(interiorName))
             {
                 var multiplier = 1f;
 
@@ -235,6 +236,7 @@ namespace RandomEnemiesSize
                             var monsterValue = v.Split(":");
                             var monsterName = monsterValue[0];
                             var monsterMultiplier = monsterValue[1];
+                            //Debug.Log($"MONTSER NAME {monsterName} MONSTER VALUE {monsterMultiplier}");
 
                             if (monsterName == "any" || monsterName == enemyName)
                                 float.TryParse(monsterMultiplier, NumberStyles.Any, CultureInfo.InvariantCulture,
