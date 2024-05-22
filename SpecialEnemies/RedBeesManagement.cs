@@ -12,8 +12,6 @@ namespace RandomEnemiesSize.SpecialEnemies
 
             var visualEffect = enemyAI.GetComponentInChildren<VisualEffect>();
 
-            Debug.Log("FOUND RED BEES");
-
             if (visualEffect != null) visualEffect.transform.localScale *= scaleMultiplier;
 
 
@@ -22,11 +20,8 @@ namespace RandomEnemiesSize.SpecialEnemies
 
         public IEnumerator ChangeHiveSize(RedLocustBees redLocustBees, float multiplier)
         {
-            Debug.Log("FOUND RED BEES SCRIPT");
-
             yield return new WaitUntil(() => redLocustBees.hive != null);
-
-            Debug.Log("FOUND HIVE");
+            
             redLocustBees.hive.gameObject.transform.localScale *= multiplier;
             var physicsProp = redLocustBees.hive.GetComponent<PhysicsProp>();
             physicsProp.originalScale = redLocustBees.hive.gameObject.transform.localScale;
