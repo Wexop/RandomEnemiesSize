@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using RandomEnemiesSize.SpecialEnemies;
 using StaticNetcodeLib;
 using Unity.Netcode;
 using UnityEngine;
@@ -28,6 +29,11 @@ namespace RandomEnemiesSize
                 enemieFound.enemyHP = influences.InfluenceHp(enemieFound.enemyHP, scaleMultiplier);
                 //change pitch
                 influences.InfluenceSound(enemieFound, scaleMultiplier);
+
+                Debug.Log($"ENEMY NAME {enemieFound.enemyType.enemyName}");
+
+                if (enemieFound.enemyType.enemyName == "Red Locust Bees")
+                    new RedBeesManagement().ChangeSize(enemieFound, scaleMultiplier);
             }
         }
     }
