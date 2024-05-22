@@ -8,6 +8,8 @@ You can configure the range size for :
 - Indoor enemies
 - Custom enemies
 
+You can configure if this mod affect vanilla and / or modded enemies (both activated by default)
+
 **Note that:**
 
 - Others mods enemies should be impacted by this mod.

@@ -1,5 +1,12 @@
 # Changelog
 
+### v1.1.4
+
+- Fix an issue where bees hive don't spawn
+- Bees hive is now affected by the mod (size and weight)
+- Add two configs to enable the mod to affect or not the vanilla enemies and to affect or not the modded enemies (both
+  activated by default)
+
 ### v1.1.3
 
 - Size of monsters can now influence the sound pitch of every of their audio sources (configurable, activate by default)
