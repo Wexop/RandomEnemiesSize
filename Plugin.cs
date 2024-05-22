@@ -25,6 +25,8 @@ namespace RandomEnemiesSize
 
         public static RandomEnemiesSize instance;
         public bool LethalLevelLoaderIsHere;
+        public ConfigEntry<bool> CustomAffectModEntry;
+        public ConfigEntry<bool> CustomAffectVanillaEntry;
         public ConfigEntry<string> customEnemyEntry;
         public ConfigEntry<string> customInteriorEntry;
 
@@ -70,6 +72,14 @@ namespace RandomEnemiesSize
             maxSizeOutdoorEntry = Config.Bind("General", "MaxMonstersSizeOutdoor", 3f,
                 "Change the maximum size of monsters outside the factory. No need to restart the game :)");
             CreateFloatConfig(maxSizeOutdoorEntry);
+
+            CustomAffectVanillaEntry = Config.Bind("Custom", "AffectVanillaEnemies", true,
+                "Activate to make this mod affect vanilla enemies. No need to restart the game :)");
+            CreateBoolConfig(CustomAffectVanillaEntry);
+
+            CustomAffectModEntry = Config.Bind("Custom", "AffectModdedEnemies", true,
+                "Activate to make this mod affect modded enemies. No need to restart the game :)");
+            CreateBoolConfig(CustomAffectModEntry);
 
             customEnemyEntry = Config.Bind("Custom", "CustomEnemiesSize", "",
                 "Custom the size for an enemy wanted with his EXACT name. RECOMMENDED: Go to the thunderstore mod page, you can find a generator to make easier this config. Manual example -> ForestGiant:0.4:5;FlowerMan:0.2:6. Dont forgot the separator ';' between each monsters. No need to restart the game :)");
@@ -178,6 +188,17 @@ namespace RandomEnemiesSize
                 RequiresRestart = false
             });
             LethalConfigManager.AddConfigItem(exampleSlider);
+        }
+
+        public bool CompareEnemyName(string name, string verifiedName)
+        {
+            var name1 = name.ToLower();
+            while (name1.Contains(" ")) name1 = name1.Replace(" ", "");
+
+            var name2 = verifiedName.ToLower();
+            while (name2.Contains(" ")) name2 = name2.Replace(" ", "");
+
+            return name1.Contains(name2);
         }
 
         public CustomEnemySize GetCustomEnemySize(string nameValue)

@@ -12,6 +12,11 @@ namespace RandomEnemiesSize.Patches
         {
             if (!__instance.IsServer || !__instance.IsOwner) return;
 
+            var isVannila = new VanillaEnemies().IsAVanillaEnemy(__instance.enemyType.enemyName);
+
+            if (isVannila && !RandomEnemiesSize.instance.CustomAffectVanillaEntry.Value ||
+                !isVannila && !RandomEnemiesSize.instance.CustomAffectModEntry.Value) return;
+
 
             var scale = Random.Range(RandomEnemiesSize.instance.minSizeOutdoorEntry.Value,
                 RandomEnemiesSize.instance.maxSizeOutdoorEntry.Value);
