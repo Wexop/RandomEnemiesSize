@@ -21,10 +21,13 @@ namespace RandomEnemiesSize.SpecialEnemies
         public IEnumerator ChangeHiveSize(RedLocustBees redLocustBees, float multiplier)
         {
             yield return new WaitUntil(() => redLocustBees.hive != null);
-            
+
             redLocustBees.hive.gameObject.transform.localScale *= multiplier;
             var physicsProp = redLocustBees.hive.GetComponent<PhysicsProp>();
+            var cloneHide = Object.Instantiate(physicsProp.itemProperties);
+            cloneHide.weight *= 1 + multiplier * 0.25f;
             physicsProp.originalScale = redLocustBees.hive.gameObject.transform.localScale;
+            physicsProp.itemProperties = cloneHide;
         }
     }
 }
