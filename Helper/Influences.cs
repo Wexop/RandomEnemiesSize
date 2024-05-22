@@ -35,12 +35,18 @@ namespace RandomEnemiesSize
             if (!soundInfluence) return;
 
             var audioSources = new List<AudioSource>();
-            audioSources.AddRange(enemyAI.GetComponents<AudioSource>());
+            AudioSource componentAudioSource = null;
+
+            enemyAI.TryGetComponent(out componentAudioSource);
+            if (componentAudioSource != null) audioSources.Add(componentAudioSource);
             audioSources.AddRange(enemyAI.GetComponentsInChildren<AudioSource>());
+
             var value = 1f - (multiplier - 1);
             var pitch = Mathf.Clamp(value, soundInfluenceMin, soundInfluenceMax);
-            enemyAI.creatureVoice.pitch = pitch;
-            enemyAI.creatureSFX.pitch = pitch;
+
+            if (enemyAI.creatureVoice != null) enemyAI.creatureVoice.pitch = pitch;
+            if (enemyAI.creatureSFX != null) enemyAI.creatureSFX.pitch = pitch;
+
             foreach (var audioSource in audioSources) audioSource.pitch = pitch;
         }
     }
