@@ -1,5 +1,10 @@
 # Changelog
 
+### v1.1.5
+
+- Landmines and turrets can now have a random size (activated by default)
+- Landmines and turrets are affected by FunMode and sound pitch influence if activated
+
 ### v1.1.4
 
 - Fix an issue where bees hive don't spawn

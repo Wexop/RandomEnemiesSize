@@ -7,6 +7,7 @@ You can configure the range size for :
 - Outside enemies
 - Indoor enemies
 - Custom enemies
+- Turret and Landmines
 
 You can configure if this mod affect vanilla and / or modded enemies (both activated by default)
 
