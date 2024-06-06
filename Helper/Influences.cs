@@ -49,5 +49,27 @@ namespace RandomEnemiesSize
 
             foreach (var audioSource in audioSources) audioSource.pitch = pitch;
         }
+
+        public void InfluenceTurretSound(Turret turret, float multiplier)
+        {
+            if (!soundInfluence || turret == null) return;
+
+            var audioSources = new List<AudioSource>();
+            AudioSource componentAudioSource = null;
+
+            turret.TryGetComponent(out componentAudioSource);
+            if (componentAudioSource != null) audioSources.Add(componentAudioSource);
+            audioSources.AddRange(turret.GetComponentsInChildren<AudioSource>());
+
+            var value = 1f - (multiplier - 1);
+            var pitch = Mathf.Clamp(value, soundInfluenceMin, soundInfluenceMax);
+
+            if (turret.berserkAudio != null) turret.berserkAudio.pitch = pitch;
+            if (turret.farAudio != null) turret.farAudio.pitch = pitch;
+            if (turret.mainAudio != null) turret.mainAudio.pitch = pitch;
+            if (turret.bulletCollisionAudio != null) turret.bulletCollisionAudio.pitch = pitch;
+
+            foreach (var audioSource in audioSources) audioSource.pitch = pitch;
+        }
     }
 }

@@ -19,13 +19,14 @@ namespace RandomEnemiesSize
     {
         private const string GUID = "wexop.random_enemies_size";
         private const string NAME = "RandomEnemiesSize";
-        private const string VERSION = "1.1.4";
+        private const string VERSION = "1.1.5";
 
         public static string LethalLevelLoaderReferenceChain = "imabatby.lethallevelloader";
 
         public static RandomEnemiesSize instance;
         public bool LethalLevelLoaderIsHere;
         public ConfigEntry<bool> CustomAffectModEntry;
+        public ConfigEntry<bool> customAffectTurretEntry;
         public ConfigEntry<bool> CustomAffectVanillaEntry;
         public ConfigEntry<string> customEnemyEntry;
         public ConfigEntry<string> customInteriorEntry;
@@ -42,8 +43,10 @@ namespace RandomEnemiesSize
 
         public ConfigEntry<float> maxSizeIndoorEntry;
         public ConfigEntry<float> maxSizeOutdoorEntry;
+        public ConfigEntry<float> maxSizeTurretEntry;
         public ConfigEntry<float> minSizeIndoorEntry;
         public ConfigEntry<float> minSizeOutdoorEntry;
+        public ConfigEntry<float> minSizeTurretEntry;
 
         private void Awake()
         {
@@ -56,6 +59,8 @@ namespace RandomEnemiesSize
                 Debug.Log("LethalLevelLoader found !");
                 LethalLevelLoaderIsHere = true;
             }
+
+            //GENERAL
 
             minSizeIndoorEntry = Config.Bind("General", "MinMonstersSizeIndoor", 0.4f,
                 "Change the minimum size of monsters in the factory. No need to restart the game :)");
@@ -73,6 +78,8 @@ namespace RandomEnemiesSize
                 "Change the maximum size of monsters outside the factory. No need to restart the game :)");
             CreateFloatConfig(maxSizeOutdoorEntry);
 
+            //CUSTOM
+
             CustomAffectVanillaEntry = Config.Bind("Custom", "AffectVanillaEnemies", true,
                 "Activate to make this mod affect vanilla enemies. No need to restart the game :)");
             CreateBoolConfig(CustomAffectVanillaEntry);
@@ -89,6 +96,20 @@ namespace RandomEnemiesSize
                 "THE MOD LethalLevelLoader IS REQUIRED FOR THIS FEATURE. Multiply the base size for an indoor enemy in an interior wanted with his EXACT name. RECOMMENDED: Go to the thunderstore mod page, you can find a generator to make easier this config. Manual example -> mansion#any:1.5,NutCracker:2;customInterior#any:3; No need to restart the game :)");
             CreateInteriorStringConfig(customInteriorEntry);
 
+            customAffectTurretEntry = Config.Bind("Custom", "AffectTurretSize", true,
+                "Activate to make this mod affect turrets size. No need to restart the game :)");
+            CreateBoolConfig(customAffectTurretEntry);
+
+            minSizeTurretEntry = Config.Bind("Custom", "MinTurretSize", 0.5f,
+                "Change the minimum size of turrets. No need to restart the game :)");
+            CreateFloatConfig(minSizeTurretEntry, 0f, 3f);
+
+            maxSizeTurretEntry = Config.Bind("Custom", "MaxTurretSize", 1.5f,
+                "Change the maximum size of turrets. No need to restart the game :)");
+            CreateFloatConfig(maxSizeTurretEntry, 0f, 3f);
+
+            //INFLUENCES
+
             influenceHpConfig = Config.Bind("Influences", "InfluenceHp", true,
                 "Activate to make size influence monsters HP. No need to restart the game :)");
             CreateBoolConfig(influenceHpConfig);
@@ -104,6 +125,8 @@ namespace RandomEnemiesSize
             influenceSoundMaxEntry = Config.Bind("Influences", "InfluenceSoundMaxPitch", 2.5f,
                 "If InfluenceSound is activated, this define the maximum pitch of monsters audio sources. No need to restart the game :)");
             CreateFloatConfig(influenceSoundMaxEntry, 0f, 3f);
+
+            //FUNMODE
 
             funModeEntry = Config.Bind("FunMode", "FunMode", false,
                 "Activate the fun mode to randomize the size in every space directions (verticaly, horizontaly). No need to restart the game :)");
@@ -122,6 +145,8 @@ namespace RandomEnemiesSize
             CreateBoolConfig(funModeLockHorizontalEnrty);
 
             Harmony.CreateAndPatchAll(typeof(PatchEnemySize));
+            Harmony.CreateAndPatchAll(typeof(PatchTurretSize));
+            Harmony.CreateAndPatchAll(typeof(PatchLandmineSize));
 
             Logger.LogInfo("RandomEnemiesSize Patched !!");
         }

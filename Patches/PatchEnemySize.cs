@@ -44,9 +44,6 @@ namespace RandomEnemiesSize.Patches
                 }
             }
 
-
-            //server dispawn gameobject, change scale, and respawn it to sync with clients
-
             var originalScale = __instance.gameObject.transform.localScale;
             var newScale = originalScale * scale;
 

@@ -34,5 +34,24 @@ namespace RandomEnemiesSize
                     new RedBeesManagement().ChangeSize(enemieFound, scaleMultiplier);
             }
         }
+
+        [ClientRpc]
+        public static void UpdateTurretClientRpc(ulong networkId, Vector3 newScale, float scaleMultiplier,
+            Influences influences)
+        {
+            var turrets = Object.FindObjectsByType<Turret>(FindObjectsSortMode.None).ToList();
+            var turretObjectFound = turrets.Find(e => e.NetworkObjectId == networkId);
+            var turretFound = turretObjectFound.GetComponentInParent<NetworkObject>().gameObject;
+            if (turretFound == null)
+            {
+                Debug.Log($"TURRET NOT FOUND {networkId}");
+            }
+            else
+            {
+                Debug.Log($"TURRET WITH NEW SCALE : {newScale}");
+                turretFound.transform.localScale = newScale;
+                influences.InfluenceTurretSound(turretFound.GetComponentInChildren<Turret>(), scaleMultiplier);
+            }
+        }
     }
 }
