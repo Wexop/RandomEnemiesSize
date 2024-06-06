@@ -71,5 +71,25 @@ namespace RandomEnemiesSize
 
             foreach (var audioSource in audioSources) audioSource.pitch = pitch;
         }
+
+        public void InfluenceMineSound(Landmine landmine, float multiplier)
+        {
+            if (!soundInfluence || landmine == null) return;
+
+            var audioSources = new List<AudioSource>();
+            AudioSource componentAudioSource = null;
+
+            landmine.TryGetComponent(out componentAudioSource);
+            if (componentAudioSource != null) audioSources.Add(componentAudioSource);
+            audioSources.AddRange(landmine.GetComponentsInChildren<AudioSource>());
+
+            var value = 1f - (multiplier - 1);
+            var pitch = Mathf.Clamp(value, soundInfluenceMin, soundInfluenceMax);
+
+            if (landmine.mineAudio != null) landmine.mineAudio.pitch = pitch;
+            if (landmine.mineFarAudio != null) landmine.mineFarAudio.pitch = pitch;
+
+            foreach (var audioSource in audioSources) audioSource.pitch = pitch;
+        }
     }
 }

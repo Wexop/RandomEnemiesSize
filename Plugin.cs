@@ -25,6 +25,7 @@ namespace RandomEnemiesSize
 
         public static RandomEnemiesSize instance;
         public bool LethalLevelLoaderIsHere;
+        public ConfigEntry<bool> customAffectMineEntry;
         public ConfigEntry<bool> CustomAffectModEntry;
         public ConfigEntry<bool> customAffectTurretEntry;
         public ConfigEntry<bool> CustomAffectVanillaEntry;
@@ -42,9 +43,11 @@ namespace RandomEnemiesSize
         public ConfigEntry<float> influenceSoundMinEntry;
 
         public ConfigEntry<float> maxSizeIndoorEntry;
+        public ConfigEntry<float> maxSizeMineEntry;
         public ConfigEntry<float> maxSizeOutdoorEntry;
         public ConfigEntry<float> maxSizeTurretEntry;
         public ConfigEntry<float> minSizeIndoorEntry;
+        public ConfigEntry<float> minSizeMineEntry;
         public ConfigEntry<float> minSizeOutdoorEntry;
         public ConfigEntry<float> minSizeTurretEntry;
 
@@ -100,13 +103,25 @@ namespace RandomEnemiesSize
                 "Activate to make this mod affect turrets size. No need to restart the game :)");
             CreateBoolConfig(customAffectTurretEntry);
 
-            minSizeTurretEntry = Config.Bind("Custom", "MinTurretSize", 0.5f,
+            minSizeTurretEntry = Config.Bind("Custom", "MinTurretSize", 0.25f,
                 "Change the minimum size of turrets. No need to restart the game :)");
             CreateFloatConfig(minSizeTurretEntry, 0f, 3f);
 
             maxSizeTurretEntry = Config.Bind("Custom", "MaxTurretSize", 1.5f,
                 "Change the maximum size of turrets. No need to restart the game :)");
             CreateFloatConfig(maxSizeTurretEntry, 0f, 3f);
+
+            customAffectMineEntry = Config.Bind("Custom", "AffectLandMineSize", true,
+                "Activate to make this mod affect land mines size. No need to restart the game :)");
+            CreateBoolConfig(customAffectMineEntry);
+
+            minSizeMineEntry = Config.Bind("Custom", "MinLandMinesSize", 0.2f,
+                "Change the minimum size of land mines. No need to restart the game :)");
+            CreateFloatConfig(minSizeMineEntry, 0f, 5f);
+
+            maxSizeMineEntry = Config.Bind("Custom", "MaxLandMinesSize", 3f,
+                "Change the maximum size of land mines. No need to restart the game :)");
+            CreateFloatConfig(maxSizeMineEntry, 0f, 5f);
 
             //INFLUENCES
 
