@@ -11,6 +11,8 @@ You can configure the range size for :
 
 You can configure if this mod affect vanilla and / or modded enemies (both activated by default)
 
+You can configure the chance for each monster to have a random size (0% never to 100% always).
+
 **Note that:**
 
 - Others mods enemies should be impacted by this mod.

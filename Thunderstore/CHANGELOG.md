@@ -1,5 +1,10 @@
 # Changelog
 
+### v1.1.6
+
+- You can configure the chance for each monster to have a random size (0% is never, 100% is always)
+- You can show dev logs or not (disabled by default)
+
 ### v1.1.5
 
 - Landmines and turrets can now have a random size (activated by default)
