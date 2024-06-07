@@ -31,6 +31,7 @@ namespace RandomEnemiesSize
         public ConfigEntry<bool> CustomAffectVanillaEntry;
         public ConfigEntry<string> customEnemyEntry;
         public ConfigEntry<string> customInteriorEntry;
+        public ConfigEntry<bool> devLogEntry;
 
         public ConfigEntry<bool> funModeEntry;
         public ConfigEntry<float> funModeHorizontalMaxEntry;
@@ -51,6 +52,8 @@ namespace RandomEnemiesSize
         public ConfigEntry<float> minSizeOutdoorEntry;
         public ConfigEntry<float> minSizeTurretEntry;
 
+        public ConfigEntry<float> randomPercentChanceEntry;
+
         private void Awake()
         {
             instance = this;
@@ -64,6 +67,10 @@ namespace RandomEnemiesSize
             }
 
             //GENERAL
+
+            randomPercentChanceEntry = Config.Bind("General", "ChanceOfRandomSize", 100f,
+                "The chance for each monster to have a random size. 100% is always, 0% is never. No need to restart the game :)");
+            CreateFloatConfig(randomPercentChanceEntry, 0f, 100f);
 
             minSizeIndoorEntry = Config.Bind("General", "MinMonstersSizeIndoor", 0.4f,
                 "Change the minimum size of monsters in the factory. No need to restart the game :)");
@@ -159,6 +166,11 @@ namespace RandomEnemiesSize
                 "If fun mode is activated, it will change the horizontal axis (x and z) with the same value. No need to restart the game :)");
             CreateBoolConfig(funModeLockHorizontalEnrty);
 
+            //DEV
+
+            devLogEntry = Config.Bind("DEV", "DevLogs", false, "Show the dev logs");
+            CreateBoolConfig(devLogEntry);
+
             Harmony.CreateAndPatchAll(typeof(PatchEnemySize));
             Harmony.CreateAndPatchAll(typeof(PatchTurretSize));
             Harmony.CreateAndPatchAll(typeof(PatchLandmineSize));
@@ -180,7 +192,7 @@ namespace RandomEnemiesSize
                 return interiorName;
             }
 
-            Debug.Log($"INTERIOR FOUND: {interiorName}");
+            if (instance.devLogEntry.Value) Debug.Log($"INTERIOR FOUND: {interiorName}");
             return interiorName;
         }
 

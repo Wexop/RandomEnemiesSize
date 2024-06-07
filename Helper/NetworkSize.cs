@@ -18,7 +18,7 @@ namespace RandomEnemiesSize
 
             if (enemieFound == null)
             {
-                Debug.Log($"ENEMIE NOT FOUND {networkId}");
+                if (RandomEnemiesSize.instance.devLogEntry.Value) Debug.Log($"ENEMIE NOT FOUND {networkId}");
             }
             else
             {
@@ -44,11 +44,11 @@ namespace RandomEnemiesSize
             var turretFound = turretObjectFound.GetComponentInParent<NetworkObject>().gameObject;
             if (turretFound == null)
             {
-                Debug.Log($"TURRET NOT FOUND {networkId}");
+                if (RandomEnemiesSize.instance.devLogEntry.Value) Debug.Log($"TURRET NOT FOUND {networkId}");
             }
             else
             {
-                Debug.Log($"TURRET WITH NEW SCALE : {newScale}");
+                if (RandomEnemiesSize.instance.devLogEntry.Value) Debug.Log($"TURRET WITH NEW SCALE : {newScale}");
                 turretFound.transform.localScale = newScale;
                 influences.InfluenceTurretSound(turretFound.GetComponentInChildren<Turret>(), scaleMultiplier);
             }
@@ -63,11 +63,11 @@ namespace RandomEnemiesSize
             var mineFound = minesObjectFound.GetComponentInParent<NetworkObject>().gameObject;
             if (mineFound == null)
             {
-                Debug.Log($"LANDMINE NOT FOUND {networkId}");
+                if (RandomEnemiesSize.instance.devLogEntry.Value) Debug.Log($"LANDMINE NOT FOUND {networkId}");
             }
             else
             {
-                Debug.Log($"LANDMINE WITH NEW SCALE : {newScale}");
+                if (RandomEnemiesSize.instance.devLogEntry.Value) Debug.Log($"LANDMINE WITH NEW SCALE : {newScale}");
                 mineFound.transform.localScale = newScale;
                 influences.InfluenceMineSound(mineFound.GetComponentInChildren<Landmine>(), scaleMultiplier);
             }

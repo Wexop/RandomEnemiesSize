@@ -17,6 +17,17 @@ namespace RandomEnemiesSize.Patches
             if (isVannila && !RandomEnemiesSize.instance.CustomAffectVanillaEntry.Value ||
                 !isVannila && !RandomEnemiesSize.instance.CustomAffectModEntry.Value) return;
 
+            //RANDOM PERCENT
+            var randomPercent = Random.Range(0f, 100f);
+
+            if (RandomEnemiesSize.instance.randomPercentChanceEntry.Value < randomPercent)
+            {
+                if (RandomEnemiesSize.instance.devLogEntry.Value)
+                    Debug.Log(
+                        $"RANDOM PERCENT NOT RANDOM SIZE : {randomPercent} FOR ENEMY {__instance.gameObject.name}");
+                return;
+            }
+
 
             var scale = Random.Range(RandomEnemiesSize.instance.minSizeOutdoorEntry.Value,
                 RandomEnemiesSize.instance.maxSizeOutdoorEntry.Value);
@@ -67,7 +78,8 @@ namespace RandomEnemiesSize.Patches
             NetworkSize.UpdateEnemyClientRpc(__instance.NetworkObjectId, newScale, scale, influences);
 
 
-            Debug.Log($"ENEMY ({__instance.gameObject.name}) SPAWNED WITH RANDOM SIZE {newScale.ToString()}");
+            if (RandomEnemiesSize.instance.devLogEntry.Value)
+                Debug.Log($"ENEMY ({__instance.gameObject.name}) SPAWNED WITH RANDOM SIZE {newScale.ToString()}");
         }
     }
 }
