@@ -18,30 +18,30 @@ You can configure the chance for each monster to have a random size (0% never to
 - Others mods enemies should be impacted by this mod.
 - Only the **player who host the game** config will be taken.
 
-**FOR CUSTOM ENEMIES**
+### FOR CUSTOM ENEMIES
 
-**Recommended:**
+#### Recommended:
 
 You can use [this generator](https://wexop.github.io/RandomEnemiesSizeCustomGeneraror) and copy the result in the
 input 'CustomEnemiesSize' to custom the range size of each monsters!
 
-**Manualy:**
+#### Manualy:
 
 This is an input, you can for example write -> ForestGiant:1:2;NutCracker:1:2 Make sure to have a separator ';' between
 monsters, even if you have only one custom enemies !
 
-**FOR CUSTOM INTERIORS**
+### FOR CUSTOM INTERIORS
 
 To use this feature **you need install the mod LethalLevelLoader**.
 
-You can multiply the previous configs size for every interiors (and every monster in every interior !)
+You can multiply the previous configs size for every interior (and every monster in every interior !)
 
-**Recommended:**
+#### Recommended:
 
 You can use [the generator](https://wexop.github.io/RandomEnemiesSizeCustomGeneraror) and copy the result in the input '
 CustomInteriorsSize'!
 
-**Manualy:**
+#### Manualy:
 
 This is an input, you can for example write -> HauntedMansion#any:1,Puffer:2;
 
@@ -51,14 +51,14 @@ on [the generator](https://wexop.github.io/RandomEnemiesSizeCustomGeneraror)).
 
 Make sure to have a separator ';' between interiors, even if you have only one !
 
-**INFLUENCES**
+### INFLUENCES
 
 - **Hp influence** is activated by default, the hp of enemies will be multiplied with their size (bigger enemy -> more
   hp, smaller -> less hp)
 - **Sound influence** is activated by default, the sound pitch of every audio sources of the monster will be multiplied
   with their size. You can also set the minimum and maximum pitch value in configs
 
-**FUN MODE**
+### FUN MODE
 You can activate the fun mode to randomize the size of every axis (x,y,z). The height range is based on initial configs,
 but you can config horizontals ranges (x,z)
 
@@ -68,13 +68,13 @@ This normaly should work with modded enemies. For any issues, create an issue on
 
 Have fun :)
 
-**QUESTIONS**
+### QUESTIONS
 
 - Why LethalLevelLoader as soft dependence ?
 
 LLL give an easy way to know the dungeon name (for custom interiors multiplier), and most of the mods use this api to
 create custom dungeon, so can find the interior name easily !
 
-### Related mods
+### RELATED MODS
 
 [LittleCompany](https://thunderstore.io/c/lethal-company/p/Toybox/LittleCompany/) - A Lethal Company mod for anything size-related! Enemies behaviour change depending on the size of enemies and yours! 
