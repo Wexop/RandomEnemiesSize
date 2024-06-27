@@ -1,4 +1,4 @@
-[Message:   BepInEx] BepInEx 5.4.21.0 - Lethal Company (27/11/2023 19:29:48)
+[Message:   BepInEx] BepInEx 5.4.21.0 - Lethal Company (22/05/2024 22:07:57)
 [Info   :   BepInEx] Running under Unity v2022.3.9.15351836
 [Info   :   BepInEx] CLR runtime version: 4.0.30319.42000
 [Info   :   BepInEx] Supports SRE: True
@@ -26,7 +26,7 @@
 [Message:   BepInEx] Preloader finished
 [Message:   BepInEx] Chainloader ready
 [Message:   BepInEx] Chainloader started
-[Info   :   BepInEx] 9 plugins to load
+[Info   :   BepInEx] 12 plugins to load
 [Info   :   BepInEx] Loading [LethalConfig 1.4.2]
 [Info   :ainavt.lc.lethalconfig] Registered config "LethalConfig/Example/Int Slider"
 [Info   :ainavt.lc.lethalconfig] Registered config "LethalConfig/Example/Float Slider"
@@ -41,10 +41,59 @@
 [Info   :ainavt.lc.lethalconfig] Registered config "LethalConfig/Example/Text Input Dropdown"
 [Info   :ainavt.lc.lethalconfig] Finished loading assets.
 [Info   :ainavt.lc.lethalconfig] LethalConfig loaded!
+[Info   :   BepInEx] Loading [Terminal Api 1.5.4]
+[Info   :Terminal Api] Plugin TerminalApi is loaded!
 [Info   :   BepInEx] Loading [Starlancer AI Fix 3.6.0]
 [Info   :Starlancer AI Fix] Starlancer AI Fix Online.
 [Info   :   BepInEx] Loading [LethalLib 0.15.1]
 [Info   : LethalLib] LethalLib loaded!!
+[Info   :   BepInEx] Loading [Imperium 0.1.9]
+[Message:  Imperium] [MON] Imperium message block :)
+╒══════════════════════════════════════════════════════════════════╕
+│                    < Imperium Resource Loader >                    │
+╞══════════════════════════════════════════════════════════════════╡
+│ > Successfully loaded imperium_ui.prefab from asset bundle.      │
+│ > Successfully loaded teleport_ui.prefab from asset bundle.      │
+│ > Successfully loaded weather_ui.prefab from asset bundle.       │
+│ > Successfully loaded spawning_ui.prefab from asset bundle.      │
+│ > Successfully loaded moon_ui.prefab from asset bundle.          │
+│ > Successfully loaded save_ui.prefab from asset bundle.          │
+│ > Successfully loaded objects_ui.prefab from asset bundle.       │
+│ > Successfully loaded settings_ui.prefab from asset bundle.      │
+│ > Successfully loaded rendering_ui.prefab from asset bundle.     │
+│ > Successfully loaded oracle_ui.prefab from asset bundle.        │
+│ > Successfully loaded navigator_ui.prefab from asset bundle.     │
+│ > Successfully loaded visualizer_ui.prefab from asset bundle.    │
+│ > Successfully loaded confirmation_ui.prefab from asset bundle.  │
+│ > Successfully loaded indicator.prefab from asset bundle.        │
+│ > Successfully loaded map_ui.prefab from asset bundle.           │
+│ > Successfully loaded minimap.prefab from asset bundle.          │
+│ > Successfully loaded minimap_settings.prefab from asset bundle. │
+│ > Successfully loaded layer_selector.prefab from asset bundle.   │
+│ > Successfully loaded spawn_timer.prefab from asset bundle.      │
+│ > Successfully loaded spiketrap_timer.prefab from asset bundle.  │
+│ > Successfully loaded insight_panel.prefab from asset bundle.    │
+│ > Successfully loaded spawn_indicator.prefab from asset bundle.  │
+│ > Successfully loaded noise_overlay.prefab from asset bundle.    │
+│ > Successfully loaded network_handler.prefab from asset bundle.  │
+│ > Successfully loaded xray.mat from asset bundle.                │
+│ > Successfully loaded fresnel_white.mat from asset bundle.       │
+│ > Successfully loaded fresnel_blue.mat from asset bundle.        │
+│ > Successfully loaded fresnel_red.mat from asset bundle.         │
+│ > Successfully loaded fresnel_green.mat from asset bundle.       │
+│ > Successfully loaded fresnel_yellow.mat from asset bundle.      │
+│ > Successfully loaded wireframe_navmesh.mat from asset bundle.   │
+│ > Successfully loaded wireframe_purple.mat from asset bundle.    │
+│ > Successfully loaded wireframe_cyan.mat from asset bundle.      │
+│ > Successfully loaded wireframe_amaranth.mat from asset bundle.  │
+│ > Successfully loaded wireframe_yellow.mat from asset bundle.    │
+│ > Successfully loaded wireframe_green.mat from asset bundle.     │
+│ > Successfully loaded wireframe_red.mat from asset bundle.       │
+│ > Successfully loaded shig.mat from asset bundle.                │
+│ > Successfully loaded GrassClick.wav from asset bundle.          │
+│ > Successfully loaded ButtonClick.ogg from asset bundle.         │
+╘══════════════════════════════════════════════════════════════════╛
+[Info   :  Imperium] [OK] Imperium is ready!
 [Info   :   BepInEx] Loading [MaxWasUnavailable.LethalModDataLib 1.2.2]
 [Debug  :MaxWasUnavailable.LethalModDataLib] Patching...
 [Debug  :MaxWasUnavailable.LethalModDataLib] Patched!
@@ -55,25 +104,48 @@
 [Info   :LethalLevelLoader] Config Level Set As: User
 [Info   :   BepInEx] Loading [LethalDevMode 1.0.0]
 [Info   :LethalDevMode] Plugin LethalDevMode is loaded!
+[Info   :   BepInEx] Loading [CompanyExecutive 3.0.1]
+[Message:Terminal Api] Not in game, waiting to be in game to add executive toggle keyword.
+[Message:Terminal Api] Not in game, waiting to be in game to add executive consistent keyword.
+[Message:Terminal Api] Not in game, waiting to be in game to add executive override keyword.
+[Message:Terminal Api] Not in game, waiting to be in game to add executive give keyword.
+[Info   :CompanyExecutive] Plugin CompanyExecutive is loaded!
 [Info   :   BepInEx] Loading [FartZone 1.0.2]
 [Info   :  FartZone] FartZone starting....
 [Info   :   BepInEx] Loading [StaticNetcodeLib 1.0.3]
 [Debug  :StaticNetcodeLib] Patching...
 [Debug  :StaticNetcodeLib] Finished patching!
 [Info   :StaticNetcodeLib] Xilophor.StaticNetcodeLib v1.0.3 has loaded!
-[Info   :   BepInEx] Loading [RandomEnemiesSize 1.0.6]
+[Info   :   BepInEx] Loading [RandomEnemiesSize 1.1.7]
 [Info   :RandomEnemiesSize] RandomEnemiesSize starting....
+[Info   : Unity Log] LethalLevelLoader found !
+[Info   :ainavt.lc.lethalconfig] Registered config "RandomEnemiesSize/General/ChanceOfRandomSize"
 [Info   :ainavt.lc.lethalconfig] Registered config "RandomEnemiesSize/General/MinMonstersSizeIndoor"
 [Info   :ainavt.lc.lethalconfig] Registered config "RandomEnemiesSize/General/MaxMonstersSizeIndoor"
 [Info   :ainavt.lc.lethalconfig] Registered config "RandomEnemiesSize/General/MinMonstersSizeOutdoor"
 [Info   :ainavt.lc.lethalconfig] Registered config "RandomEnemiesSize/General/MaxMonstersSizeOutdoor"
+[Info   :ainavt.lc.lethalconfig] Registered config "RandomEnemiesSize/Custom/AffectVanillaEnemies"
+[Info   :ainavt.lc.lethalconfig] Registered config "RandomEnemiesSize/Custom/AffectModdedEnemies"
 [Info   :ainavt.lc.lethalconfig] Registered config "RandomEnemiesSize/Custom/CustomEnemiesSize"
 [Info   :ainavt.lc.lethalconfig] Registered config "RandomEnemiesSize/Custom/CustomInteriorsSize"
-[Info   :ainavt.lc.lethalconfig] Registered config "RandomEnemiesSize/Influence/InfluenceHp"
+[Info   :ainavt.lc.lethalconfig] Registered config "RandomEnemiesSize/Turret/AffectTurretSize"
+[Info   :ainavt.lc.lethalconfig] Registered config "RandomEnemiesSize/Turret/MinTurretSize"
+[Info   :ainavt.lc.lethalconfig] Registered config "RandomEnemiesSize/Turret/MaxTurretSize"
+[Info   :ainavt.lc.lethalconfig] Registered config "RandomEnemiesSize/Landmine/AffectLandMineSize"
+[Info   :ainavt.lc.lethalconfig] Registered config "RandomEnemiesSize/Landmine/MinLandMinesSize"
+[Info   :ainavt.lc.lethalconfig] Registered config "RandomEnemiesSize/Landmine/MaxLandMinesSize"
+[Info   :ainavt.lc.lethalconfig] Registered config "RandomEnemiesSize/SpikeTrap/AffectSpikeTrapSize"
+[Info   :ainavt.lc.lethalconfig] Registered config "RandomEnemiesSize/SpikeTrap/MinSpikeTrapSize"
+[Info   :ainavt.lc.lethalconfig] Registered config "RandomEnemiesSize/SpikeTrap/MaxSpikeTrapSize"
+[Info   :ainavt.lc.lethalconfig] Registered config "RandomEnemiesSize/Influences/InfluenceHp"
+[Info   :ainavt.lc.lethalconfig] Registered config "RandomEnemiesSize/Influences/InfluenceSound"
+[Info   :ainavt.lc.lethalconfig] Registered config "RandomEnemiesSize/Influences/InfluenceSoundMinPitch"
+[Info   :ainavt.lc.lethalconfig] Registered config "RandomEnemiesSize/Influences/InfluenceSoundMaxPitch"
 [Info   :ainavt.lc.lethalconfig] Registered config "RandomEnemiesSize/FunMode/FunMode"
 [Info   :ainavt.lc.lethalconfig] Registered config "RandomEnemiesSize/FunMode/FunModeHorizontalSizeMin"
 [Info   :ainavt.lc.lethalconfig] Registered config "RandomEnemiesSize/FunMode/FunModeHorizontalSizeMax"
 [Info   :ainavt.lc.lethalconfig] Registered config "RandomEnemiesSize/FunMode/LockHorizontalAxis"
+[Info   :ainavt.lc.lethalconfig] Registered config "RandomEnemiesSize/DEV/DevLogs"
 [Info   :RandomEnemiesSize] RandomEnemiesSize Patched !!
 [Message:   BepInEx] Chainloader startup complete
 [Info   :LethalLevelLoader] No ExtendedMod Found In Bundle: fartmoon. Forcefully Loading ExtendedContent!
@@ -89,23 +161,26 @@
 [Debug  :MaxWasUnavailable.LethalModDataLib] LethalModDataLib version (1.2.2) matches last saved version (1.2.2).
 [Debug  :MaxWasUnavailable.LethalModDataLib] Saving data to file LCGeneralSaveData.moddata with key MaxWasUnavailable.LethalModDataLib.LMDLVersion...
 [Info   :ainavt.lc.lethalconfig] Injecting mod config menu into main menu...
-[Info   : Unity Log] Returning week num: 23
-[Info   : Unity Log] week num: 23
+[Info   : Unity Log] Returning week num: 28
+[Info   : Unity Log] week num: 28
 [Info   :ainavt.lc.lethalconfig] Injecting mod config menu into main menu...
-[Debug  :ainavt.lc.lethalconfig] 9 mods loaded: ainavt.lc.lethalconfig;AudioKnight.StarlancerAIFix;evaisa.lethallib;MaxWasUnavailable.LethalModDataLib;imabatby.lethallevelloader;LethalDevMode;wexop.fartzone;Xilophor.StaticNetcodeLib;wexop.random_enemies_size
+[Debug  :ainavt.lc.lethalconfig] 12 mods loaded: ainavt.lc.lethalconfig;atomic.terminalapi;AudioKnight.StarlancerAIFix;evaisa.lethallib;giosuel.Imperium;MaxWasUnavailable.LethalModDataLib;imabatby.lethallevelloader;LethalDevMode;SoulWithMae.CompanyExecutive;wexop.fartzone;Xilophor.StaticNetcodeLib;wexop.random_enemies_size
 [Debug  :ainavt.lc.lethalconfig] ainavt.lc.lethalconfig : LethalConfig : 1.4.2
+[Debug  :ainavt.lc.lethalconfig] atomic.terminalapi : Terminal Api : 1.5.4
 [Debug  :ainavt.lc.lethalconfig] AudioKnight.StarlancerAIFix : Starlancer AI Fix : 3.6.0
 [Debug  :ainavt.lc.lethalconfig] evaisa.lethallib : LethalLib : 0.15.1
+[Debug  :ainavt.lc.lethalconfig] giosuel.Imperium : Imperium : 0.1.9
 [Debug  :ainavt.lc.lethalconfig] MaxWasUnavailable.LethalModDataLib : MaxWasUnavailable.LethalModDataLib : 1.2.2
 [Debug  :ainavt.lc.lethalconfig] imabatby.lethallevelloader : LethalLevelLoader : 1.2.0.1
 [Debug  :ainavt.lc.lethalconfig] LethalDevMode : LethalDevMode : 1.0.0
+[Debug  :ainavt.lc.lethalconfig] SoulWithMae.CompanyExecutive : CompanyExecutive : 3.0.1
 [Debug  :ainavt.lc.lethalconfig] wexop.fartzone : FartZone : 1.0.2
 [Debug  :ainavt.lc.lethalconfig] Xilophor.StaticNetcodeLib : StaticNetcodeLib : 1.0.3
-[Debug  :ainavt.lc.lethalconfig] wexop.random_enemies_size : RandomEnemiesSize : 1.0.6
-[Info   :ainavt.lc.lethalconfig] Generated 1 mod entries.
-[Info   :ainavt.lc.lethalconfig] Generated 24 configs, of which 2 were missing and registered.
+[Debug  :ainavt.lc.lethalconfig] wexop.random_enemies_size : RandomEnemiesSize : 1.1.7
+[Info   :ainavt.lc.lethalconfig] Generated 4 mod entries.
+[Info   :ainavt.lc.lethalconfig] Generated 67 configs, of which 29 were missing and registered.
 [Info   : Unity Log] host button pressed
-[Info   : Unity Log] Returning week num: 23
+[Info   : Unity Log] Returning week num: 28
 [Info   : Unity Log] Clicked local connection only
 [Info   : Unity Log] Displaying menu message
 [Info   : Unity Log] Connection approval callback! Game version of client request: 
@@ -114,7 +189,7 @@
 [Warning: Unity Log] [Netcode] You cannot decline the host connection. The connection was automatically approved.
 [Info   : Unity Log] started host!
 [Info   : Unity Log] are we in a server?: True
-[Warning: Unity Log] [Dissonance:Recording] (19:48:06.674) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:0,1721658)
+[Warning: Unity Log] [Dissonance:Recording] (09:53:57.812) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:0,1515079)
 [Info   :LethalLevelLoader] LethalLevelLoader Loaded The Following ExtendedLevels:
 1. 41 Experimentation (Vanilla)
 2. 220 Assurance (Vanilla)
@@ -142,18 +217,23 @@
 [Debug  :MaxWasUnavailable.LethalModDataLib] Loading data from file LCSaveFile2.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile2.itemSaveDataList...
 [Debug  :MaxWasUnavailable.LethalModDataLib] Loading data from file LCSaveFile2.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile2.itemSaveData...
 [Debug  :MaxWasUnavailable.LethalModDataLib] Loading data from file LCSaveFile2.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile2.CurrentLevelName...
-[Info   :LethalLevelLoader] Initialized LLL Save File, Current Level Was: FartZoneLevel, Current Vanilla Save Is: LCSaveFile2
+[Info   :LethalLevelLoader] Initialized LLL Save File, Current Level Was: OffenseLevel, Current Vanilla Save Is: LCSaveFile2
 [Info   :LethalLevelLoader] LethalLevelLoader Has Finished Initializing.
 [Info   : Unity Log] Enabling connection callbacks in StartOfRound
 [Info   : Unity Log] Began listening to SceneManager_OnLoadComplete1 on this client
 [Info   : LethalLib] Adding 0 unlockables to unlockables list
 [Info   : LethalLib] Adding 0 items to terminal
+[Message:Terminal Api] In game, applying any changes now.
+[Message:Terminal Api] Added executive toggle keyword to terminal keywords.
+[Message:Terminal Api] Added executive consistent keyword to terminal keywords.
+[Message:Terminal Api] Added executive override keyword to terminal keywords.
+[Message:Terminal Api] Added executive give keyword to terminal keywords.
 [Warning: Unity Log] damageTrigger is disabled! Netcode for GameObjects does not support spawning disabled NetworkBehaviours! The InteractTrigger component was skipped during spawn!
 [Info   : LethalLib] Found 0 prefabs to fix
-[Info   :LethalLevelLoader] Loading Previously Saved SelectableLevel: FartZone
-[Info   : Unity Log] level id: 13
+[Info   :LethalLevelLoader] Loading Previously Saved SelectableLevel: 21 Offense
+[Info   : Unity Log] level id: 8
 [Info   : Unity Log] Changing level
-[Info   :LethalLevelLoader] Saving Current SelectableLevel: FartZone
+[Info   :LethalLevelLoader] Saving Current SelectableLevel: 21 Offense
 [Debug  :MaxWasUnavailable.LethalModDataLib] Saving data to file LCSaveFile2.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile2.customItemDictionary...
 [Debug  :MaxWasUnavailable.LethalModDataLib] Saving data to file LCSaveFile2.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile2.allItemsList...
 [Debug  :MaxWasUnavailable.LethalModDataLib] Saving data to file LCSaveFile2.moddata with key LethalLevelLoader.LLLSaveFile.LLLSaveFile2.itemSaveDataList...
@@ -176,12 +256,7 @@
 [Info   : Unity Log] Suits: 1
 [Info   : Unity Log] Suit #0: 0
 [Info   : Unity Log] pos: (-2.45, 2.75, -8.41); rot: (0.00, 90.00, 0.00)
-[Info   : Unity Log] Ship grabbable items list loaded. Count: 25
-[Info   : Unity Log] Setting scrap value for item: RedLocustHive(Clone): 0
-[Info   : Unity Log] Setting scrap value for item: RedLocustHive(Clone): 0
-[Info   : Unity Log] Setting scrap value for item: RedLocustHive(Clone): 0
-[Info   : Unity Log] Setting scrap value for item: RedLocustHive(Clone): 0
-[Info   : Unity Log] Setting scrap value for item: RedLocustHive(Clone): 0
+[Info   : Unity Log] Ship grabbable items list loaded. Count: 2
 [Info   : Unity Log] Item sales percentages #0: 0
 [Info   : Unity Log] Item sales percentages #1: 0
 [Info   : Unity Log] Item sales percentages #2: 0
@@ -204,10 +279,47 @@
 [Info   : Unity Log] Called teleport function on Player (1)
 [Info   : Unity Log] Called teleport function on Player (2)
 [Info   : Unity Log] Called teleport function on Player (3)
+[Info   :  Imperium] [NET] Imperium access was granted!
+[Info   :  Imperium] [OK] Successfully loaded Imperium.MonoBehaviours.ImpUI.MapUI.MinimapOverlay !
+[Info   :  Imperium] [UI] Failed to bind button 'ImpFreecam/layer_selector(Clone)/Container/Window/TitleBox/Close'
+[Info   :  Imperium] [OK] Successfully loaded Imperium.MonoBehaviours.ImpUI.LayerSelector.LayerSelector !
+[Message:  Imperium] [MON] Imperium message block :)
+╒═══════════════════════════════════════════════════╕
+│              < Imperium Monitoring >              │
+╞═══════════════════════════════════════════════════╡
+│ Imperium scanned the current level for obstacles. │
+│    > 0x Doors                                     │
+│    > 0x Security doors                            │
+│    > 0x Turrets                                   │
+│    > 0x Landmines                                 │
+│    > 0x Breaker boxes                             │
+│    > 0x Spider webs                               │
+╘═══════════════════════════════════════════════════╛
+[Info   :  Imperium] [OK] Successfully loaded Imperium.MonoBehaviours.ImpUI.SettingsUI.SettingsUI !
+[Info   :  Imperium] [OK] Successfully loaded Imperium.MonoBehaviours.ImpUI.SaveUI.ConfirmationUI !
+[Info   :  Imperium] [OK] Successfully loaded Imperium.MonoBehaviours.ImpUI.SaveUI.SaveUI !
+[Info   :  Imperium] [OK] Successfully loaded Imperium.MonoBehaviours.ImpUI.ObjectsUI.ObjectsUI !
+[Info   :  Imperium] [OK] Successfully loaded Imperium.MonoBehaviours.ImpUI.MoonUI.MoonUI !
+[Info   :  Imperium] [OK] Successfully loaded Imperium.MonoBehaviours.ImpUI.RenderingUI.RenderingUI !
+[Info   :  Imperium] [OK] Successfully loaded Imperium.MonoBehaviours.ImpUI.VisualizationUI.VisualizationUI !
+[Info   :  Imperium] [OK] Successfully loaded Imperium.MonoBehaviours.ImpUI.MinimapSettings.MinimapSettings !
+[Info   :  Imperium] [OK] Successfully loaded Imperium.MonoBehaviours.ImpUI.ImperiumUI.ImperiumUI !
+[Info   :  Imperium] [OK] Successfully loaded Imperium.MonoBehaviours.ImpUI.SpawningUI.SpawningUI !
+[Info   :  Imperium] [OK] Successfully loaded Imperium.MonoBehaviours.ImpUI.TeleportUI.TeleportUI !
+[Info   :  Imperium] [OK] Successfully loaded Imperium.MonoBehaviours.ImpUI.WeatherUI.WeatherUI !
+[Info   :  Imperium] [OK] Successfully loaded Imperium.MonoBehaviours.ImpUI.OracleUI.OracleUI !
+[Info   :  Imperium] [OK] Successfully loaded Imperium.MonoBehaviours.ImpUI.NavigatorUI.NavigatorUI !
+[Info   :  Imperium] [UI] Failed to bind button 'ImpInterface/map_ui(Clone)/Container/FloorSlider/Reset'
+[Info   :  Imperium] [OK] Successfully loaded Imperium.MonoBehaviours.ImpUI.MapUI.MapUI !
+[Info   :  Imperium] [OK] Imperium UIs have been registered! \o/
 [Info   : Unity Log] !!!! ENABLING CAMERA FOR PLAYER: Player
 [Info   : Unity Log] !!!! connectedPlayersAmount: 0
 [Info   : Unity Log] Has beta?: {hasBeta}
 [Info   : Unity Log] Has beta save data: True
+[Info   : Unity Log] Connection approval callback! Game version of client request: 50
+[Info   : Unity Log] Joining client id: 1; Local/host client id: 0
+[Info   : Unity Log] Approved connection?: True. Connected players #: 1
+[Info   : Unity Log] Disapproval reason: 
 [Warning: Unity Log] BoxColliders does not support negative scale or size.
 The effective box size has been forced positive and is likely to give unexpected collision geometry.
 If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Environment/HangarShip/LightSwitchContainer/PlacementCollider"
@@ -241,13 +353,11 @@ If you absolutely need to use negative scaling you can use the convex MeshCollid
 [Warning: Unity Log] BoxColliders does not support negative scale or size.
 The effective box size has been forced positive and is likely to give unexpected collision geometry.
 If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Environment/HangarShip/ShipBottomColliders/Cube (4)"
+[Warning: Unity Log] [Dissonance:Recording] (09:54:05.048) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:4,224103)
+[Warning: Unity Log] [Dissonance:Recording] (09:54:05.166) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:0,1636303)
 [Warning: Unity Log] BoxColliders does not support negative scale or size.
 The effective box size has been forced positive and is likely to give unexpected collision geometry.
 If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Environment/HangarShip/StorageCloset/Cube.000/Cube"
-[Info   : Unity Log] Connection approval callback! Game version of client request: 50
-[Info   : Unity Log] Joining client id: 1; Local/host client id: 0
-[Info   : Unity Log] Approved connection?: True. Connected players #: 1
-[Info   : Unity Log] Disapproval reason: 
 [Info   : Unity Log] Client connected callback in gamenetworkmanager
 [Info   : Unity Log] player connected
 [Info   : Unity Log] connected players #: 0
@@ -277,1259 +387,582 @@ If you absolutely need to use negative scaling you can use the convex MeshCollid
 [Warning: Unity Log] [Netcode] Deferred messages were received for a trigger of type OnSpawn with key 0, but that trigger was not received within within 1 second(s).
 [Info   : Unity Log] Refreshing voice playback objects. Number of voice objects found: 1
 [Info   : Unity Log] Found a match for voice object #0 and player object #1
-[Info   : Unity Log] player voice chat audiosource: Player ff1ed1a8-fff8-4aba-bd79-a1efed3b514e voice comms (UnityEngine.AudioSource); set audiomixer to VoicePlayer1 (UnityEngine.AudioMixerGroup) ; VoicePlayer1 (UnityEngine.AudioMixerGroup) ; 1
+[Info   : Unity Log] player voice chat audiosource: Player f2b79c14-a397-4323-ab19-edf2a5e2b13c voice comms (UnityEngine.AudioSource); set audiomixer to VoicePlayer1 (UnityEngine.AudioMixerGroup) ; VoicePlayer1 (UnityEngine.AudioMixerGroup) ; 1
 [Info   : Unity Log] Skipping player #2 as they are not controlled or dead
 [Info   : Unity Log] Skipping player #3 as they are not controlled or dead
 [Info   : Unity Log] Setting animation on client
-[Warning: Unity Log] KillTrigger is disabled! Netcode for GameObjects does not support spawning disabled NetworkBehaviours! The InteractTrigger component was skipped during spawn!
+[Info   : Unity Log] Lever animation: setting bool to True
+[Info   : Unity Log] Sent lever animation RPC on this client
+[Info   : Unity Log] STOPPING SPECIAL ANIMATION ON LOCAL CLIENT; player who was using: Player #0
+[Info   : Unity Log] Current lobby is null. (Attempted to close lobby at game start)
+[Info   : Unity Log] Loading scene
+[Info   : Unity Log] Scene that began loading: Level7Offense
+[Info   : Unity Log] LOADING GAME!!!!!
+[Info   : Unity Log] Waiting for all players to load!
+[Warning: Unity Log] One Static Lighting Sky component was already set for baking, only the latest one will be used.
+[Warning: Unity Log] LadderTrigger is disabled! Netcode for GameObjects does not support spawning disabled NetworkBehaviours! The InteractTrigger component was skipped during spawn!
+[Warning: Unity Log] LadderTrigger is disabled! Netcode for GameObjects does not support spawning disabled NetworkBehaviours! The InteractTrigger component was skipped during spawn!
+[Warning: Unity Log] LadderTrigger is disabled! Netcode for GameObjects does not support spawning disabled NetworkBehaviours! The InteractTrigger component was skipped during spawn!
 [Warning: Unity Log] BoxColliders does not support negative scale or size.
 The effective box size has been forced positive and is likely to give unexpected collision geometry.
-If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "TestRoom(Clone)/TestLevel/CatwalkStairs.002 (1)/StairCollider"
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Environment/Map/ModelsIntroScene/Girder1 (4)/Collider (2)"
 [Warning: Unity Log] BoxColliders does not support negative scale or size.
 The effective box size has been forced positive and is likely to give unexpected collision geometry.
-If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "TestRoom(Clone)/TestLevel/CatwalkStairs.002 (1)/StairCollider (6)"
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Environment/SteelDoorFake/DoorMesh/Cube"
 [Warning: Unity Log] BoxColliders does not support negative scale or size.
 The effective box size has been forced positive and is likely to give unexpected collision geometry.
-If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "TestRoom(Clone)/TestLevel/CatwalkStairs.002 (1)/StairCollider (8)"
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Environment/Map/ModelsIntroScene/ChainlinkFence (18)"
 [Warning: Unity Log] BoxColliders does not support negative scale or size.
 The effective box size has been forced positive and is likely to give unexpected collision geometry.
-If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "TestRoom(Clone)/TestLevel/CatwalkStairs.002 (1)/StairCollider (10)"
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Environment/Map/ModelsIntroScene/ChainlinkFence (19)"
 [Warning: Unity Log] BoxColliders does not support negative scale or size.
 The effective box size has been forced positive and is likely to give unexpected collision geometry.
-If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "TestRoom(Clone)/TestLevel/CatwalkStairs.002 (1)/StairCollider (5)"
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Environment/Map/ModelsIntroScene/ChainlinkFence (17)"
 [Warning: Unity Log] BoxColliders does not support negative scale or size.
 The effective box size has been forced positive and is likely to give unexpected collision geometry.
-If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "TestRoom(Clone)/TestLevel/CatwalkStairs.002 (1)/StairCollider (9)"
-[Warning: Unity Log] BoxColliders does not support negative scale or size.
-The effective box size has been forced positive and is likely to give unexpected collision geometry.
-If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "TestRoom(Clone)/TestLevel/CatwalkStairs.002 (1)/StairCollider (7)"
-[Warning: Unity Log] BoxColliders does not support negative scale or size.
-The effective box size has been forced positive and is likely to give unexpected collision geometry.
-If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "TestRoom(Clone)/TestLevel/CatwalkStairs.002 (1)/StairCollider (4)"
-[Warning: Unity Log] BoxColliders does not support negative scale or size.
-The effective box size has been forced positive and is likely to give unexpected collision geometry.
-If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "TestRoom(Clone)/TestLevel/CatwalkStairs.002 (1)/StairCollider (2)"
-[Warning: Unity Log] BoxColliders does not support negative scale or size.
-The effective box size has been forced positive and is likely to give unexpected collision geometry.
-If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "TestRoom(Clone)/TestLevel/CatwalkStairs.002 (1)/StairCollider (3)"
-[Warning: Unity Log] BoxColliders does not support negative scale or size.
-The effective box size has been forced positive and is likely to give unexpected collision geometry.
-If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "TestRoom(Clone)/TestLevel/CatwalkStairs.002 (1)/StairCollider (1)"
-[Info   :Starlancer AI Fix] Finding outside AI nodes.
-[Info   :Starlancer AI Fix] Finding inside AI nodes.
-[Info   : Unity Log] Odin Serializer ArchitectureInfo initialization with defaults (all unaligned read/writes disabled).
-[Info   : Unity Log] ENEMIE FOUND MouthDog(Clone) NEW SCALE IS (4.92, 4.92, 4.92) WITH A MULTIPLIER OF 4,922068
-[Info   : Unity Log] ENEMY (MouthDog(Clone)) SPAWNED WITH RANDOM SIZE (4.92, 4.92, 4.92)
-[Warning: Unity Log] [Dissonance:Recording] (19:49:00.797) BasePreprocessingPipeline: Lost 480 samples in the preprocessor (buffer full), injecting silence to compensate
-[Warning: Unity Log] [Dissonance:Recording] (19:49:00.799) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:0,2744605)
-[Info   :ainavt.lc.lethalconfig] Saved config values for 2 items.
-[Info   :ainavt.lc.lethalconfig] Modified 0 item(s) that requires a restart.
-[Info   : Unity Log] ENEMIE FOUND MouthDog(Clone) NEW SCALE IS (0.25, 0.25, 0.25) WITH A MULTIPLIER OF 0,25
-[Info   : Unity Log] ENEMY (MouthDog(Clone)) SPAWNED WITH RANDOM SIZE (0.25, 0.25, 0.25)
-[Info   : Unity Log] playerHeldBy on grabbed object: Player (1) (GameNetcodeStuff.PlayerControllerB)
-[Warning: Unity Log] [Dissonance:Recording] (19:49:49.514) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:0,151112)
-[Warning: Unity Log] [Dissonance:Recording] (19:49:50.750) BasePreprocessingPipeline: Lost 960 samples in the preprocessor (buffer full), injecting silence to compensate
-[Info   : Unity Log] Current behaviour state: 0
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 1
-[Info   : Unity Log] Current behaviour state: 0
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 1
-[Info   : Unity Log] Setting animation on client
-[Info   : Unity Log] Current behaviour state: 1
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Kill player rpc
-[Info   : Unity Log] killing player A
-[Info   : Unity Log] killing player B
-[Info   : Unity Log] Setting animation on client
-[Info   : Unity Log] Current behaviour state: 3
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Current behaviour state: 2
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Current behaviour state: 1
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Setting lastHeardNoisePosition to (35.49, -3.47, -31.31)
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Current behaviour state: 3
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Ending lunge
-[Info   : Unity Log] Setting animation on client
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Setting animation on client
-[Info   : Unity Log] Setting animation on client
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Current behaviour state: 3
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Ending lunge
-[Info   : Unity Log] Setting animation on client
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Setting animation on client
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Setting animation on client
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Setting animation on client
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Setting animation on client
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Kill enemy server rpc called with destroy False
-[Info   : Unity Log] Kill enemy client rpc called; False
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] Kill enemy called; destroy: False
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Setting animation on client
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Setting animation on client
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Current behaviour state: 3
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Ending lunge
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Setting animation on client
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Setting animation on client
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Setting animation on client
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Setting animation on client
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Setting animation on client
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Setting animation on client
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Setting animation on client
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Player is not targetable
-[Info   : Unity Log] Kill enemy server rpc called with destroy False
-[Info   : Unity Log] Kill enemy client rpc called; False
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] Kill enemy called; destroy: False
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Setting animation on client
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   :ainavt.lc.lethalconfig] Saved config values for 1 items.
-[Info   :ainavt.lc.lethalconfig] Modified 0 item(s) that requires a restart.
-[Info   : Unity Log] ENEMIE FOUND MouthDog(Clone) NEW SCALE IS (0.25, 0.25, 0.25) WITH A MULTIPLIER OF 0,25
-[Info   : Unity Log] ENEMY (MouthDog(Clone)) SPAWNED WITH RANDOM SIZE (0.25, 0.25, 0.25)
-[Info   : Unity Log] Current behaviour state: 0
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 1
-[Warning: Unity Log] [Dissonance:Recording] (19:50:28.980) BasePreprocessingPipeline: Lost 960 samples in the preprocessor (buffer full), injecting silence to compensate
-[Warning: Unity Log] [Dissonance:Recording] (19:50:29.019) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:0,157096)
-[Info   : Unity Log] Current behaviour state: 1
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Setting animation on client
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Setting lastHeardNoisePosition to (39.58, -2.94, -36.77)
-[Info   : Unity Log] Setting lastHeardNoisePosition to (39.58, -2.94, -36.77)
-[Info   : Unity Log] Current behaviour state: 3
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Ending lunge
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Setting animation on client
-[Info   : Unity Log] Setting animation on client
-[Info   : Unity Log] Kill enemy server rpc called with destroy False
-[Info   : Unity Log] Kill enemy client rpc called; False
-[Info   : Unity Log] Current behaviour state: 3
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Kill enemy called; destroy: False
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] ENEMIE FOUND MouthDog(Clone) NEW SCALE IS (0.25, 0.25, 0.25) WITH A MULTIPLIER OF 0,25
-[Info   : Unity Log] ENEMY (MouthDog(Clone)) SPAWNED WITH RANDOM SIZE (0.25, 0.25, 0.25)
-[Info   : Unity Log] ENEMIE FOUND MouthDog(Clone) NEW SCALE IS (0.25, 0.25, 0.25) WITH A MULTIPLIER OF 0,25
-[Info   : Unity Log] ENEMY (MouthDog(Clone)) SPAWNED WITH RANDOM SIZE (0.25, 0.25, 0.25)
-[Info   : Unity Log] ENEMIE FOUND MouthDog(Clone) NEW SCALE IS (0.25, 0.25, 0.25) WITH A MULTIPLIER OF 0,25
-[Info   : Unity Log] ENEMY (MouthDog(Clone)) SPAWNED WITH RANDOM SIZE (0.25, 0.25, 0.25)
-[Info   : Unity Log] Current behaviour state: 0
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 1
-[Info   : Unity Log] Current behaviour state: 0
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Current behaviour state: 0
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 1
-[Info   : Unity Log] Setting animation on client
-[Info   : Unity Log] Current behaviour state: 1
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Setting lastHeardNoisePosition to (43.85, -2.48, -33.46)
-[Info   : Unity Log] Current behaviour state: 1
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Setting lastHeardNoisePosition to (43.85, -2.48, -33.46)
-[Info   : Unity Log] Setting lastHeardNoisePosition to (43.85, -2.48, -33.46)
-[Info   : Unity Log] Setting lastHeardNoisePosition to (43.85, -2.48, -33.46)
-[Info   : Unity Log] Setting lastHeardNoisePosition to (43.85, -2.48, -33.46)
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Current behaviour state: 3
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Ending lunge
-[Info   : Unity Log] Current behaviour state: 3
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Ending lunge
-[Info   : Unity Log] Current behaviour state: 3
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Ending lunge
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 1
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 1
-[Info   : Unity Log] Setting animation on client
-[Info   : Unity Log] Current behaviour state: 1
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Current behaviour state: 1
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Setting lastHeardNoisePosition to (30.48, -4.13, -29.17)
-[Info   : Unity Log] Setting lastHeardNoisePosition to (30.48, -4.13, -29.17)
-[Info   : Unity Log] Setting lastHeardNoisePosition to (30.48, -4.13, -29.17)
-[Info   : Unity Log] Setting lastHeardNoisePosition to (30.48, -4.13, -29.17)
-[Info   : Unity Log] Setting lastHeardNoisePosition to (30.48, -4.13, -29.17)
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Current behaviour state: 3
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Ending lunge
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Current behaviour state: 3
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Ending lunge
-[Info   : Unity Log] Current behaviour state: 3
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Ending lunge
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Current behaviour state: 3
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Ending lunge
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 1
-[Info   : Unity Log] Current behaviour state: 3
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Ending lunge
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 1
-[Info   : Unity Log] Setting animation on client
-[Info   : Unity Log] Current behaviour state: 3
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Ending lunge
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Current behaviour state: 3
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Ending lunge
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Setting animation on client
-[Info   : Unity Log] Kill enemy server rpc called with destroy False
-[Info   : Unity Log] Kill enemy client rpc called; False
-[Info   : Unity Log] Current behaviour state: 3
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Kill enemy called; destroy: False
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Current behaviour state: 1
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Current behaviour state: 1
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Setting lastHeardNoisePosition to (34.01, -0.33, -39.53)
-[Info   : Unity Log] Setting lastHeardNoisePosition to (34.01, -0.33, -39.53)
-[Info   : Unity Log] Setting lastHeardNoisePosition to (34.01, -0.33, -39.53)
-[Info   : Unity Log] Setting lastHeardNoisePosition to (34.01, -0.33, -39.53)
-[Info   : Unity Log] Setting lastHeardNoisePosition to (34.01, -0.33, -39.53)
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Current behaviour state: 3
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Ending lunge
-[Info   : Unity Log] Current behaviour state: 3
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Ending lunge
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Current behaviour state: 3
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Ending lunge
-[Info   : Unity Log] Current behaviour state: 3
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Ending lunge
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Current behaviour state: 3
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Ending lunge
-[Info   : Unity Log] Current behaviour state: 3
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Ending lunge
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Current behaviour state: 3
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Ending lunge
-[Info   : Unity Log] Current behaviour state: 3
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Ending lunge
-[Info   : Unity Log] Setting animation on client
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Setting animation on client
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Setting animation on client
-[Info   : Unity Log] Kill enemy server rpc called with destroy False
-[Info   : Unity Log] Kill enemy client rpc called; False
-[Info   : Unity Log] Current behaviour state: 3
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Kill enemy called; destroy: False
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Current behaviour state: 3
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Ending lunge
-[Info   : Unity Log] Setting animation on client
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Current behaviour state: 3
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Ending lunge
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Setting animation on client
-[Info   : Unity Log] Setting animation on client
-[Info   : Unity Log] Kill enemy server rpc called with destroy False
-[Info   : Unity Log] Kill enemy client rpc called; False
-[Info   : Unity Log] Current behaviour state: 3
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Kill enemy called; destroy: False
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   :ainavt.lc.lethalconfig] Saved config values for 2 items.
-[Info   :ainavt.lc.lethalconfig] Modified 0 item(s) that requires a restart.
-[Info   : Unity Log] ENEMIE FOUND MouthDog(Clone) NEW SCALE IS (0.10, 0.10, 0.10) WITH A MULTIPLIER OF 0,1
-[Info   : Unity Log] ENEMY (MouthDog(Clone)) SPAWNED WITH RANDOM SIZE (0.10, 0.10, 0.10)
-[Info   : Unity Log] Current behaviour state: 0
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 1
-[Info   : Unity Log] Setting animation on client
-[Info   : Unity Log] Kill enemy server rpc called with destroy False
-[Info   : Unity Log] Kill enemy client rpc called; False
-[Info   : Unity Log] Current behaviour state: 1
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Kill enemy called; destroy: False
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   :ainavt.lc.lethalconfig] Saved config values for 2 items.
-[Info   :ainavt.lc.lethalconfig] Modified 0 item(s) that requires a restart.
-[Info   :ainavt.lc.lethalconfig] Saved config values for 0 items.
-[Info   :ainavt.lc.lethalconfig] Modified 0 item(s) that requires a restart.
-[Info   :ainavt.lc.lethalconfig] Saved config values for 0 items.
-[Info   :ainavt.lc.lethalconfig] Modified 0 item(s) that requires a restart.
-[Info   : Unity Log] ENEMIE FOUND MouthDog(Clone) NEW SCALE IS (0.50, 0.50, 0.50) WITH A MULTIPLIER OF 0,5
-[Info   : Unity Log] ENEMY (MouthDog(Clone)) SPAWNED WITH RANDOM SIZE (0.50, 0.50, 0.50)
-[Info   : Unity Log] Setting animation on client
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Current behaviour state: 0
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Setting animation on client
-[Info   : Unity Log] Setting lastHeardNoisePosition to (48.20, -1.44, -39.67)
-[Info   : Unity Log] Setting lastHeardNoisePosition to (48.20, -1.44, -39.67)
-[Info   : Unity Log] Setting lastHeardNoisePosition to (48.20, -1.44, -39.67)
-[Info   : Unity Log] Setting lastHeardNoisePosition to (48.20, -1.44, -39.67)
-[Info   : Unity Log] Setting lastHeardNoisePosition to (48.20, -1.44, -39.67)
-[Info   : Unity Log] Setting lastHeardNoisePosition to (48.20, -1.44, -39.67)
-[Info   : Unity Log] Setting lastHeardNoisePosition to (48.20, -1.44, -39.67)
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Current behaviour state: 3
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Ending lunge
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Setting animation on client
-[Info   : Unity Log] Setting animation on client
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Current behaviour state: 3
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Ending lunge
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Setting animation on client
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Current behaviour state: 3
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Ending lunge
-[Info   : Unity Log] Setting animation on client
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Setting animation on client
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Setting animation on client
-[Info   : Unity Log] Current behaviour state: 3
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Ending lunge
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Setting animation on client
-[Info   : Unity Log] Kill enemy server rpc called with destroy False
-[Info   : Unity Log] Kill enemy client rpc called; False
-[Info   : Unity Log] Current behaviour state: 3
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Kill enemy called; destroy: False
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Discarding changed settings
-[Info   :ainavt.lc.lethalconfig] Saved config values for 2 items.
-[Info   :ainavt.lc.lethalconfig] Modified 0 item(s) that requires a restart.
-[Info   :ainavt.lc.lethalconfig] Saved config values for 0 items.
-[Info   :ainavt.lc.lethalconfig] Modified 0 item(s) that requires a restart.
-[Info   :ainavt.lc.lethalconfig] Saved config values for 0 items.
-[Info   :ainavt.lc.lethalconfig] Modified 0 item(s) that requires a restart.
-[Info   : Unity Log] ENEMIE FOUND MouthDog(Clone) NEW SCALE IS (1.00, 1.00, 1.00) WITH A MULTIPLIER OF 1
-[Info   : Unity Log] ENEMY (MouthDog(Clone)) SPAWNED WITH RANDOM SIZE (1.00, 1.00, 1.00)
-[Info   : Unity Log] Current behaviour state: 0
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 1
-[Info   : Unity Log] Setting animation on client
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Current behaviour state: 1
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Setting lastHeardNoisePosition to (38.34, -1.27, -40.88)
-[Info   : Unity Log] Setting lastHeardNoisePosition to (38.34, -1.27, -40.88)
-[Info   : Unity Log] Setting lastHeardNoisePosition to (38.34, -1.27, -40.88)
-[Info   : Unity Log] Setting lastHeardNoisePosition to (38.34, -1.27, -40.88)
-[Info   : Unity Log] Setting lastHeardNoisePosition to (38.34, -1.27, -40.88)
-[Info   : Unity Log] Setting lastHeardNoisePosition to (38.34, -1.27, -40.88)
-[Info   : Unity Log] Setting lastHeardNoisePosition to (38.34, -1.27, -40.88)
-[Info   : Unity Log] Setting lastHeardNoisePosition to (38.34, -1.27, -40.88)
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Setting animation on client
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Current behaviour state: 3
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Ending lunge
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Setting animation on client
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Setting animation on client
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Setting animation on client
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Current behaviour state: 3
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Ending lunge
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Setting animation on client
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Setting animation on client
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Setting animation on client
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Current behaviour state: 3
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Ending lunge
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Setting animation on client
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Setting animation on client
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Setting animation on client
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Current behaviour state: 3
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Ending lunge
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Setting animation on client
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Setting animation on client
-[Info   : Unity Log] Kill enemy server rpc called with destroy False
-[Info   : Unity Log] Kill enemy client rpc called; False
-[Info   : Unity Log] Current behaviour state: 3
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Kill enemy called; destroy: False
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #1 hit enemy MouthDog(Clone) with force of 1.
-[Warning: Unity Log] [Dissonance:Recording] (19:53:58.262) BasePreprocessingPipeline: Lost 960 samples in the preprocessor (buffer full), injecting silence to compensate
-[Warning: Unity Log] [Dissonance:Recording] (19:53:58.286) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:0,191966)
-[Info   :ainavt.lc.lethalconfig] Saved config values for 2 items.
-[Info   :ainavt.lc.lethalconfig] Modified 0 item(s) that requires a restart.
-[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 14,18281 meters
-[Info   : Unity Log] Mouth dog targetPos 1: (-7.83, 0.26, -15.90); distanceToNoise: 14,18281
-[Info   : Unity Log] Mouth dog targetPos 2: (-9.25, 0.17, -15.32)
-[Info   : Unity Log] Switching ownership of MouthDog #0 to player #0 (Player #0)
-[Info   : Unity Log] Dog lastheardnoisePosition: (-9.25, 0.17, -15.32)
-[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 20,05759 meters
-[Info   : Unity Log] Mouth dog targetPos 1: (1.19, -5.37, -21.40); distanceToNoise: 20,05759
-[Info   : Unity Log] Unable to get random nav mesh position in radius! Returning old pos
-[Info   : Unity Log] Mouth dog targetPos 2: (0.51, -5.37, -23.89)
-[Info   : Unity Log] Switching ownership of MouthDog #1 to player #0 (Player #0)
-[Info   : Unity Log] Dog lastheardnoisePosition: (0.51, -5.37, -23.89)
-[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 22,53975 meters
-[Info   : Unity Log] Mouth dog targetPos 1: (7.42, -4.95, -19.48); distanceToNoise: 22,53975
-[Info   : Unity Log] Mouth dog targetPos 2: (8.72, -4.19, -18.69)
-[Info   : Unity Log] Switching ownership of MouthDog #2 to player #0 (Player #0)
-[Info   : Unity Log] Dog lastheardnoisePosition: (8.72, -4.19, -18.69)
-[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 22,56843 meters
-[Info   : Unity Log] Mouth dog targetPos 1: (13.41, -4.37, -5.31); distanceToNoise: 22,56843
-[Info   : Unity Log] Mouth dog targetPos 2: (13.31, -4.35, -7.37)
-[Info   : Unity Log] Switching ownership of MouthDog #4 to player #0 (Player #0)
-[Info   : Unity Log] Dog lastheardnoisePosition: (13.31, -4.35, -7.37)
-[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 16,46869 meters
-[Info   : Unity Log] Mouth dog targetPos 1: (39.52, -4.80, -18.94); distanceToNoise: 16,46869
-[Info   : Unity Log] Mouth dog targetPos 2: (39.52, -4.83, -17.14)
-[Info   : Unity Log] Switching ownership of MouthDog #6 to player #0 (Player #0)
-[Info   : Unity Log] Dog lastheardnoisePosition: (39.52, -4.83, -17.14)
-[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 19,5596 meters
-[Info   : Unity Log] Mouth dog targetPos 1: (39.52, -4.80, -18.94); distanceToNoise: 19,5596
-[Info   : Unity Log] Mouth dog targetPos 2: (41.38, -4.71, -19.55)
-[Info   : Unity Log] Switching ownership of MouthDog #5 to player #0 (Player #0)
-[Info   : Unity Log] Dog lastheardnoisePosition: (41.38, -4.71, -19.55)
-[Info   : Unity Log] ENEMIE FOUND MouthDog(Clone) NEW SCALE IS (0.10, 0.10, 0.10) WITH A MULTIPLIER OF 0,1
-[Info   : Unity Log] ENEMY (MouthDog(Clone)) SPAWNED WITH RANDOM SIZE (0.10, 0.10, 0.10)
-[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 22,1524 meters
-[Info   : Unity Log] Mouth dog targetPos 1: (41.94, -4.36, -24.80); distanceToNoise: 22,1524
-[Info   : Unity Log] Mouth dog targetPos 2: (40.43, -3.86, -26.94)
-[Info   : Unity Log] Switching ownership of MouthDog #3 to player #0 (Player #0)
-[Info   : Unity Log] Dog lastheardnoisePosition: (40.43, -3.86, -26.94)
-[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 14,47652 meters
-[Info   : Unity Log] Mouth dog targetPos 1: (42.88, -3.92, -26.80); distanceToNoise: 14,47652
-[Info   : Unity Log] Mouth dog targetPos 2: (42.03, -3.87, -26.69)
-[Info   : Unity Log] Current behaviour state: 0
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 1
-[Info   : Unity Log] Dog lastheardnoisePosition: (42.03, -3.87, -26.69)
-[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 12,08924 meters
-[Info   : Unity Log] Mouth dog targetPos 1: (43.61, -3.48, -29.17); distanceToNoise: 12,08924
-[Info   : Unity Log] Mouth dog targetPos 2: (44.17, -3.56, -28.44)
-[Info   : Unity Log] Dog lastheardnoisePosition: (44.17, -3.56, -28.44)
-[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 8,813831 meters
-[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 3,711001 meters
-[Info   : Unity Log] Mouth dog targetPos 1: (43.05, -2.64, -33.40); distanceToNoise: 3,711001
-[Info   : Unity Log] Mouth dog targetPos 2: (43.11, -2.60, -32.95)
-[Info   : Unity Log] Current behaviour state: 1
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Dog lastheardnoisePosition: (43.11, -2.60, -32.95)
-[Info   : Unity Log] Setting lastHeardNoisePosition to (43.83, -2.16, -36.59)
-[Info   : Unity Log] Setting lastHeardNoisePosition to (43.83, -2.16, -36.59)
-[Info   : Unity Log] Setting lastHeardNoisePosition to (43.83, -2.16, -36.59)
-[Info   : Unity Log] Setting lastHeardNoisePosition to (43.83, -2.16, -36.59)
-[Info   : Unity Log] Setting lastHeardNoisePosition to (43.83, -2.16, -36.59)
-[Info   : Unity Log] Setting lastHeardNoisePosition to (43.83, -2.16, -36.59)
-[Info   : Unity Log] Setting lastHeardNoisePosition to (43.83, -2.16, -36.59)
-[Info   : Unity Log] Setting lastHeardNoisePosition to (43.83, -2.16, -36.59)
-[Info   : Unity Log] Setting lastHeardNoisePosition to (43.83, -2.16, -36.59)
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 3,245723 meters
-[Info   : Unity Log] Mouth dog targetPos 1: (43.37, -2.22, -34.60); distanceToNoise: 3,245723
-[Info   : Unity Log] Mouth dog targetPos 2: (43.24, -2.54, -34.24)
-[Info   : Unity Log] Dog lastheardnoisePosition: (43.24, -2.54, -34.24)
-[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 8,473726 meters
-[Info   : Unity Log] Mouth dog targetPos 1: (43.39, -3.15, -30.50); distanceToNoise: 8,473726
-[Info   : Unity Log] Mouth dog targetPos 2: (43.83, -2.94, -31.07)
-[Info   : Unity Log] Dog lastheardnoisePosition: (43.83, -2.94, -31.07)
-[Info   : Unity Log] Current behaviour state: 3
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Ending lunge
-[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 7,958245 meters
-[Info   : Unity Log] Mouth dog targetPos 1: (43.51, -3.36, -29.64); distanceToNoise: 7,958245
-[Info   : Unity Log] Mouth dog targetPos 2: (43.73, -3.36, -29.39)
-[Info   : Unity Log] Dog lastheardnoisePosition: (43.73, -3.36, -29.39)
-[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 6,812088 meters
-[Info   : Unity Log] Mouth dog targetPos 1: (43.63, -3.79, -27.65); distanceToNoise: 6,812088
-[Info   : Unity Log] Mouth dog targetPos 2: (42.78, -3.78, -27.46)
-[Info   : Unity Log] Dog lastheardnoisePosition: (42.78, -3.78, -27.46)
-[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 2,798676 meters
-[Info   : Unity Log] Mouth dog targetPos 1: (43.62, -4.16, -25.62); distanceToNoise: 2,798676
-[Info   : Unity Log] Mouth dog targetPos 2: (43.31, -4.15, -25.52)
-[Info   : Unity Log] Dog lastheardnoisePosition: (43.31, -4.15, -25.52)
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 0,7235166 meters
-[Info   : Unity Log] Mouth dog targetPos 1: (43.62, -4.29, -24.75); distanceToNoise: 0,7235166
-[Info   : Unity Log] Mouth dog targetPos 2: (43.56, -4.25, -24.75)
-[Info   : Unity Log] Dog lastheardnoisePosition: (43.56, -4.25, -24.75)
-[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 4,228134 meters
-[Info   : Unity Log] Mouth dog targetPos 1: (43.70, -4.28, -24.65); distanceToNoise: 4,228134
-[Info   : Unity Log] Mouth dog targetPos 2: (44.02, -4.34, -24.18)
-[Info   : Unity Log] Dog lastheardnoisePosition: (44.02, -4.34, -24.18)
-[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 5,819047 meters
-[Info   : Unity Log] Mouth dog targetPos 1: (43.51, -4.18, -25.50); distanceToNoise: 5,819047
-[Info   : Unity Log] Mouth dog targetPos 2: (43.58, -4.01, -26.01)
-[Info   : Unity Log] Dog lastheardnoisePosition: (43.58, -4.01, -26.01)
-[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 9,192899 meters
-[Info   : Unity Log] Mouth dog targetPos 1: (42.86, -3.80, -27.59); distanceToNoise: 9,192899
-[Info   : Unity Log] Mouth dog targetPos 2: (43.30, -3.73, -27.79)
-[Info   : Unity Log] Dog lastheardnoisePosition: (43.30, -3.73, -27.79)
-[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 10,32074 meters
-[Info   : Unity Log] Current behaviour state: 3
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Ending lunge
-[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 11,12157 meters
-[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 9,571421 meters
-[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 8,480988 meters
-[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 8,212026 meters
-[Info   : Unity Log] Mouth dog targetPos 1: (43.26, -3.95, -26.53); distanceToNoise: 8,212026
-[Info   : Unity Log] Mouth dog targetPos 2: (43.83, -3.82, -26.96)
-[Info   : Unity Log] Dog lastheardnoisePosition: (43.83, -3.82, -26.96)
-[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 4,838355 meters
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 8,111329 meters
-[Info   : Unity Log] Mouth dog targetPos 1: (42.13, -4.22, -25.63); distanceToNoise: 8,111329
-[Info   : Unity Log] Mouth dog targetPos 2: (42.73, -4.24, -25.09)
-[Info   : Unity Log] Dog lastheardnoisePosition: (42.73, -4.24, -25.09)
-[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 8,923334 meters
-[Info   : Unity Log] Mouth dog targetPos 1: (42.11, -4.18, -25.91); distanceToNoise: 8,923334
-[Info   : Unity Log] Mouth dog targetPos 2: (41.95, -4.02, -26.04)
-[Info   : Unity Log] Dog lastheardnoisePosition: (41.95, -4.02, -26.04)
-[Info   : Unity Log] Current behaviour state: 3
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Ending lunge
-[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 10,47725 meters
-[Info   : Unity Log] Mouth dog targetPos 1: (41.79, -4.01, -26.31); distanceToNoise: 10,47725
-[Info   : Unity Log] Mouth dog targetPos 2: (41.91, -4.15, -25.70)
-[Info   : Unity Log] Dog lastheardnoisePosition: (41.91, -4.15, -25.70)
-[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 10,54657 meters
-[Info   : Unity Log] Mouth dog targetPos 1: (40.74, -4.42, -24.70); distanceToNoise: 10,54657
-[Info   : Unity Log] Mouth dog targetPos 2: (41.90, -4.27, -25.17)
-[Info   : Unity Log] Dog lastheardnoisePosition: (41.90, -4.27, -25.17)
-[Info   : Unity Log] Current behaviour state: 2
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 3
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 3,375942 meters
-[Info   : Unity Log] Mouth dog targetPos 1: (40.62, -4.44, -24.62); distanceToNoise: 3,375942
-[Info   : Unity Log] Mouth dog targetPos 2: (40.38, -4.38, -24.82)
-[Info   : Unity Log] Dog lastheardnoisePosition: (40.38, -4.38, -24.82)
-[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 4,423306 meters
-[Info   : Unity Log] Mouth dog targetPos 1: (40.93, -4.35, -25.10); distanceToNoise: 4,423306
-[Info   : Unity Log] Mouth dog targetPos 2: (41.33, -4.30, -25.20)
-[Info   : Unity Log] Dog lastheardnoisePosition: (41.33, -4.30, -25.20)
-[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 3,453492 meters
-[Info   : Unity Log] Mouth dog targetPos 1: (42.47, -3.95, -26.61); distanceToNoise: 3,453492
-[Info   : Unity Log] Mouth dog targetPos 2: (42.40, -3.84, -26.93)
-[Info   : Unity Log] Dog lastheardnoisePosition: (42.40, -3.84, -26.93)
-[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 1,492635 meters
-[Info   : Unity Log] Mouth dog targetPos 1: (44.24, -3.77, -27.74); distanceToNoise: 1,492635
-[Info   : Unity Log] Mouth dog targetPos 2: (44.17, -3.69, -27.86)
-[Info   : Unity Log] Dog lastheardnoisePosition: (44.17, -3.69, -27.86)
-[Info   : Unity Log] Local client hit enemy MouthDog(Clone) #9 with force of 1.
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #0 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] Kill enemy called! destroy: False
-[Info   : Unity Log] Current behaviour state: 3
-[Info   : Unity Log] CHANGING BEHAVIOUR STATE!!! to 2
-[Info   : Unity Log] Kill enemy called; destroy: False
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Kill enemy server rpc called with destroy False
-[Info   : Unity Log] Kill enemy client rpc called; False
-[Info   : Unity Log] Local client hit enemy MouthDog(Clone) #9 with force of 1.
-[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
-[Info   : Unity Log] Client #0 hit enemy MouthDog(Clone) with force of 1.
-[Info   : Unity Log] dog 'MouthDog(Clone)': Heard noise! Distance: 1,825165 meters
-[Info   : Unity Log] Mouth dog targetPos 1: (44.64, -2.13, -27.95); distanceToNoise: 1,825165
-[Info   : Unity Log] Unable to get random nav mesh position in radius! Returning old pos
-[Info   : Unity Log] Mouth dog targetPos 2: (44.42, -2.13, -27.90)
-[Info   : Unity Log] Dog lastheardnoisePosition: (44.42, -2.13, -27.90)
-[Error  : Unity Log] NullReferenceException: Object reference not set to an instance of an object
-Stack trace:
-Unity.Netcode.NetworkSpawnManager.ChangeOwnership (Unity.Netcode.NetworkObject networkObject, System.UInt64 clientId) (at <895801699cfc4b4ab52267f31e2a4998>:IL_004A)
-Unity.Netcode.NetworkSpawnManager.RemoveOwnership (Unity.Netcode.NetworkObject networkObject) (at <895801699cfc4b4ab52267f31e2a4998>:IL_0000)
-Unity.Netcode.NetworkObject.RemoveOwnership () (at <895801699cfc4b4ab52267f31e2a4998>:IL_000B)
-Unity.Netcode.NetworkConnectionManager.OnClientDisconnectFromServer (System.UInt64 clientId) (at <895801699cfc4b4ab52267f31e2a4998>:IL_0169)
-Unity.Netcode.NetworkConnectionManager.DisconnectRemoteClient (System.UInt64 clientId) (at <895801699cfc4b4ab52267f31e2a4998>:IL_000B)
-Unity.Netcode.NetworkConnectionManager.Shutdown () (at <895801699cfc4b4ab52267f31e2a4998>:IL_0114)
-Unity.Netcode.NetworkManager.ShutdownInternal () (at <895801699cfc4b4ab52267f31e2a4998>:IL_0048)
-Unity.Netcode.NetworkManager.OnDestroy () (at <895801699cfc4b4ab52267f31e2a4998>:IL_0000)
-Unity.Netcode.NetworkManager.OnApplicationQuit () (at <895801699cfc4b4ab52267f31e2a4998>:IL_0007)
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Environment/Map/ModelsIntroScene/Girder1 (5)/Collider (2)"
+[Info   :LethalLevelLoader] Getting Random DungeonFlows!
+[Info   :LethalLevelLoader] ExtendedLevel <-> ExtendedDungeonFlow Dynamic Matching Report.
 
+Info For ExtendedLevel: OffenseExtendedLevel | Planet Name: Offense | Content Tags: Free, Canyon, Vanilla | Route Price: 0 | Current Weather: None
+Unviable ExtendedDungeonFlows: Facility, Facility
+Viable ExtendedDungeonFlows: Facility (300), Haunted Mansion (4)
+
+[Info   :LethalLevelLoader] Setting Random DungeonFlows!
+[Warning:LethalLevelLoader] Disabling LethalLib Dungeon.RoundManager_GenerateNewFloor() Function To Prevent Conflicts
+[Info   :LethalLevelLoader] Fire Exit Patch Report, Details Below;
+
+EntranceTeleport's Found, Offense Contains 2 Entrances! ( 1 Fire Escapes) 
+Main Entrance: EntranceTeleportA (Entrance ID: 0) (Dungeon ID: 0)
+Alternate Entrance: EntranceTeleportB (Entrance ID: 1) (Dungeon ID: 0)
+Found Fire Escape GlobalProp: (ID: 1231), Modifying Spawnrate Count From (1,1) To (1,1)
+
+
+[Info   :LethalLevelLoader] Created New Day History Log! PlanetName: Offense ,Facility ,Quota: 0 , Day: 1 , Weather: None
+[Info   : Unity Log] prop #0, #0 grounded; Ground tag: Gravel
+[Info   : Unity Log] prop #4, #0 grounded; Ground tag: Gravel
+[Info   : Unity Log] prop #5, #0 grounded; Ground tag: Gravel
+[Info   : Unity Log] prop #5, #1 grounded; Ground tag: Gravel
+[Info   : Unity Log] prop #5, #2 grounded; Ground tag: Gravel
+[Info   : Unity Log] Dungeon finished generating in one frame.
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1Split(Clone)/Colliders/StairCollider (25)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1Split(Clone)/Colliders/StairCollider (18)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1Split(Clone)/Colliders/StairCollider (16)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1Split(Clone)/Colliders/StairCollider (15)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1Split(Clone)/Colliders/StairCollider (17)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1Split(Clone)/Colliders/StairCollider (13)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1Split(Clone)/Colliders/StairCollider (24)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1Split(Clone)/Colliders/StairCollider (14)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1Split(Clone)/Colliders/StairCollider (20)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1Split(Clone)/Colliders/StairCollider (11)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1Split(Clone)/Colliders/StairCollider (19)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1Split(Clone)/Colliders/StairCollider (12)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1Split(Clone)/Colliders/StairCollider (21)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1Split(Clone)/Colliders/StairCollider (23)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1Split(Clone)/Colliders/StairCollider (22)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1Split(Clone)/Colliders/StairCollider (26)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1(Clone)/CatwalkStairs.002/StairCollider (1)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1(Clone)/CatwalkStairs.002/StairCollider (2)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1(Clone)/CatwalkStairs.002/StairCollider (9)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1(Clone)/CatwalkStairs.002/StairCollider (8)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1(Clone)/CatwalkStairs.002/StairCollider (4)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1(Clone)/CatwalkStairs.002/StairCollider (6)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1(Clone)/CatwalkStairs.002/StairCollider"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1(Clone)/CatwalkStairs.002/StairCollider (7)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1(Clone)/CatwalkStairs.002/StairCollider (10)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1(Clone)/CatwalkStairs.002/StairCollider (3)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1(Clone)/CatwalkStairs.002/StairCollider (5)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/DoubleDoorRoom(Clone)/Pipes/Pipe7 (1)/Cube (39)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/DoubleDoorRoom(Clone)/Pipes/Pipe7 (1)/Cube (38)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/DoubleDoorRoom(Clone)/Pipes/Pipe7 (1)/Cube (37)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1(Clone)/CatwalkStairs.002/StairCollider (1)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1(Clone)/CatwalkStairs.002/StairCollider (2)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1(Clone)/CatwalkStairs.002/StairCollider (9)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1(Clone)/CatwalkStairs.002/StairCollider (8)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1(Clone)/CatwalkStairs.002/StairCollider (4)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1(Clone)/CatwalkStairs.002/StairCollider (6)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1(Clone)/CatwalkStairs.002/StairCollider"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1(Clone)/CatwalkStairs.002/StairCollider (7)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1(Clone)/CatwalkStairs.002/StairCollider (10)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1(Clone)/CatwalkStairs.002/StairCollider (3)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1(Clone)/CatwalkStairs.002/StairCollider (5)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1(Clone)/CatwalkStairs.002/StairCollider (1)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1(Clone)/CatwalkStairs.002/StairCollider (2)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1(Clone)/CatwalkStairs.002/StairCollider (9)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1(Clone)/CatwalkStairs.002/StairCollider (8)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1(Clone)/CatwalkStairs.002/StairCollider (4)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1(Clone)/CatwalkStairs.002/StairCollider (6)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1(Clone)/CatwalkStairs.002/StairCollider"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1(Clone)/CatwalkStairs.002/StairCollider (7)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1(Clone)/CatwalkStairs.002/StairCollider (10)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1(Clone)/CatwalkStairs.002/StairCollider (3)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1(Clone)/CatwalkStairs.002/StairCollider (5)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/HallwayCorner(Clone)/Pipes/NWCorner/Pipe1 (1)/Collider (3)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/HallwayCorner(Clone)/Pipes/NWCorner/Pipe1 (1)/Collider (1)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/HallwayCorner(Clone)/Pipes/NWCorner/Pipe1 (1)/Collider"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/HallwayCorner(Clone)/Pipes/NWCorner/Pipe1 (1)/Collider (2)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1(Clone)/CatwalkStairs.002/StairCollider (1)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1(Clone)/CatwalkStairs.002/StairCollider (2)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1(Clone)/CatwalkStairs.002/StairCollider (9)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1(Clone)/CatwalkStairs.002/StairCollider (8)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1(Clone)/CatwalkStairs.002/StairCollider (4)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1(Clone)/CatwalkStairs.002/StairCollider (6)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1(Clone)/CatwalkStairs.002/StairCollider"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1(Clone)/CatwalkStairs.002/StairCollider (7)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1(Clone)/CatwalkStairs.002/StairCollider (10)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1(Clone)/CatwalkStairs.002/StairCollider (3)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1(Clone)/CatwalkStairs.002/StairCollider (5)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/HallwayCorner(Clone)/Pipes/NWCorner/Pipe1 (1)/Collider (3)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/HallwayCorner(Clone)/Pipes/NWCorner/Pipe1 (1)/Collider (1)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/HallwayCorner(Clone)/Pipes/NWCorner/Pipe1 (1)/Collider"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/HallwayCorner(Clone)/Pipes/NWCorner/Pipe1 (1)/Collider (2)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/HallwayCorner(Clone)/Pipes/NWCorner/Pipe1 (1)/Collider (3)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/HallwayCorner(Clone)/Pipes/NWCorner/Pipe1 (1)/Collider (1)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/HallwayCorner(Clone)/Pipes/NWCorner/Pipe1 (1)/Collider"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/HallwayCorner(Clone)/Pipes/NWCorner/Pipe1 (1)/Collider (2)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/HallwayCorner(Clone)/Pipes/NWCorner/Pipe1 (1)/Collider (3)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/HallwayCorner(Clone)/Pipes/NWCorner/Pipe1 (1)/Collider (1)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/HallwayCorner(Clone)/Pipes/NWCorner/Pipe1 (1)/Collider"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/HallwayCorner(Clone)/Pipes/SWCorner/Pipe7/Collider (7)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/HallwayCorner(Clone)/Pipes/NWCorner/Pipe1 (1)/Collider (2)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/HallwayCorner(Clone)/Pipes/SWCorner/Pipe7/Collider (9)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/HallwayCorner(Clone)/Pipes/SWCorner/Pipe7/Collider (8)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1Split(Clone)/Colliders/StairCollider (25)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1Split(Clone)/Colliders/StairCollider (18)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1Split(Clone)/Colliders/StairCollider (16)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1Split(Clone)/Colliders/StairCollider (15)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1Split(Clone)/Colliders/StairCollider (17)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1Split(Clone)/Colliders/StairCollider (13)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1Split(Clone)/Colliders/StairCollider (24)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1Split(Clone)/Colliders/StairCollider (14)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1Split(Clone)/Colliders/StairCollider (20)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1Split(Clone)/Colliders/StairCollider (11)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1Split(Clone)/Colliders/StairCollider (19)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1Split(Clone)/Colliders/StairCollider (12)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1Split(Clone)/Colliders/StairCollider (21)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1Split(Clone)/Colliders/StairCollider (23)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1Split(Clone)/Colliders/StairCollider (22)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/CatwalkTile2x1Split(Clone)/Colliders/StairCollider (26)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/DoubleDoorRoom(Clone)/Props/LungDockingStation/LungSocketMachine/BigSocket/Collisions/Cube"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/DoubleDoorRoom(Clone)/Props/LungDockingStation/LungSocketMachine/BigSocket/Collisions/Cube (1)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/DoubleDoorRoom(Clone)/Props/LungDockingStation/LungSocketMachine/BigSocket/Collisions/Cube (3)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/DoubleDoorRoom(Clone)/Props/LungDockingStation/LungSocketMachine/BigSocket/Collisions/Cube (4)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/DoubleDoorRoom(Clone)/Props/LungDockingStation/LungSocketMachine/BigSocket/Collisions/Cube (5)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/DoubleDoorRoom(Clone)/Props/LungDockingStation/LungSocketMachine/BigSocket/Collisions/Cube (2)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/DoubleDoorRoom(Clone)/Props/LungDockingStation/LungSocketMachine/BigSocket/Collisions/Cube (6)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Systems/LevelGeneration/LevelGenerationRoot/DoubleDoorRoom(Clone)/Props/LungDockingStation/LungSocketMachine/BigSocket/Collisions/Cube (7)"
+[Warning: Unity Log] [Dissonance:Recording] (09:54:21.479) BasicMicrophoneCapture: Insufficient buffer space, requested 50880, clamped to 16383 (dropping 34497 samples)
+[Warning: Unity Log] [Dissonance:Recording] (09:54:21.480) BasePreprocessingPipeline: Lost 960 samples in the preprocessor (buffer full), injecting silence to compensate
+[Warning: Unity Log] [Dissonance:Recording] (09:54:21.481) BasePreprocessingPipeline: Lost 480 samples in the preprocessor (buffer full), injecting silence to compensate
+[Warning: Unity Log] [Dissonance:Recording] (09:54:21.497) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:0,9878498)
+[Info   : Unity Log] Players finished generating the new floor
+[Info   : Unity Log] Spawning synced props on server. Length: 37
+[Warning: Unity Log] Only custom filters can be played. Please add a custom filter or an audioclip to the audiosource (SteamValve(Clone)).
+[Error  :LethalLevelLoader] Removed: 35 SpawnableItemWithRarities From CurrentLevel: Offense Due To Invalid Properties To Prevent Errors.
+[Info   : Unity Log] Number of scrap to spawn: 15. minTotalScrapValue: 100. Total value of items: 0.
+[Info   :  Imperium] [ORACLE] Oracle had to re-simulate due to YRotFar
+[Info   :  Imperium] [ORACLE] Oracle had to re-simulate due to YRotFar
+[Info   : Unity Log] Odin Serializer ArchitectureInfo initialization with defaults (all unaligned read/writes disabled).
+[Info   : Unity Log] LANDMINE WITH NEW SCALE : (0.42, 0.42, 0.42)
+[Info   : Unity Log] LANDMINE WITH NEW SCALE : (0.61, 0.61, 0.61)
+[Info   : Unity Log] LANDMINE WITH NEW SCALE : (0.59, 0.59, 0.59)
+[Info   : Unity Log] LANDMINE WITH NEW SCALE : (0.10, 0.10, 0.10)
+[Info   : Unity Log] TURRET WITH NEW SCALE : (1.28, 1.28, 1.28)
+[Info   : Unity Log] TURRET WITH NEW SCALE : (0.37, 0.37, 0.37)
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "EnginePart(Clone)/ScanNode"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "EnginePart(Clone)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "EnginePart(Clone)/ScanNode"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "EnginePart(Clone)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "EnginePart(Clone)/ScanNode"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "EnginePart(Clone)"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "EnginePart(Clone)/ScanNode"
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "EnginePart(Clone)"
+[Warning: Unity Log] [Dissonance:Recording] (09:54:24.022) BasicMicrophoneCapture: Insufficient buffer space, requested 37440, clamped to 16383 (dropping 21057 samples)
+[Warning: Unity Log] [Dissonance:Recording] (09:54:24.023) BasePreprocessingPipeline: Lost 960 samples in the preprocessor (buffer full), injecting silence to compensate
+[Warning: Unity Log] [Dissonance:Recording] (09:54:24.024) BasePreprocessingPipeline: Lost 480 samples in the preprocessor (buffer full), injecting silence to compensate
+[Info   : Unity Log] Setting door BigDoor(Clone) with code x8 to open
+[Info   : Unity Log] setting big door open for door BigDoor(Clone); True; True
+[Info   : Unity Log] Setting door BigDoor(Clone) with code x8 to open
+[Info   : Unity Log] setting big door open for door BigDoor(Clone); True; True
+[Info   : Unity Log] Setting door BigDoor(Clone) with code v0 to open
+[Info   : Unity Log] setting big door open for door BigDoor(Clone); True; True
+[Info   : Unity Log] Setting door BigDoor(Clone) with code j6 to open
+[Info   : Unity Log] setting big door open for door BigDoor(Clone); True; True
+[Info   : Unity Log] Turning lights on at start
+[Message:  Imperium] [MON] Imperium message block :)
+╒═══════════════════════════════════════════════════╕
+│              < Imperium Monitoring >              │
+╞═══════════════════════════════════════════════════╡
+│ Imperium scanned the current level for obstacles. │
+│    > 19x Doors                                    │
+│    > 11x Security doors                           │
+│    > 2x Turrets                                   │
+│    > 4x Landmines                                 │
+│    > 1x Breaker boxes                             │
+│    > 0x Spider webs                               │
+╘═══════════════════════════════════════════════════╛
+[Message:  Imperium] [MON] Imperium message block :)
+╒═══════════════════════════════════════════════════╕
+│              < Imperium Monitoring >              │
+╞═══════════════════════════════════════════════════╡
+│ Imperium scanned the current level for obstacles. │
+│    > 19x Doors                                    │
+│    > 11x Security doors                           │
+│    > 2x Turrets                                   │
+│    > 4x Landmines                                 │
+│    > 1x Breaker boxes                             │
+│    > 0x Spider webs                               │
+╘═══════════════════════════════════════════════════╛
+[Warning: Unity Log] [Dissonance:Recording] (09:54:24.701) BasicMicrophoneCapture: Insufficient buffer space, requested 33120, clamped to 16383 (dropping 16737 samples)
+[Warning: Unity Log] [Dissonance:Recording] (09:54:24.704) BasePreprocessingPipeline: Lost 480 samples in the preprocessor (buffer full), injecting silence to compensate
+[Warning: Unity Log] [Dissonance:Recording] (09:54:24.704) BasePreprocessingPipeline: Lost 960 samples in the preprocessor (buffer full), injecting silence to compensate
+[Warning: Unity Log] [Dissonance:Recording] (09:54:24.705) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:0,7757433)
+[Warning: Unity Log] [Dissonance:Recording] (09:54:24.844) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:0,5757319)
+[Message:  Imperium] [MON] Imperium message block :)
+╒══════════════════╕
+│< Spawn Tracker >│
+╞══════════════════╡
+│ Nothing Spawned  │
+╘══════════════════╛
+[Message:  Imperium] [MON] Imperium message block :)
+╒══════════════════╕
+│< Spawn Tracker >│
+╞══════════════════╡
+│ Nothing Spawned  │
+╘══════════════════╛
+[Info   : Unity Log] startofround: 8; 0
+[Info   : Unity Log] clientRPC scrap values length: 15
+[Debug  :   BepInEx] [UnityInput] Unknown key name: OEM1, skipping remapping
+[Debug  :   BepInEx] [UnityInput] Unknown key name: OEM2, skipping remapping
+[Debug  :   BepInEx] [UnityInput] Unknown key name: OEM3, skipping remapping
+[Debug  :   BepInEx] [UnityInput] Unknown key name: OEM4, skipping remapping
+[Debug  :   BepInEx] [UnityInput] Unknown key name: OEM5, skipping remapping
+[Debug  :   BepInEx] [UnityInput] Unknown key name: IMESelected, skipping remapping
+[Debug  :   BepInEx] [UnityInput] Using NewInputSystem
+[Info   : Unity Log] secondary use A
+[Info   : Unity Log] secondary use A
+[Info   : Unity Log] secondary use A
+[Info   : Unity Log] secondary use A
+[Info   : Unity Log] SPIKE TRAP WITH NEW SCALE : (1.71, 1.00, 1.71)
+[Warning: Unity Log] [Dissonance:Recording] (09:54:39.958) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:0,2181729)
+[Info   : Unity Log] clip index: 3; current planet: 21 Offense
+[Info   : Unity Log] Current outside ambience clips length: 5
+[Info   : Unity Log] Play time of day sfx
+[Info   : Unity Log] Play music!; ; 0,7
+[Info   : Unity Log] secondary use A
+[Info   : Unity Log] secondary use A
+[Info   : Unity Log] secondary use A
+[Info   : Unity Log] secondary use A
+[Info   : Unity Log] SPIKE TRAP WITH NEW SCALE : (0.50, 1.00, 0.50)
+[Warning: Unity Log] [Dissonance:Recording] (09:54:49.286) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:0,1939407)
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] A player died. player object: Player (1)
+[Warning: Unity Log] Setting linear velocity of a kinematic body is not supported.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Warning: Unity Log] Setting linear velocity of a kinematic body is not supported.
+[Warning: Unity Log] Setting angular velocity of a kinematic body is not supported.
+[Message:  Imperium] [MON] Imperium message block :)
+╒══════════════════╕
+│< Spawn Tracker >│
+╞══════════════════╡
+│ Nothing Spawned  │
+╘══════════════════╛
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] secondary use A
+[Info   : Unity Log] secondary use A
+[Info   : Unity Log] secondary use A
+[Info   : Unity Log] secondary use A
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] SPIKE TRAP WITH NEW SCALE : (0.32, 1.00, 0.32)
+[Warning: Unity Log] [Dissonance:Recording] (09:55:33.594) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:0,2121206)
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] clip index: 2; current planet: 21 Offense
+[Info   : Unity Log] Current outside ambience clips length: 5
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Warning: Unity Log] Setting linear velocity of a kinematic body is not supported.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] secondary use A
+[Info   : Unity Log] secondary use A
+[Info   : Unity Log] secondary use A
+[Info   : Unity Log] secondary use A
+[Info   : Unity Log] SPIKE TRAP WITH NEW SCALE : (0.58, 1.00, 0.58)
+[Warning: Unity Log] [Dissonance:Recording] (09:55:56.704) CapturePipelineManager: Detected a frame skip, forcing capture pipeline reset (Delta Time:0,212112)
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] clip index: 0; current planet: 21 Offense
+[Info   : Unity Log] Current outside ambience clips length: 5
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Running kill player function for LOCAL client, player object: Player
+[Info   : Unity Log] A player died. player object: Player
+[Warning: Unity Log] Setting linear velocity of a kinematic body is not supported.
+[Info   : Unity Log] !!!! DISABLING CAMERA FOR PLAYER: Player
+[Info   : Unity Log] !!!! connectedPlayersAmount: 1
+[Info   : Unity Log] Adding boxes
+[Info   : Unity Log] True
+[Warning: Unity Log] PlayOneShot was called with a null AudioClip.
+[Info   : Unity Log] Is in elevator D?: False
+[Info   : Unity Log] clip index: 1; current planet: 21 Offense
+[Info   : Unity Log] Current outside ambience clips length: 5
 [Info   : Unity Log] Disconnecting and setting networkobjects to destroy with owner
 [Info   : Unity Log] Shutting down and disconnecting from server. Is host?: True
+[Warning: Unity Log] [Dissonance:Recording] (09:56:10.694) BasicMicrophoneCapture: Insufficient buffer space, requested 25440, clamped to 16383 (dropping 9057 samples)
+[Warning: Unity Log] [Dissonance:Recording] (09:56:10.697) BasePreprocessingPipeline: Lost 480 samples in the preprocessor (buffer full), injecting silence to compensate
+[Warning: Unity Log] [Dissonance:Recording] (09:56:10.698) BasePreprocessingPipeline: Lost 480 samples in the preprocessor (buffer full), injecting silence to compensate
+[Info   : Unity Log] Disconnect callback called
+[Info   : Unity Log] Is server: True; ishost: True; isConnectedClient: False
+[Info   : Unity Log] Disconnect callback called in gamenetworkmanager; disconnecting clientId: 1
+[Info   : Unity Log] Client disconnected from server
+[Info   : Unity Log] Calling OnPlayerDC!
+[Info   : Unity Log] Shutdown is in progress, returning
+[Info   : Unity Log] Calling OnPlayerDC!
+[Info   : Unity Log] Shutdown is in progress, returning
+[Info   : Unity Log] Disconnect callback from networkmanager in gamenetworkmanager
+[Info   : Unity Log] Resetting unlockables list!
+[Info   : Unity Log] Scene manager is null
 [Info   : Unity Log] Terminal disabled, disabling ESC key listener
-[Error  : Unity Log] NullReferenceException
-Stack trace:
-UnityEngine.InputSystem.PlayerInput.get_actions () (at <dbb0ce7b96144bd8bcbcb8b0d765f970>:IL_0008)
-GameNetcodeStuff.PlayerControllerB.OnDisable () (at <255c0877f9414c3aa6f1fe5079ac13f3>:IL_0005)
-
-[Error  : Unity Log] NullReferenceException
-Stack trace:
-UnityEngine.InputSystem.PlayerInput.get_actions () (at <dbb0ce7b96144bd8bcbcb8b0d765f970>:IL_0008)
-GameNetcodeStuff.PlayerControllerB.OnDisable () (at <255c0877f9414c3aa6f1fe5079ac13f3>:IL_0005)
-
 [Info   : Unity Log] DISABLING connection callbacks in round manager
-[Error  : Unity Log] NullReferenceException
-Stack trace:
-UnityEngine.InputSystem.PlayerInput.get_actions () (at <dbb0ce7b96144bd8bcbcb8b0d765f970>:IL_0008)
-HUDManager.OnDisable () (at <255c0877f9414c3aa6f1fe5079ac13f3>:IL_0005)
-
-[Error  : Unity Log] NullReferenceException
-Stack trace:
-UnityEngi
+[Info   : Unity Log] Returning week num: 28
+[Info   : Unity Log] week num: 28
+[Info   :ainavt.lc.lethalconfig] Injecting mod config menu into main menu...
+[Info   :FixPluginTypesSerialization] Restored original AssemblyNames list
