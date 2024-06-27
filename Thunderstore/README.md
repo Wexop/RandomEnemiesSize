@@ -41,6 +41,8 @@ You can multiply the previous configs size for every interiors (and every monste
 You can use [the generator](https://wexop.github.io/RandomEnemiesSizeCustomGeneraror) and copy the result in the input '
 CustomInteriorsSize'!
 
+**Manualy:**
+
 This is an input, you can for example write -> HauntedMansion#any:1,Puffer:2;
 
 The formula is interiorName, an # to tell this is the end of the name, then you can write any (or not) and tell the
@@ -68,7 +70,7 @@ Have fun :)
 
 **QUESTIONS**
 
-- Why LethalLevelLoader as dependence ?
+- Why LethalLevelLoader as soft dependence ?
 
 LLL give an easy way to know the dungeon name (for custom interiors multiplier), and most of the mods use this api to
 create custom dungeon, so can find the interior name easily !
