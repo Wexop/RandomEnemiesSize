@@ -2,7 +2,7 @@
   "name": "RandomEnemiesSize",
   "version_number": "1.1.7",
   "website_url": "https://github.com/Wexop/RandomEnemiesSize",
-  "description": "[V50] Monsters now spawn with a random size. Configurable with LethalConfig: Outside, Indoor, Custom enemies, turrets and landmines !",
+  "description": "[V50] Monsters now spawn with a random size. Configurable with LethalConfig: Outside, Indoor, Custom enemies and map hazards !",
   "dependencies": [
     "BepInEx-BepInExPack-5.4.2100",
     "Evaisa-HookGenPatcher-0.0.5",
