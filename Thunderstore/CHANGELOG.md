@@ -2,7 +2,7 @@
 
 ### v1.1.7
 
-- Spike traps size are now affected by the mod (configurable, enabled by default)
+- Spike traps size are now affected by the mod (configurable, activated by default)
 
 ### v1.1.6
 
