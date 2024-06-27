@@ -72,5 +72,24 @@ namespace RandomEnemiesSize
                 influences.InfluenceMineSound(mineFound.GetComponentInChildren<Landmine>(), scaleMultiplier);
             }
         }
+        
+        [ClientRpc]
+        public static void UpdateSpikeTrapClientRpc(ulong networkId, Vector3 newScale, float scaleMultiplier,
+            Influences influences)
+        {
+            var spikeTraps = Object.FindObjectsByType<SpikeRoofTrap>(FindObjectsSortMode.None).ToList();
+            var spikeTrapsFoundObject = spikeTraps.Find(e => e.NetworkObjectId == networkId);
+            var spikeTrapFound = spikeTrapsFoundObject.GetComponentInParent<NetworkObject>().gameObject;
+            if (spikeTrapFound == null)
+            {
+                if (RandomEnemiesSize.instance.devLogEntry.Value) Debug.Log($"SPIKE TRAP NOT FOUND {networkId}");
+            }
+            else
+            {
+                if (RandomEnemiesSize.instance.devLogEntry.Value) Debug.Log($"SPIKE TRAP WITH NEW SCALE : {newScale}");
+                spikeTrapFound.transform.localScale = newScale;
+                influences.InfluenceSpikeTrapSound(spikeTrapFound.GetComponentInChildren<SpikeRoofTrap>(), scaleMultiplier);
+            }
+        }
     }
 }

@@ -19,7 +19,7 @@ namespace RandomEnemiesSize
     {
         private const string GUID = "wexop.random_enemies_size";
         private const string NAME = "RandomEnemiesSize";
-        private const string VERSION = "1.1.6";
+        private const string VERSION = "1.1.7";
 
         public static string LethalLevelLoaderReferenceChain = "imabatby.lethallevelloader";
 
@@ -28,6 +28,7 @@ namespace RandomEnemiesSize
         public ConfigEntry<bool> customAffectMineEntry;
         public ConfigEntry<bool> CustomAffectModEntry;
         public ConfigEntry<bool> customAffectTurretEntry;
+        public ConfigEntry<bool> customAffectSpikeTrapEntry;
         public ConfigEntry<bool> CustomAffectVanillaEntry;
         public ConfigEntry<string> customEnemyEntry;
         public ConfigEntry<string> customInteriorEntry;
@@ -51,6 +52,8 @@ namespace RandomEnemiesSize
         public ConfigEntry<float> minSizeMineEntry;
         public ConfigEntry<float> minSizeOutdoorEntry;
         public ConfigEntry<float> minSizeTurretEntry;
+        public ConfigEntry<float> minSizeSpikeTrapEntry;
+        public ConfigEntry<float> maxSizeSpikeTrapEntry;
 
         public ConfigEntry<float> randomPercentChanceEntry;
 
@@ -105,30 +108,48 @@ namespace RandomEnemiesSize
             customInteriorEntry = Config.Bind("Custom", "CustomInteriorsSize", "",
                 "THE MOD LethalLevelLoader IS REQUIRED FOR THIS FEATURE. Multiply the base size for an indoor enemy in an interior wanted with his EXACT name. RECOMMENDED: Go to the thunderstore mod page, you can find a generator to make easier this config. Manual example -> mansion#any:1.5,NutCracker:2;customInterior#any:3; No need to restart the game :)");
             CreateInteriorStringConfig(customInteriorEntry);
+            
+            // turret
 
-            customAffectTurretEntry = Config.Bind("Custom", "AffectTurretSize", true,
+            customAffectTurretEntry = Config.Bind("Turret", "AffectTurretSize", true,
                 "Activate to make this mod affect turrets size. No need to restart the game :)");
             CreateBoolConfig(customAffectTurretEntry);
 
-            minSizeTurretEntry = Config.Bind("Custom", "MinTurretSize", 0.25f,
+            minSizeTurretEntry = Config.Bind("Turret", "MinTurretSize", 0.25f,
                 "Change the minimum size of turrets. No need to restart the game :)");
             CreateFloatConfig(minSizeTurretEntry, 0f, 3f);
 
-            maxSizeTurretEntry = Config.Bind("Custom", "MaxTurretSize", 1.5f,
+            maxSizeTurretEntry = Config.Bind("Turret", "MaxTurretSize", 1.5f,
                 "Change the maximum size of turrets. No need to restart the game :)");
             CreateFloatConfig(maxSizeTurretEntry, 0f, 3f);
+            
+            //landmine
 
-            customAffectMineEntry = Config.Bind("Custom", "AffectLandMineSize", true,
+            customAffectMineEntry = Config.Bind("Landmine", "AffectLandMineSize", true,
                 "Activate to make this mod affect land mines size. No need to restart the game :)");
             CreateBoolConfig(customAffectMineEntry);
 
-            minSizeMineEntry = Config.Bind("Custom", "MinLandMinesSize", 0.2f,
+            minSizeMineEntry = Config.Bind("Landmine", "MinLandMinesSize", 0.2f,
                 "Change the minimum size of land mines. No need to restart the game :)");
             CreateFloatConfig(minSizeMineEntry, 0f, 5f);
 
-            maxSizeMineEntry = Config.Bind("Custom", "MaxLandMinesSize", 3f,
+            maxSizeMineEntry = Config.Bind("Landmine", "MaxLandMinesSize", 3f,
                 "Change the maximum size of land mines. No need to restart the game :)");
             CreateFloatConfig(maxSizeMineEntry, 0f, 5f);
+            
+            //spike trap
+            
+            customAffectSpikeTrapEntry = Config.Bind("SpikeTrap", "AffectSpikeTrapSize", true,
+                "Activate to make this mod affect spike traps size. No need to restart the game :)");
+            CreateBoolConfig(customAffectSpikeTrapEntry);
+
+            minSizeSpikeTrapEntry = Config.Bind("SpikeTrap", "MinSpikeTrapSize", 0.3f,
+                "Change the minimum size of spike traps. No need to restart the game :)");
+            CreateFloatConfig(minSizeSpikeTrapEntry, 0f, 5f);
+
+            maxSizeSpikeTrapEntry = Config.Bind("SpikeTrap", "MaxSpikeTrapSize", 2f,
+                "Change the maximum size of spike traps. No need to restart the game :)");
+            CreateFloatConfig(maxSizeSpikeTrapEntry, 0f, 5f);
 
             //INFLUENCES
 
@@ -174,6 +195,7 @@ namespace RandomEnemiesSize
             Harmony.CreateAndPatchAll(typeof(PatchEnemySize));
             Harmony.CreateAndPatchAll(typeof(PatchTurretSize));
             Harmony.CreateAndPatchAll(typeof(PatchLandmineSize));
+            Harmony.CreateAndPatchAll(typeof(PatchSpikeTrapSize));
 
             Logger.LogInfo("RandomEnemiesSize Patched !!");
         }

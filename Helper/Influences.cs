@@ -91,5 +91,24 @@ namespace RandomEnemiesSize
 
             foreach (var audioSource in audioSources) audioSource.pitch = pitch;
         }
+        
+        public void InfluenceSpikeTrapSound(SpikeRoofTrap spikeTrap, float multiplier)
+        {
+            if (!soundInfluence || spikeTrap == null) return;
+
+            var audioSources = new List<AudioSource>();
+            AudioSource componentAudioSource = null;
+
+            spikeTrap.TryGetComponent(out componentAudioSource);
+            if (componentAudioSource != null) audioSources.Add(componentAudioSource);
+            audioSources.AddRange(spikeTrap.GetComponentsInChildren<AudioSource>());
+
+            var value = 1f - (multiplier - 1);
+            var pitch = Mathf.Clamp(value, soundInfluenceMin, soundInfluenceMax);
+
+            if (spikeTrap.spikeTrapAudio != null) spikeTrap.spikeTrapAudio.pitch = pitch;
+
+            foreach (var audioSource in audioSources) audioSource.pitch = pitch;
+        }
     }
 }

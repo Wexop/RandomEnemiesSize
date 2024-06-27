@@ -7,7 +7,7 @@ You can configure the range size for :
 - Outside enemies
 - Indoor enemies
 - Custom enemies
-- Turret and Landmines
+- Hazards (landmines, turrets, spike traps)
 
 You can configure if this mod affect vanilla and / or modded enemies (both activated by default)
 
@@ -72,3 +72,7 @@ Have fun :)
 
 LLL give an easy way to know the dungeon name (for custom interiors multiplier), and most of the mods use this api to
 create custom dungeon, so can find the interior name easily !
+
+### Related mods
+
+[LittleCompany](https://thunderstore.io/c/lethal-company/p/Toybox/LittleCompany/) - A Lethal Company mod for anything size-related! Enemies behaviour change depending on the size of enemies and yours! 

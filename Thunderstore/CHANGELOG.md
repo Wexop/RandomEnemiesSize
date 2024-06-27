@@ -1,5 +1,9 @@
 # Changelog
 
+### v1.1.7
+
+- Spike traps size are now affected by the mod (configurable, enabled by default)
+
 ### v1.1.6
 
 - You can configure the chance for each monster to have a random size (0% is never, 100% is always)
