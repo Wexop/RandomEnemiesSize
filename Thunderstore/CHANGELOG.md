@@ -1,5 +1,11 @@
 # Changelog
 
+### v1.1.8
+
+- New config, Beehive influence, disabled by default. Beehive weight and price are affected by the size.
+- New Bees management : Beehive size is always affected, but the weight is not if you disable the Beehive influence config. 
+- Also, bees speed is now affected by the size (big bees => slower, small bees have the same speed as normal size). Bees player detection is also affected, so you can get easier big bees.
+
 ### v1.1.7
 
 - Spike traps size are now affected by the mod (configurable, activated by default)
