@@ -78,4 +78,5 @@ create custom dungeon, so can find the interior name easily !
 
 ### RELATED MODS
 
-[LittleCompany](https://thunderstore.io/c/lethal-company/p/Toybox/LittleCompany/) - A Lethal Company mod for anything size-related! Enemies behaviour change depending on the size of enemies and yours! 
+- [LittleCompany](https://thunderstore.io/c/lethal-company/p/Toybox/LittleCompany/) - A Lethal Company mod for anything size-related! Enemies behaviour change depending on the size of enemies and yours!
+- [MapHazardsMoves](https://thunderstore.io/c/lethal-company/p/Wexop/MapHazardsMoves/) - A Lethal Company mod that make map hazards like turret, landmine, spike trap walk ! Try it with RandomEnemiesSize to be chased by a big scary spike trap ! 
