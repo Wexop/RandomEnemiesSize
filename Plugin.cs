@@ -39,10 +39,12 @@ namespace RandomEnemiesSize
         public ConfigEntry<float> funModeHorizontalMinEntry;
         public ConfigEntry<bool> funModeLockHorizontalEnrty;
 
+
         public ConfigEntry<bool> influenceHpConfig;
         public ConfigEntry<bool> influenceSoundConfig;
         public ConfigEntry<float> influenceSoundMaxEntry;
         public ConfigEntry<float> influenceSoundMinEntry;
+        public ConfigEntry<bool> influenceBeehiveEntry;
 
         public ConfigEntry<float> maxSizeIndoorEntry;
         public ConfigEntry<float> maxSizeMineEntry;
@@ -169,6 +171,10 @@ namespace RandomEnemiesSize
                 "If InfluenceSound is activated, this define the maximum pitch of monsters audio sources. No need to restart the game :)");
             CreateFloatConfig(influenceSoundMaxEntry, 0f, 3f);
 
+            influenceBeehiveEntry = Config.Bind("Influences", "InfluenceBeehive", false,
+                "Activate to make size influence beehive weight and price. No need to restart the game :)");
+            CreateBoolConfig(influenceBeehiveEntry);
+
             //FUNMODE
 
             funModeEntry = Config.Bind("FunMode", "FunMode", false,
@@ -196,6 +202,7 @@ namespace RandomEnemiesSize
             Harmony.CreateAndPatchAll(typeof(PatchTurretSize));
             Harmony.CreateAndPatchAll(typeof(PatchLandmineSize));
             Harmony.CreateAndPatchAll(typeof(PatchSpikeTrapSize));
+            Harmony.CreateAndPatchAll(typeof(PatchRedLocustBees));
 
             Logger.LogInfo("RandomEnemiesSize Patched !!");
         }

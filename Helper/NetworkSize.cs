@@ -31,7 +31,7 @@ namespace RandomEnemiesSize
                 influences.InfluenceSound(enemieFound, scaleMultiplier);
 
                 if (enemieFound.enemyType.enemyName == "Red Locust Bees")
-                    new RedBeesManagement().ChangeSize(enemieFound, scaleMultiplier);
+                    RedBeesManagement.ChangeSize(enemieFound, scaleMultiplier);
             }
         }
 
