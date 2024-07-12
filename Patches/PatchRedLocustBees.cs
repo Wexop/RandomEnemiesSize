@@ -12,12 +12,18 @@ public class PatchRedLocustBees
     [HarmonyPostfix]
     private static void PatchMovingTowardPlayer(RedLocustBees __instance)
     {
+
         int? beeParticleState = Traverse.Create(__instance).Field("beeParticleState").GetValue() as int?;
 
         if (beeParticleState.HasValue)
         {
-            if(RedBeesManagement.instance.BeesDictionary[__instance.NetworkObjectId].lastState == beeParticleState) return;
+            RedBees redBees = RedBeesManagement.instance.BeesDictionary[__instance.NetworkObjectId];
+            __instance.agent.speed = Mathf.Clamp(__instance.agent.speed / redBees.multiplier, 1f, 100f);
+            
+            if(redBees.lastState == beeParticleState) return;
+            
             RedBeesManagement.instance.BeesDictionary[__instance.NetworkObjectId].lastState = beeParticleState.Value;
+
             if (beeParticleState.Value == 0)
             {
                 RedBeesManagement.instance.StopTargetingPlayerRescale(__instance.NetworkObjectId);

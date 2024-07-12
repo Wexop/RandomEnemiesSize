@@ -20,6 +20,11 @@ namespace RandomEnemiesSize.SpecialEnemies
             }
             
             var redLocustBees = enemyAI.GetComponent<RedLocustBees>();
+            
+            if (scaleMultiplier > 1)
+            {
+                redLocustBees.defenseDistance = Mathf.RoundToInt(redLocustBees.defenseDistance * scaleMultiplier);
+            }
 
             var visualEffect = enemyAI.GetComponentInChildren<VisualEffect>();
 
@@ -32,6 +37,7 @@ namespace RandomEnemiesSize.SpecialEnemies
                 
                 redBees.SizedScale = visualEffect.transform.localScale;
                 redBees.GameObject = visualEffect.gameObject;
+                redBees.multiplier = scaleMultiplier;
                 
                 if (instance.BeesDictionary.ContainsKey(redLocustBees.NetworkObjectId))
                 {
@@ -40,6 +46,8 @@ namespace RandomEnemiesSize.SpecialEnemies
                 
                 instance.BeesDictionary.Add(redLocustBees.NetworkObjectId, redBees);
             }
+            
+
 
 
             if (redLocustBees != null) redLocustBees.StartCoroutine(ChangeHiveSize(redLocustBees, scaleMultiplier));
@@ -50,25 +58,22 @@ namespace RandomEnemiesSize.SpecialEnemies
             yield return new WaitUntil(() => redLocustBees.hive != null);
 
             redLocustBees.hive.gameObject.transform.localScale *= multiplier;
-            if (multiplier > 1)
-            {
-                redLocustBees.agent.speed *= Mathf.Clamp(1 - (multiplier - 1), 0.5f, 100);
-                redLocustBees.defenseDistance = Mathf.RoundToInt(redLocustBees.defenseDistance * multiplier);
-            }
+            
+            var physicsProp = redLocustBees.hive.GetComponent<PhysicsProp>();
+            var cloneHide = Object.Instantiate(physicsProp.itemProperties);
 
             if (RandomEnemiesSize.instance.influenceBeehiveEntry.Value)
             {
-                var physicsProp = redLocustBees.hive.GetComponent<PhysicsProp>();
-                var cloneHide = Object.Instantiate(physicsProp.itemProperties);
+
                 if (multiplier > 1)
                 {
                     cloneHide.weight = 1 + (multiplier * 0.1f);
                 }
                 
                 physicsProp.SetScrapValue(Mathf.RoundToInt(physicsProp.scrapValue * multiplier));
-                physicsProp.originalScale = redLocustBees.hive.gameObject.transform.localScale;
-                physicsProp.itemProperties = cloneHide;
             }
+            physicsProp.originalScale = redLocustBees.hive.gameObject.transform.localScale;
+            physicsProp.itemProperties = cloneHide;
         }
 
         public void TargetPlayerRescale(ulong networkId)
