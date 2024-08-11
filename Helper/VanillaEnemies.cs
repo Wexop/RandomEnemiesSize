@@ -28,7 +28,9 @@ namespace RandomEnemiesSize
             "Red Locust Bees",
             "Bunker Spider",
             "Earth Leviathan",
-            "Spring"
+            "Spring",
+            "Clay Surgeon",
+            "Bush Wolf",
         };
 
         public bool IsAVanillaEnemy(string name)
