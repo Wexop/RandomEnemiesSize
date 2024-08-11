@@ -29,6 +29,18 @@ namespace RandomEnemiesSize
                 enemieFound.enemyHP = influences.InfluenceHp(enemieFound.enemyHP, scaleMultiplier);
                 //change pitch
                 influences.InfluenceSound(enemieFound, scaleMultiplier);
+                
+                //STORE ENEMY FOR OTHERS MODS COMPATIBILITY
+
+                EnemyResized enemyResized = new EnemyResized();
+                enemyResized.influences = influences;
+                enemyResized.isHazard = false;
+                enemyResized.newtorkId = networkId;
+                enemyResized.multiplier = scaleMultiplier;
+                enemyResized.gameObject = enemieFound.gameObject;
+                enemyResized.scale = newScale;
+                
+                RandomEnemiesSize.instance.RandomEnemiesSizeDataDictionnary.Add(networkId, enemyResized);
 
                 if (enemieFound.enemyType.enemyName == "Red Locust Bees")
                     RedBeesManagement.ChangeSize(enemieFound, scaleMultiplier);
@@ -51,6 +63,19 @@ namespace RandomEnemiesSize
                 if (RandomEnemiesSize.instance.devLogEntry.Value) Debug.Log($"TURRET WITH NEW SCALE : {newScale}");
                 turretFound.transform.localScale = newScale;
                 influences.InfluenceTurretSound(turretFound.GetComponentInChildren<Turret>(), scaleMultiplier);
+                
+                //STORE ENEMY FOR OTHERS MODS COMPATIBILITY
+
+                EnemyResized enemyResized = new EnemyResized();
+                enemyResized.influences = influences;
+                enemyResized.isHazard = true;
+                enemyResized.newtorkId = networkId;
+                enemyResized.multiplier = scaleMultiplier;
+                enemyResized.gameObject = turretFound.gameObject;
+                enemyResized.scale = newScale;
+                
+                RandomEnemiesSize.instance.RandomEnemiesSizeDataDictionnary.Add(networkId, enemyResized);
+                
             }
         }
 
@@ -70,6 +95,19 @@ namespace RandomEnemiesSize
                 if (RandomEnemiesSize.instance.devLogEntry.Value) Debug.Log($"LANDMINE WITH NEW SCALE : {newScale}");
                 mineFound.transform.localScale = newScale;
                 influences.InfluenceMineSound(mineFound.GetComponentInChildren<Landmine>(), scaleMultiplier);
+                
+                //STORE ENEMY FOR OTHERS MODS COMPATIBILITY
+
+                EnemyResized enemyResized = new EnemyResized();
+                enemyResized.influences = influences;
+                enemyResized.isHazard = true;
+                enemyResized.newtorkId = networkId;
+                enemyResized.multiplier = scaleMultiplier;
+                enemyResized.gameObject = mineFound.gameObject;
+                enemyResized.scale = newScale;
+                
+                RandomEnemiesSize.instance.RandomEnemiesSizeDataDictionnary.Add(networkId, enemyResized);
+                
             }
         }
         
@@ -89,6 +127,18 @@ namespace RandomEnemiesSize
                 if (RandomEnemiesSize.instance.devLogEntry.Value) Debug.Log($"SPIKE TRAP WITH NEW SCALE : {newScale}");
                 spikeTrapFound.transform.localScale = newScale;
                 influences.InfluenceSpikeTrapSound(spikeTrapFound.GetComponentInChildren<SpikeRoofTrap>(), scaleMultiplier);
+                
+                //STORE ENEMY FOR OTHERS MODS COMPATIBILITY
+
+                EnemyResized enemyResized = new EnemyResized();
+                enemyResized.influences = influences;
+                enemyResized.isHazard = true;
+                enemyResized.newtorkId = networkId;
+                enemyResized.multiplier = scaleMultiplier;
+                enemyResized.gameObject = spikeTrapFound.gameObject;
+                enemyResized.scale = newScale;
+                
+                RandomEnemiesSize.instance.RandomEnemiesSizeDataDictionnary.Add(networkId, enemyResized);
             }
         }
     }

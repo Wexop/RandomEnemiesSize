@@ -1,4 +1,5 @@
-﻿using System.Globalization;
+﻿using System.Collections.Generic;
+using System.Globalization;
 using BepInEx;
 using BepInEx.Bootstrap;
 using BepInEx.Configuration;
@@ -25,6 +26,9 @@ namespace RandomEnemiesSize
 
         public static RandomEnemiesSize instance;
         public bool LethalLevelLoaderIsHere;
+
+        public Dictionary<ulong, EnemyResized> RandomEnemiesSizeDataDictionnary = new Dictionary<ulong, EnemyResized>();
+        
         public ConfigEntry<bool> customAffectMineEntry;
         public ConfigEntry<bool> CustomAffectModEntry;
         public ConfigEntry<bool> customAffectTurretEntry;
