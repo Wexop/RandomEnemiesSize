@@ -207,6 +207,7 @@ namespace RandomEnemiesSize
             Harmony.CreateAndPatchAll(typeof(PatchLandmineSize));
             Harmony.CreateAndPatchAll(typeof(PatchSpikeTrapSize));
             Harmony.CreateAndPatchAll(typeof(PatchRedLocustBees));
+            Harmony.CreateAndPatchAll(typeof(PatchRoundManager));
 
             Logger.LogInfo("RandomEnemiesSize Patched !!");
         }
