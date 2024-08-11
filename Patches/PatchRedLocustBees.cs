@@ -1,5 +1,4 @@
-﻿using System;
-using HarmonyLib;
+﻿using HarmonyLib;
 using RandomEnemiesSize.SpecialEnemies;
 using UnityEngine;
 
@@ -12,6 +11,8 @@ public class PatchRedLocustBees
     [HarmonyPostfix]
     private static void PatchMovingTowardPlayer(RedLocustBees __instance)
     {
+
+        if (!RedBeesManagement.instance.BeesDictionary.ContainsKey(__instance.NetworkObjectId)) return;
 
         int? beeParticleState = Traverse.Create(__instance).Field("beeParticleState").GetValue() as int?;
 
