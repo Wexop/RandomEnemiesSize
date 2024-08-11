@@ -40,7 +40,7 @@ namespace RandomEnemiesSize
                 enemyResized.gameObject = enemieFound.gameObject;
                 enemyResized.scale = newScale;
                 
-                RandomEnemiesSize.instance.RandomEnemiesSizeDataDictionnary.Add(networkId, enemyResized);
+                RandomEnemiesSize.instance.RandomEnemiesSizeDataDictionary.Add(networkId, enemyResized);
 
                 if (enemieFound.enemyType.enemyName == "Red Locust Bees")
                     RedBeesManagement.ChangeSize(enemieFound, scaleMultiplier);
@@ -74,7 +74,7 @@ namespace RandomEnemiesSize
                 enemyResized.gameObject = turretFound.gameObject;
                 enemyResized.scale = newScale;
                 
-                RandomEnemiesSize.instance.RandomEnemiesSizeDataDictionnary.Add(networkId, enemyResized);
+                RandomEnemiesSize.instance.RandomEnemiesSizeDataDictionary.Add(networkId, enemyResized);
                 
             }
         }
@@ -106,7 +106,7 @@ namespace RandomEnemiesSize
                 enemyResized.gameObject = mineFound.gameObject;
                 enemyResized.scale = newScale;
                 
-                RandomEnemiesSize.instance.RandomEnemiesSizeDataDictionnary.Add(networkId, enemyResized);
+                RandomEnemiesSize.instance.RandomEnemiesSizeDataDictionary.Add(networkId, enemyResized);
                 
             }
         }
@@ -138,7 +138,7 @@ namespace RandomEnemiesSize
                 enemyResized.gameObject = spikeTrapFound.gameObject;
                 enemyResized.scale = newScale;
                 
-                RandomEnemiesSize.instance.RandomEnemiesSizeDataDictionnary.Add(networkId, enemyResized);
+                RandomEnemiesSize.instance.RandomEnemiesSizeDataDictionary.Add(networkId, enemyResized);
             }
         }
     }

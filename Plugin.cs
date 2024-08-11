@@ -20,14 +20,14 @@ namespace RandomEnemiesSize
     {
         private const string GUID = "wexop.random_enemies_size";
         private const string NAME = "RandomEnemiesSize";
-        private const string VERSION = "1.1.8";
+        private const string VERSION = "1.1.9";
 
         public static string LethalLevelLoaderReferenceChain = "imabatby.lethallevelloader";
 
         public static RandomEnemiesSize instance;
         public bool LethalLevelLoaderIsHere;
 
-        public Dictionary<ulong, EnemyResized> RandomEnemiesSizeDataDictionnary = new Dictionary<ulong, EnemyResized>();
+        public Dictionary<ulong, EnemyResized> RandomEnemiesSizeDataDictionary = new Dictionary<ulong, EnemyResized>();
         
         public ConfigEntry<bool> customAffectMineEntry;
         public ConfigEntry<bool> CustomAffectModEntry;

@@ -9,6 +9,6 @@ public class PatchRoundManager
     [HarmonyPrefix]
     private static void PatchLoadLevel()
     {
-        RandomEnemiesSize.instance.RandomEnemiesSizeDataDictionnary.Clear();
+        RandomEnemiesSize.instance.RandomEnemiesSizeDataDictionary.Clear();
     }
 }

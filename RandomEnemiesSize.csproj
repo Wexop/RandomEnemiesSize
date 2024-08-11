@@ -31,9 +31,6 @@
       <Reference Include="LethalLevelLoader, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null">
         <HintPath>..\DEPENDENCES\LETHALLEVELLOADER\plugins\LethalLevelLoader.dll</HintPath>
       </Reference>
-      <Reference Include="LethalLib, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-        <HintPath>..\..\..\..\..\..\..\..\..\..\Downloads\Evaisa-LethalLib-0.15.1\plugins\LethalLib\LethalLib.dll</HintPath>
-      </Reference>
       <Reference Include="Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
         <HintPath>D:\SteamLibrary\steamapps\common\Lethal Company\Lethal Company_Data\Managed\Unity.Burst.dll</HintPath>
       </Reference>

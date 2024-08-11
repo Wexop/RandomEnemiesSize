@@ -1,5 +1,11 @@
 # Changelog
 
+### v1.1.9
+
+- Add V55 enemies into vanilla enemies check
+- Fix bees spam error log
+- Make the mod easier to have compatibility for other devs. Check README => MOD COMPATIBILITY for more information.
+
 ### v1.1.8
 
 - New config, Beehive influence, disabled by default. Beehive weight and price are affected by the size.

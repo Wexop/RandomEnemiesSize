@@ -80,3 +80,31 @@ create custom dungeon, so can find the interior name easily !
 
 - [LittleCompany](https://thunderstore.io/c/lethal-company/p/Toybox/LittleCompany/) - A Lethal Company mod for anything size-related! Enemies behaviour change depending on the size of enemies and yours!
 - [MapHazardsMoves](https://thunderstore.io/c/lethal-company/p/Wexop/MapHazardsMoves/) - A Lethal Company mod that make map hazards like turret, landmine, spike trap walk ! Try it with RandomEnemiesSize to be chased by a big scary spike trap ! 
+
+### MOD COMPATIBILITY
+
+I created a way to have an easy compatibility with RandomEnemiesSize. You can access to a dictionary from
+
+```RandomEnemiesSize.RandomEnemiesSizeDataDictionary```
+
+This dictionary entry is the NetworkId (ulong type) of any monster with a random size.
+It returns an object like this :
+
+``` 
+ public class EnemyResized
+{
+    public Vector3 scale;
+    public float multiplier;
+    public ulong newtorkId;
+    public Influences influences;
+    public GameObject gameObject;
+    public bool isHazard;
+}
+ ```
+
+**This dictionary is cleared each time RoundManager.LoadNewLevel is call**
+
+Don't forget to check if the enemy networkId is here before trying to access to the object.
+
+Feel free to use this dictionary for any compatibility with the mod. For any question, suggestion, need, feel free to open an issue on GitHub or to ping me in the modded lethal company server :)
+
