@@ -9,6 +9,7 @@ using LethalConfig.ConfigItems;
 using LethalConfig.ConfigItems.Options;
 using LethalLevelLoader;
 using RandomEnemiesSize.Patches;
+using RandomEnemiesSize.SpecialEnemies;
 using UnityEngine;
 
 namespace RandomEnemiesSize
@@ -201,6 +202,8 @@ namespace RandomEnemiesSize
 
             devLogEntry = Config.Bind("DEV", "DevLogs", false, "Show the dev logs");
             CreateBoolConfig(devLogEntry);
+            
+            RedBeesManagement.Init();
 
             Harmony.CreateAndPatchAll(typeof(PatchEnemySize));
             Harmony.CreateAndPatchAll(typeof(PatchTurretSize));

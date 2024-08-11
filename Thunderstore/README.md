@@ -99,12 +99,15 @@ It returns an object like this :
     public Influences influences;
     public GameObject gameObject;
     public bool isHazard;
+    public string enemyName;
 }
  ```
 
 **This dictionary is cleared each time RoundManager.LoadNewLevel is call**
 
 Don't forget to check if the enemy networkId is here before trying to access to the object.
+
+This should work for host and client. But remember that RandomEnemiesSize take only host configs, so check host may be better.
 
 Feel free to use this dictionary for any compatibility with the mod. For any question, suggestion, need, feel free to open an issue on GitHub or to ping me in the modded lethal company server :)
 

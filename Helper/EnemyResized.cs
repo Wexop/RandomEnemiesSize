@@ -10,4 +10,5 @@ public class EnemyResized
     public Influences influences;
     public GameObject gameObject;
     public bool isHazard;
+    public string enemyName;
 }

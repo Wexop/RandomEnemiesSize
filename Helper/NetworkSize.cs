@@ -39,6 +39,7 @@ namespace RandomEnemiesSize
                 enemyResized.multiplier = scaleMultiplier;
                 enemyResized.gameObject = enemieFound.gameObject;
                 enemyResized.scale = newScale;
+                enemyResized.enemyName = enemieFound.enemyType.enemyName;
                 
                 RandomEnemiesSize.instance.RandomEnemiesSizeDataDictionary.Add(networkId, enemyResized);
 
@@ -73,6 +74,7 @@ namespace RandomEnemiesSize
                 enemyResized.multiplier = scaleMultiplier;
                 enemyResized.gameObject = turretFound.gameObject;
                 enemyResized.scale = newScale;
+                enemyResized.enemyName = "Turret";
                 
                 RandomEnemiesSize.instance.RandomEnemiesSizeDataDictionary.Add(networkId, enemyResized);
                 
@@ -105,6 +107,7 @@ namespace RandomEnemiesSize
                 enemyResized.multiplier = scaleMultiplier;
                 enemyResized.gameObject = mineFound.gameObject;
                 enemyResized.scale = newScale;
+                enemyResized.enemyName = "LandMine";
                 
                 RandomEnemiesSize.instance.RandomEnemiesSizeDataDictionary.Add(networkId, enemyResized);
                 
@@ -137,6 +140,7 @@ namespace RandomEnemiesSize
                 enemyResized.multiplier = scaleMultiplier;
                 enemyResized.gameObject = spikeTrapFound.gameObject;
                 enemyResized.scale = newScale;
+                enemyResized.enemyName = "SpikeTrap";
                 
                 RandomEnemiesSize.instance.RandomEnemiesSizeDataDictionary.Add(networkId, enemyResized);
             }

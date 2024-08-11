@@ -11,13 +11,16 @@ namespace RandomEnemiesSize.SpecialEnemies
         public static RedBeesManagement instance;
 
         public Dictionary<ulong, RedBees> BeesDictionary = new Dictionary<ulong, RedBees>();
-        public static void ChangeSize(EnemyAI enemyAI, float scaleMultiplier)
-        {
 
+        public static void Init()
+        {
             if (instance == null)
             {
                 instance = new RedBeesManagement();
             }
+        }
+        public static void ChangeSize(EnemyAI enemyAI, float scaleMultiplier)
+        {
             
             var redLocustBees = enemyAI.GetComponent<RedLocustBees>();
             
