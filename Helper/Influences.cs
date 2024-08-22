@@ -49,6 +49,23 @@ namespace RandomEnemiesSize
 
             foreach (var audioSource in audioSources) audioSource.pitch = pitch;
         }
+        
+        public void InfluenceMapHazardSound(GameObject gameObject, float multiplier)
+        {
+            if (!soundInfluence) return;
+
+            var audioSources = new List<AudioSource>();
+            AudioSource componentAudioSource = null;
+
+            gameObject.TryGetComponent(out componentAudioSource);
+            if (componentAudioSource != null) audioSources.Add(componentAudioSource);
+            audioSources.AddRange(gameObject.GetComponentsInChildren<AudioSource>());
+
+            var value = 1f - (multiplier - 1);
+            var pitch = Mathf.Clamp(value, soundInfluenceMin, soundInfluenceMax);
+
+            foreach (var audioSource in audioSources) audioSource.pitch = pitch;
+        }
 
         public void InfluenceTurretSound(Turret turret, float multiplier)
         {

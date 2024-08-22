@@ -47,6 +47,38 @@ namespace RandomEnemiesSize
                     RedBeesManagement.ChangeSize(enemieFound, scaleMultiplier);
             }
         }
+        
+        [ClientRpc]
+        public static void UpdateAnyMapHazardClientRpc(ulong networkId, Vector3 newScale, float scaleMultiplier,
+            Influences influences)
+        {
+            var objects = Object.FindObjectsByType<NetworkObject>(FindObjectsSortMode.None).ToList();
+            var objectFound = objects.Find(e => e.NetworkObjectId == networkId);
+            if (objectFound == null)
+            {
+                if (RandomEnemiesSize.instance.devLogEntry.Value) Debug.Log($"MAP HAZARD NOT FOUND {networkId}");
+            }
+            else
+            {
+                if (RandomEnemiesSize.instance.devLogEntry.Value) Debug.Log($"MAP HAZARD WITH NEW SCALE : {newScale}");
+                objectFound.transform.localScale = newScale;
+                influences.InfluenceMapHazardSound(objectFound.gameObject, scaleMultiplier);
+                
+                //STORE ENEMY FOR OTHERS MODS COMPATIBILITY
+
+                EnemyResized enemyResized = new EnemyResized();
+                enemyResized.influences = influences;
+                enemyResized.isHazard = true;
+                enemyResized.newtorkId = networkId;
+                enemyResized.multiplier = scaleMultiplier;
+                enemyResized.gameObject = objectFound.gameObject;
+                enemyResized.scale = newScale;
+                enemyResized.enemyName = objectFound.gameObject.name;
+                
+                RandomEnemiesSize.instance.RandomEnemiesSizeDataDictionary.Add(networkId, enemyResized);
+                
+            }
+        }
 
         [ClientRpc]
         public static void UpdateTurretClientRpc(ulong networkId, Vector3 newScale, float scaleMultiplier,
