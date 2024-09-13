@@ -1,5 +1,9 @@
 # Changelog
 
+### v1.1.10
+
+- Add Maneater into vanilla check
+
 ### v1.1.9
 
 - Add V55 enemies into vanilla enemies check
