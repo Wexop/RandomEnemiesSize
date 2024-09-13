@@ -8,6 +8,7 @@ using LethalConfig;
 using LethalConfig.ConfigItems;
 using LethalConfig.ConfigItems.Options;
 using LethalLevelLoader;
+using LethalLib.Modules;
 using RandomEnemiesSize.Patches;
 using RandomEnemiesSize.SpecialEnemies;
 using UnityEngine;
@@ -34,6 +35,7 @@ namespace RandomEnemiesSize
         public ConfigEntry<bool> CustomAffectModEntry;
         public ConfigEntry<bool> customAffectTurretEntry;
         public ConfigEntry<bool> customAffectSpikeTrapEntry;
+        public ConfigEntry<bool> customAffectModdedHazardEntry;
         public ConfigEntry<bool> CustomAffectVanillaEntry;
         public ConfigEntry<string> customEnemyEntry;
         public ConfigEntry<string> customInteriorEntry;
@@ -61,6 +63,8 @@ namespace RandomEnemiesSize
         public ConfigEntry<float> minSizeTurretEntry;
         public ConfigEntry<float> minSizeSpikeTrapEntry;
         public ConfigEntry<float> maxSizeSpikeTrapEntry;
+        public ConfigEntry<float> minSizeModdedHazardEntry;
+        public ConfigEntry<float> maxSizeModdedHazardEntry;
 
         public ConfigEntry<float> randomPercentChanceEntry;
 
@@ -157,6 +161,20 @@ namespace RandomEnemiesSize
             maxSizeSpikeTrapEntry = Config.Bind("SpikeTrap", "MaxSpikeTrapSize", 2f,
                 "Change the maximum size of spike traps. No need to restart the game :)");
             CreateFloatConfig(maxSizeSpikeTrapEntry, 0f, 5f);
+            
+            //modded hazards
+            
+            customAffectModdedHazardEntry = Config.Bind("ModdedHazard", "AffectModdedHazard", true,
+                "Activate to make this mod affect modded map hazards size. No need to restart the game :)");
+            CreateBoolConfig(customAffectModdedHazardEntry);
+
+            minSizeModdedHazardEntry = Config.Bind("ModdedHazard", "MinModdedHazardSize", 0.3f,
+                "Change the minimum size of modded map hazards. No need to restart the game :)");
+            CreateFloatConfig(minSizeModdedHazardEntry, 0f, 5f);
+
+            maxSizeModdedHazardEntry = Config.Bind("ModdedHazard", "MaxModdedHazardSize", 2f,
+                "Change the maximum size of modded map hazards. No need to restart the game :)");
+            CreateFloatConfig(maxSizeModdedHazardEntry, 0f, 5f);
 
             //INFLUENCES
 
@@ -204,6 +222,12 @@ namespace RandomEnemiesSize
             CreateBoolConfig(devLogEntry);
             
             RedBeesManagement.Init();
+            MapObjects.mapObjects.ForEach(m =>
+            {
+                var name = m.mapObject.prefabToSpawn.name;
+                if(name.Contains("TurretContainer") || name.Contains("Landmine") || name.Contains("SpikeRoofTrapHazard")) return;
+                m.mapObject.prefabToSpawn.gameObject.AddComponent<MapHazardSizeRandomizer>();
+            });
 
             Harmony.CreateAndPatchAll(typeof(PatchEnemySize));
             Harmony.CreateAndPatchAll(typeof(PatchTurretSize));

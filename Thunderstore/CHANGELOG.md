@@ -3,6 +3,10 @@
 ### v1.1.10
 
 - Add Maneater into vanilla check
+- Mod can now affect modded map hazards
+- Add configs for modded map hazards
+- Update README with a new section MOD COMPATIBILITY FOR MAP HAZARDS, for modded map hazards that would not be affected by default by the mod.
+- Add lethal lib in dependency
 
 ### v1.1.9
 

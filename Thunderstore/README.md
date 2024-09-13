@@ -7,7 +7,7 @@ You can configure the range size for :
 - Outside enemies
 - Indoor enemies
 - Custom enemies
-- Hazards (landmines, turrets, spike traps)
+- Hazards (landmines, turrets, spike traps, modded hazards)
 
 You can configure if this mod affect vanilla and / or modded enemies (both activated by default)
 
@@ -15,7 +15,7 @@ You can configure the chance for each monster to have a random size (0% never to
 
 **Note that:**
 
-- Others mods enemies should be impacted by this mod.
+- Others mods enemies and map hazards should be impacted by this mod.
 - Only the **player who host the game** config will be taken.
 
 ### FOR CUSTOM ENEMIES
@@ -23,7 +23,7 @@ You can configure the chance for each monster to have a random size (0% never to
 #### Recommended:
 
 You can use [this generator](https://wexop.github.io/RandomEnemiesSizeCustomGeneraror) and copy the result in the
-input 'CustomEnemiesSize' to custom the range size of each monsters!
+input 'CustomEnemiesSize' to custom the range size of each monsters or modded map hazards!
 
 #### Manualy:
 
@@ -108,6 +108,25 @@ It returns an object like this :
 Don't forget to check if the enemy networkId is here before trying to access to the object.
 
 This should work for host and client. But remember that RandomEnemiesSize take only host configs, so check host may be better.
+
+### MOD COMPATIBILITY FOR MAP HAZARDS
+
+RandomEnemiesSize can normally affect modded map hazards. 
+
+If a modded map hazard cannot be affected by default by the mod, here is how you can have a compatibility :
+
+Do a soft dependency on RandomEnemiesSize :
+``` 
+[BepInDependency("wexop.random_enemies_size", BepInDependency.DependencyFlags.SoftDependency)]
+ ```
+Now on your map hazard script, on the start check if RandomEnemiesSize is here, and add the component MapHazardSizeRandomizer : 
+
+``` 
+if (Chainloader.PluginInfos.ContainsKey("wexop.random_enemies_size"))
+{
+    gameObject.addComponent<MapHazardSizeRandomizer>();
+}
+ ```
 
 Feel free to use this dictionary for any compatibility with the mod. For any question, suggestion, need, feel free to open an issue on GitHub or to ping me in the modded lethal company server :)
 

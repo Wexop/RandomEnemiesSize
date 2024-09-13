@@ -10,7 +10,7 @@ public class MapHazardSizeRandomizer: NetworkBehaviour
     {
         if (!IsServer || !IsOwner) return;
 
-        if (!RandomEnemiesSize.instance.customAffectTurretEntry.Value) return;
+        if (!RandomEnemiesSize.instance.customAffectModdedHazardEntry.Value) return;
 
         //RANDOM PERCENT
 
@@ -24,8 +24,11 @@ public class MapHazardSizeRandomizer: NetworkBehaviour
             return;
         }
 
-        var scale = Random.Range(RandomEnemiesSize.instance.minSizeTurretEntry.Value,
-            RandomEnemiesSize.instance.maxSizeTurretEntry.Value);
+        var scale = Random.Range(RandomEnemiesSize.instance.minSizeModdedHazardEntry.Value,
+            RandomEnemiesSize.instance.maxSizeModdedHazardEntry.Value);
+        
+        var customEnemy = RandomEnemiesSize.instance.GetCustomEnemySize(gameObject.name);
+        if (customEnemy.found) scale = Random.Range(customEnemy.minValue, customEnemy.maxValue);
 
         var networkObject = gameObject.GetComponentInParent<NetworkObject>();
 
