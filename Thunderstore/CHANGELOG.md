@@ -1,6 +1,6 @@
 # Changelog
 
-### v1.1.10
+### v1.1.11
 
 - Try to fix a desync size issue on hazards
 
