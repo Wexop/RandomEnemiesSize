@@ -29,7 +29,7 @@ namespace RandomEnemiesSize.Patches
             var scale = Random.Range(RandomEnemiesSize.instance.minSizeMineEntry.Value,
                 RandomEnemiesSize.instance.maxSizeMineEntry.Value);
 
-            var networkObject = __instance.gameObject.GetComponentInParent<NetworkObject>();
+            var networkObject = __instance.NetworkObject;
 
             var originalScale = networkObject.transform.localScale;
             var newScale = originalScale * scale;

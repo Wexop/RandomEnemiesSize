@@ -30,7 +30,7 @@ public class MapHazardSizeRandomizer: NetworkBehaviour
         var customEnemy = RandomEnemiesSize.instance.GetCustomEnemySize(gameObject.name);
         if (customEnemy.found) scale = Random.Range(customEnemy.minValue, customEnemy.maxValue);
 
-        var networkObject = gameObject.GetComponentInParent<NetworkObject>();
+        var networkObject = NetworkObject;
 
         var originalScale = networkObject.transform.localScale;
         var newScale = originalScale * scale;

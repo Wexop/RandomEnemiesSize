@@ -2,6 +2,10 @@
 
 ### v1.1.10
 
+- Try to fix a desync size issue on hazards
+
+### v1.1.10
+
 - Add Maneater into vanilla check
 - Mod can now affect modded map hazards
 - Add configs for modded map hazards

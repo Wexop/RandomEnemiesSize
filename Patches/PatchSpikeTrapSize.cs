@@ -30,7 +30,7 @@ namespace RandomEnemiesSize.Patches
             var scale = Random.Range(RandomEnemiesSize.instance.minSizeSpikeTrapEntry.Value,
                 RandomEnemiesSize.instance.maxSizeSpikeTrapEntry.Value);
 
-            var networkObject = __instance.gameObject.GetComponentInParent<NetworkObject>();
+            var networkObject = __instance.NetworkObject;
 
             var originalScale = new Vector3(1,0,1);
             var newScale = originalScale * scale;

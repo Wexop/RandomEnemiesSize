@@ -18,8 +18,12 @@ public class PatchRoundManager
         {
             var name = spawnableMapObject.prefabToSpawn.name;
             if(name.Contains("TurretContainer") || name.Contains("Landmine") || name.Contains("SpikeRoofTrapHazard")) return;
+
+            var component = spawnableMapObject.prefabToSpawn.GetComponent<MapHazardSizeRandomizer>();
+            if (component == null)
+                component = spawnableMapObject.prefabToSpawn.GetComponentInChildren<MapHazardSizeRandomizer>();
             
-            spawnableMapObject.prefabToSpawn.AddComponent<MapHazardSizeRandomizer>();
+            if(component == null) spawnableMapObject.prefabToSpawn.AddComponent<MapHazardSizeRandomizer>();
         }
     }
 }
