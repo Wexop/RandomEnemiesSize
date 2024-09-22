@@ -1,5 +1,9 @@
 # Changelog
 
+### v1.1.12
+
+- Masked enemy is now affected by the mod
+
 ### v1.1.11
 
 - Try to fix a desync size issue on hazards

@@ -6,6 +6,15 @@ namespace RandomEnemiesSize.Patches
     [HarmonyPatch(typeof(EnemyAI))]
     internal class PatchEnemySize
     {
+
+        [HarmonyPatch(typeof(MaskedPlayerEnemy))]
+        [HarmonyPatch("Start")]
+        [HarmonyPostfix]
+        private static void PatchStartMasked(MaskedPlayerEnemy __instance)
+        {
+            PatchStart(__instance);
+        }
+        
         [HarmonyPatch("Start")]
         [HarmonyPostfix]
         private static void PatchStart(EnemyAI __instance)
