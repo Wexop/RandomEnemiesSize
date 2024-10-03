@@ -7,7 +7,7 @@ namespace RandomEnemiesSize.Patches;
 [HarmonyPatch(typeof(RoundManager))]
 public class PatchRoundManager
 {
-    [HarmonyPatch(nameof(RoundManager.LoadNewLevel))]
+    [HarmonyPatch(nameof(RoundManager.GenerateNewLevelClientRpc))]
     [HarmonyPrefix]
     private static void PatchLoadLevel(RoundManager __instance)
     {

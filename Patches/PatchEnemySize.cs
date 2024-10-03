@@ -87,8 +87,6 @@ namespace RandomEnemiesSize.Patches
             NetworkSize.UpdateEnemyClientRpc(__instance.NetworkObjectId, newScale, scale, influences);
 
 
-            if (RandomEnemiesSize.instance.devLogEntry.Value)
-                Debug.Log($"ENEMY ({__instance.gameObject.name}) SPAWNED WITH RANDOM SIZE {newScale.ToString()}");
         }
     }
 }

@@ -22,7 +22,7 @@ namespace RandomEnemiesSize
     {
         private const string GUID = "wexop.random_enemies_size";
         private const string NAME = "RandomEnemiesSize";
-        private const string VERSION = "1.1.12";
+        private const string VERSION = "1.1.13";
 
         public static string LethalLevelLoaderReferenceChain = "imabatby.lethallevelloader";
 
@@ -237,6 +237,15 @@ namespace RandomEnemiesSize
             Harmony.CreateAndPatchAll(typeof(PatchRoundManager));
 
             Logger.LogInfo("RandomEnemiesSize Patched !!");
+        }
+
+        public void RegisterResizedGameObject(EnemyResized enemyResized)
+        {
+            if (instance.RandomEnemiesSizeDataDictionary.ContainsKey(enemyResized.newtorkId))
+            {
+                instance.RandomEnemiesSizeDataDictionary.Remove(enemyResized.newtorkId);
+            }
+            instance.RandomEnemiesSizeDataDictionary.Add(enemyResized.newtorkId, enemyResized);
         }
 
         public static string GetDungeonName()

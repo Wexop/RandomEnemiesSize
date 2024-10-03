@@ -22,6 +22,8 @@ namespace RandomEnemiesSize
             }
             else
             {
+                
+                if (RandomEnemiesSize.instance.devLogEntry.Value) Debug.Log($"ENEMY ({enemieFound.name}) SPAWNED WITH RANDOM SIZE {newScale.ToString()}");
                 //Debug.Log($"ENEMIE FOUND {enemieFound.gameObject.name} NEW SCALE IS {newScale} WITH A MULTIPLIER OF {scaleMultiplier}");
                 //change scale
                 enemieFound.transform.localScale = newScale;
@@ -40,8 +42,8 @@ namespace RandomEnemiesSize
                 enemyResized.gameObject = enemieFound.gameObject;
                 enemyResized.scale = newScale;
                 enemyResized.enemyName = enemieFound.enemyType.enemyName;
-                
-                RandomEnemiesSize.instance.RandomEnemiesSizeDataDictionary.Add(networkId, enemyResized);
+
+                RandomEnemiesSize.instance.RegisterResizedGameObject(enemyResized);
 
                 if (enemieFound.enemyType.enemyName == "Red Locust Bees")
                     RedBeesManagement.ChangeSize(enemieFound, scaleMultiplier);
@@ -75,7 +77,7 @@ namespace RandomEnemiesSize
                 enemyResized.scale = newScale;
                 enemyResized.enemyName = objectFound.gameObject.name;
                 
-                RandomEnemiesSize.instance.RandomEnemiesSizeDataDictionary.Add(networkId, enemyResized);
+                RandomEnemiesSize.instance.RegisterResizedGameObject(enemyResized);
                 
             }
         }
@@ -108,7 +110,7 @@ namespace RandomEnemiesSize
                 enemyResized.scale = newScale;
                 enemyResized.enemyName = "Turret";
                 
-                RandomEnemiesSize.instance.RandomEnemiesSizeDataDictionary.Add(networkId, enemyResized);
+                RandomEnemiesSize.instance.RegisterResizedGameObject(enemyResized);
                 
             }
         }
@@ -141,7 +143,7 @@ namespace RandomEnemiesSize
                 enemyResized.scale = newScale;
                 enemyResized.enemyName = "LandMine";
                 
-                RandomEnemiesSize.instance.RandomEnemiesSizeDataDictionary.Add(networkId, enemyResized);
+                RandomEnemiesSize.instance.RegisterResizedGameObject(enemyResized);
                 
             }
         }
@@ -174,7 +176,7 @@ namespace RandomEnemiesSize
                 enemyResized.scale = newScale;
                 enemyResized.enemyName = "SpikeTrap";
                 
-                RandomEnemiesSize.instance.RandomEnemiesSizeDataDictionary.Add(networkId, enemyResized);
+                RandomEnemiesSize.instance.RegisterResizedGameObject(enemyResized);
             }
         }
     }

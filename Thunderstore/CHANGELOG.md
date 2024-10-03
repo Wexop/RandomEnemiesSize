@@ -1,5 +1,9 @@
 # Changelog
 
+### v1.1.13
+
+- Improve shared enemyResized dictionary
+
 ### v1.1.12
 
 - Masked enemy is now affected by the mod
