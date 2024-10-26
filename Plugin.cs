@@ -22,7 +22,7 @@ namespace RandomEnemiesSize
     {
         private const string GUID = "wexop.random_enemies_size";
         private const string NAME = "RandomEnemiesSize";
-        private const string VERSION = "1.1.13";
+        private const string VERSION = "1.1.14";
 
         public static string LethalLevelLoaderReferenceChain = "imabatby.lethallevelloader";
 
@@ -226,7 +226,8 @@ namespace RandomEnemiesSize
             {
                 var name = m.mapObject.prefabToSpawn.name;
                 if(name.Contains("TurretContainer") || name.Contains("Landmine") || name.Contains("SpikeRoofTrapHazard")) return;
-                m.mapObject.prefabToSpawn.gameObject.AddComponent<MapHazardSizeRandomizer>();
+                var c = m.mapObject.prefabToSpawn.gameObject.GetComponent<MapHazardSizeRandomizer>();
+                if(c == null) m.mapObject.prefabToSpawn.gameObject.AddComponent<MapHazardSizeRandomizer>();
             });
 
             Harmony.CreateAndPatchAll(typeof(PatchEnemySize));
@@ -337,22 +338,19 @@ namespace RandomEnemiesSize
             var name = nameValue.ToLower();
             while (name.Contains(" ")) name = name.Replace(" ", "");
 
-            if (customEnemies.ToLower().Contains(name))
+            var enemies = customEnemies.Split(";");
+
+            foreach (var e in enemies)
             {
-                var enemies = customEnemies.Split(";");
-
-                foreach (var e in enemies)
+                var values = e.Split(":");
+                if (name.Contains(values[0]))
                 {
-                    var values = e.Split(":");
-                    if (values[0].Contains(name))
-                    {
-                        float.TryParse(values[1], NumberStyles.Any, CultureInfo.InvariantCulture, out minvalue);
-                        float.TryParse(values[2], NumberStyles.Any, CultureInfo.InvariantCulture, out maxvalue);
+                    float.TryParse(values[1], NumberStyles.Any, CultureInfo.InvariantCulture, out minvalue);
+                    float.TryParse(values[2], NumberStyles.Any, CultureInfo.InvariantCulture, out maxvalue);
 
-                        customEnemy.found = true;
-                        customEnemy.minValue = minvalue;
-                        customEnemy.maxValue = maxvalue;
-                    }
+                    customEnemy.found = true;
+                    customEnemy.minValue = minvalue;
+                    customEnemy.maxValue = maxvalue;
                 }
             }
 

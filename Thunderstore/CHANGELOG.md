@@ -1,5 +1,9 @@
 # Changelog
 
+### v1.1.14
+
+- Better enemy names check
+
 ### v1.1.13
 
 - Improve shared enemyResized dictionary
