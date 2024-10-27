@@ -43,6 +43,8 @@ namespace RandomEnemiesSize
 
             var value = 1f - (multiplier - 1);
             var pitch = Mathf.Clamp(value, soundInfluenceMin, soundInfluenceMax);
+            
+            if(RandomEnemiesSize.instance.devLogEntry.Value) Debug.Log($"Pitch set to {pitch}");
 
             if (enemyAI.creatureVoice != null) enemyAI.creatureVoice.pitch = pitch;
             if (enemyAI.creatureSFX != null) enemyAI.creatureSFX.pitch = pitch;
@@ -63,6 +65,7 @@ namespace RandomEnemiesSize
 
             var value = 1f - (multiplier - 1);
             var pitch = Mathf.Clamp(value, soundInfluenceMin, soundInfluenceMax);
+            if(RandomEnemiesSize.instance.devLogEntry.Value) Debug.Log($"Pitch set to {pitch}");
 
             foreach (var audioSource in audioSources) audioSource.pitch = pitch;
         }
@@ -80,6 +83,7 @@ namespace RandomEnemiesSize
 
             var value = 1f - (multiplier - 1);
             var pitch = Mathf.Clamp(value, soundInfluenceMin, soundInfluenceMax);
+            if(RandomEnemiesSize.instance.devLogEntry.Value) Debug.Log($"Pitch set to {pitch}");
 
             if (turret.berserkAudio != null) turret.berserkAudio.pitch = pitch;
             if (turret.farAudio != null) turret.farAudio.pitch = pitch;
@@ -102,6 +106,7 @@ namespace RandomEnemiesSize
 
             var value = 1f - (multiplier - 1);
             var pitch = Mathf.Clamp(value, soundInfluenceMin, soundInfluenceMax);
+            if(RandomEnemiesSize.instance.devLogEntry.Value) Debug.Log($"Pitch set to {pitch}");
 
             if (landmine.mineAudio != null) landmine.mineAudio.pitch = pitch;
             if (landmine.mineFarAudio != null) landmine.mineFarAudio.pitch = pitch;
@@ -122,6 +127,7 @@ namespace RandomEnemiesSize
 
             var value = 1f - (multiplier - 1);
             var pitch = Mathf.Clamp(value, soundInfluenceMin, soundInfluenceMax);
+            if(RandomEnemiesSize.instance.devLogEntry.Value) Debug.Log($"Pitch set to {pitch}");
 
             if (spikeTrap.spikeTrapAudio != null) spikeTrap.spikeTrapAudio.pitch = pitch;
 
