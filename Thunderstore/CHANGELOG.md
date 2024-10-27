@@ -1,5 +1,9 @@
 # Changelog
 
+### v1.1.16
+
+- Fix an issue with custom enemy names
+
 ### v1.1.15
 
 - Fix an issue where monster break when customEnemy configs is empty
