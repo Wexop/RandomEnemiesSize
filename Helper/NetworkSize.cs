@@ -62,7 +62,7 @@ namespace RandomEnemiesSize
             }
             else
             {
-                if (RandomEnemiesSize.instance.devLogEntry.Value) Debug.Log($"MAP HAZARD WITH NEW SCALE : {newScale}");
+                if (RandomEnemiesSize.instance.devLogEntry.Value) Debug.Log($"MAP HAZARD {objectFound.name} WITH NEW SCALE : {newScale}");
                 objectFound.transform.localScale = newScale;
                 influences.InfluenceMapHazardSound(objectFound.gameObject, scaleMultiplier);
                 

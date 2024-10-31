@@ -1,6 +1,6 @@
 {
   "name": "RandomEnemiesSize",
-  "version_number": "1.1.16",
+  "version_number": "1.1.17",
   "website_url": "https://github.com/Wexop/RandomEnemiesSize",
   "description": "[V50+] Monsters now spawn with a random size. Configurable with LethalConfig: Outside, Indoor, Custom enemies and map hazards !",
   "dependencies": [

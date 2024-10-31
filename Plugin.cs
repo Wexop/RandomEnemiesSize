@@ -22,7 +22,7 @@ namespace RandomEnemiesSize
     {
         private const string GUID = "wexop.random_enemies_size";
         private const string NAME = "RandomEnemiesSize";
-        private const string VERSION = "1.1.16";
+        private const string VERSION = "1.1.17";
 
         public static string LethalLevelLoaderReferenceChain = "imabatby.lethallevelloader";
 
@@ -341,6 +341,11 @@ namespace RandomEnemiesSize
             while (name.Contains(" ")) name = name.Replace(" ", "");
 
             var enemies = customEnemies.Split(";");
+
+            if (enemies.Length <= 1)
+            {
+                enemies = customEnemies.Split(",");
+            }
 
             foreach (var e in enemies)
             {
