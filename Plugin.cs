@@ -9,6 +9,7 @@ using LethalConfig.ConfigItems;
 using LethalConfig.ConfigItems.Options;
 using LethalLevelLoader;
 using LethalLib.Modules;
+using RandomEnemiesSize.Helper;
 using RandomEnemiesSize.Patches;
 using RandomEnemiesSize.SpecialEnemies;
 using UnityEngine;
@@ -36,6 +37,7 @@ namespace RandomEnemiesSize
         public ConfigEntry<bool> customAffectTurretEntry;
         public ConfigEntry<bool> customAffectSpikeTrapEntry;
         public ConfigEntry<bool> customAffectModdedHazardEntry;
+        public ConfigEntry<bool> customAffectOutsideHazardEntry;
         public ConfigEntry<bool> CustomAffectVanillaEntry;
         public ConfigEntry<string> customEnemyEntry;
         public ConfigEntry<string> customInteriorEntry;
@@ -65,6 +67,8 @@ namespace RandomEnemiesSize
         public ConfigEntry<float> maxSizeSpikeTrapEntry;
         public ConfigEntry<float> minSizeModdedHazardEntry;
         public ConfigEntry<float> maxSizeModdedHazardEntry;
+        public ConfigEntry<float> minSizeOutsideHazardEntry;
+        public ConfigEntry<float> maxSizeOutsideHazardEntry;
 
         public ConfigEntry<float> randomPercentChanceEntry;
 
@@ -175,6 +179,20 @@ namespace RandomEnemiesSize
             maxSizeModdedHazardEntry = Config.Bind("ModdedHazard", "MaxModdedHazardSize", 2f,
                 "Change the maximum size of modded map hazards. No need to restart the game :)");
             CreateFloatConfig(maxSizeModdedHazardEntry, 0f, 5f);
+            
+            //outside hazards
+            
+            customAffectOutsideHazardEntry = Config.Bind("OutsideHazard", "AffectOutsideModdedHazard", false,
+                "Activate to make this mod affect outside hazards size. No need to restart the game :)");
+            CreateBoolConfig(customAffectOutsideHazardEntry);
+
+            minSizeOutsideHazardEntry = Config.Bind("OutsideHazard", "MinModdedHazardSize", 0.3f,
+                "Change the minimum size of outside hazards. No need to restart the game :)");
+            CreateFloatConfig(minSizeOutsideHazardEntry, 0f, 5f);
+
+            maxSizeOutsideHazardEntry = Config.Bind("OutsideHazard", "MaxModdedHazardSize", 2f,
+                "Change the maximum size of outside hazards. No need to restart the game :)");
+            CreateFloatConfig(maxSizeOutsideHazardEntry, 0f, 5f);
 
             //INFLUENCES
 
@@ -222,13 +240,7 @@ namespace RandomEnemiesSize
             CreateBoolConfig(devLogEntry);
             
             RedBeesManagement.Init();
-            MapObjects.mapObjects.ForEach(m =>
-            {
-                var name = m.mapObject.prefabToSpawn.name;
-                if(name.Contains("TurretContainer") || name.Contains("Landmine") || name.Contains("SpikeRoofTrapHazard")) return;
-                var c = m.mapObject.prefabToSpawn.gameObject.GetComponent<MapHazardSizeRandomizer>();
-                if(c == null) m.mapObject.prefabToSpawn.gameObject.AddComponent<MapHazardSizeRandomizer>();
-            });
+            AddRandomSizeToHazards();
 
             Harmony.CreateAndPatchAll(typeof(PatchEnemySize));
             Harmony.CreateAndPatchAll(typeof(PatchTurretSize));
@@ -238,6 +250,21 @@ namespace RandomEnemiesSize
             Harmony.CreateAndPatchAll(typeof(PatchRoundManager));
 
             Logger.LogInfo("RandomEnemiesSize Patched !!");
+        }
+
+        public void AddRandomSizeToHazards()
+        {
+            MapObjects.mapObjects.ForEach(m =>
+            {
+                var name = m.mapObject.prefabToSpawn.name;
+                if(name.Contains("TurretContainer") || name.Contains("Landmine") || name.Contains("SpikeRoofTrapHazard")) return;
+                
+                var c = m.mapObject.prefabToSpawn.gameObject.GetComponent<MapHazardSizeRandomizer>();
+                if(c == null) m.mapObject.prefabToSpawn.gameObject.AddComponent<MapHazardSizeRandomizer>();
+                
+                var a = m.outsideObject?.spawnableObject?.prefabToSpawn?.gameObject.GetComponent<OutsideMapHazardSizeRandomizer>();
+                if(a == null) m.outsideObject?.spawnableObject?.prefabToSpawn?.gameObject.AddComponent<OutsideMapHazardSizeRandomizer>();
+            });
         }
 
         public void RegisterResizedGameObject(EnemyResized enemyResized)
