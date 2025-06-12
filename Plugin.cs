@@ -38,6 +38,7 @@ namespace RandomEnemiesSize
         public ConfigEntry<bool> customAffectModdedHazardEntry;
         public ConfigEntry<bool> CustomAffectVanillaEntry;
         public ConfigEntry<string> customEnemyEntry;
+        public ConfigEntry<string> customMoonEntry;
         public ConfigEntry<string> customInteriorEntry;
         public ConfigEntry<bool> devLogEntry;
 
@@ -113,12 +114,16 @@ namespace RandomEnemiesSize
             CreateBoolConfig(CustomAffectModEntry);
 
             customEnemyEntry = Config.Bind("Custom", "CustomEnemiesSize", "",
-                "Custom the size for an enemy wanted with his EXACT name. RECOMMENDED: Go to the thunderstore mod page, you can find a generator to make easier this config. Manual example -> ForestGiant:0.4:5;FlowerMan:0.2:6. Dont forgot the separator ';' between each monsters. No need to restart the game :)");
+                "Custom the size for an enemy wanted with his EXACT name. RECOMMENDED: Go to the thunderstore mod page, you can find a generator to make this config easier. Manual example -> ForestGiant:0.4:5;FlowerMan:0.2:6. Dont forgot the separator ';' between each monsters. No need to restart the game :)");
             CreateStringConfig(customEnemyEntry);
 
             customInteriorEntry = Config.Bind("Custom", "CustomInteriorsSize", "",
-                "THE MOD LethalLevelLoader IS REQUIRED FOR THIS FEATURE. Multiply the base size for an indoor enemy in an interior wanted with his EXACT name. RECOMMENDED: Go to the thunderstore mod page, you can find a generator to make easier this config. Manual example -> mansion#any:1.5,NutCracker:2;customInterior#any:3; No need to restart the game :)");
+                "THE MOD LethalLevelLoader IS REQUIRED FOR THIS FEATURE. Multiply the base size for an indoor enemy in an interior wanted with his EXACT name. RECOMMENDED: Go to the thunderstore mod page, you can find a generator to make this config easier. Manual example -> mansion#any:1.5,NutCracker:2;customInterior#any:3; No need to restart the game :)");
             CreateInteriorStringConfig(customInteriorEntry);
+
+            customMoonEntry = Config.Bind("Custom", "CustomMoonEnemiesSize", "",
+                "Custom the size for an enemy on a specific moon. RECOMMENDED: Go to the thunderstore mod page, you can find a generator to make this config easier. Manual example -> Assurance#any:0.8:2.5,ForestGiant:0.4:5,FlowerMan:0.2:6;Mars#any:1:2,ForestGiant:1:3 . No need to restart the game :)");
+            CreateInteriorStringConfig(customMoonEntry);
             
             // turret
 
@@ -361,6 +366,72 @@ namespace RandomEnemiesSize
                     customEnemy.found = true;
                     customEnemy.minValue = minvalue;
                     customEnemy.maxValue = maxvalue;
+                }
+            }
+
+            return customEnemy;
+        }
+
+        public CustomEnemySize GetCustomMoonEnemySize(string enemyName, string planetName)
+        {
+            var customEnemy = new CustomEnemySize();
+
+            if (customMoonEntry.Value == "" || enemyName == null || planetName == null || enemyName == "" || planetName == "") return customEnemy;
+
+            var customEnemies = customMoonEntry.Value.ToLower();
+
+            while (customEnemies.Contains(" ")) customEnemies = customEnemies.Replace(" ", "");
+
+            float minvalue = 1;
+            float maxvalue = 1;
+
+            var name = enemyName.ToLower();
+            while (name.Contains(" ")) name = name.Replace(" ", "");
+
+            var planet = planetName.ToLower();
+            while (planet.Contains(" ")) planet = planet.Replace(" ", "");
+            
+            Logger.LogInfo(name);
+            Logger.LogInfo(planet);
+            Logger.LogInfo(customEnemies);
+            
+            var moons = customEnemies.Split(";");
+            Logger.LogInfo(moons);
+
+            foreach (var e in moons)
+            {
+                var data = e.Split("#");
+                Logger.LogInfo($"{data[0]}, {data[1]}");
+
+                if (CompareEnemyName(planet, data[0]))
+                {
+                    var enemies = data[1].Split(",");
+                    Logger.LogInfo($"{enemies}, {enemies.Length}");
+
+
+                    foreach (var enemy in enemies)
+                    {
+                        Logger.LogInfo(enemy);
+
+                        var values = enemy.Split(":");
+                        Logger.LogInfo(values);
+
+                        if(values.Length != 3) continue;
+            
+                        if (name.Contains(values[0]) || (values[0] == "any" && !customEnemy.found))
+                        {
+                            Logger.LogInfo(values);
+
+                            float.TryParse(values[1], NumberStyles.Any, CultureInfo.InvariantCulture, out minvalue);
+                            float.TryParse(values[2], NumberStyles.Any, CultureInfo.InvariantCulture, out maxvalue);
+
+                            customEnemy.found = true;
+                            customEnemy.minValue = minvalue;
+                            customEnemy.maxValue = maxvalue;
+                        }
+                    }
+                
+
                 }
             }
 

@@ -48,6 +48,13 @@ namespace RandomEnemiesSize.Patches
             var customEnemy = RandomEnemiesSize.instance.GetCustomEnemySize(__instance.enemyType.enemyName);
             if (customEnemy.found) scale = Random.Range(customEnemy.minValue, customEnemy.maxValue);
 
+            if (RandomEnemiesSize.instance.devLogEntry.Value)
+                Debug.Log(
+                    $"PLANET NAME : {StartOfRound.Instance.currentLevel.PlanetName}");
+
+            var customMoonEnemy = RandomEnemiesSize.instance.GetCustomMoonEnemySize(__instance.enemyType.enemyName, StartOfRound.Instance.currentLevel.PlanetName);
+            if (customMoonEnemy.found) scale = Random.Range(customMoonEnemy.minValue, customMoonEnemy.maxValue);
+
 
             if (RandomEnemiesSize.instance.LethalLevelLoaderIsHere)
             {

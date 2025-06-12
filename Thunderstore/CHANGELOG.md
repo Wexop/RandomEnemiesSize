@@ -1,5 +1,11 @@
 # Changelog
 
+### v1.1.17
+
+- New config, custom moon enemy size. Ex : Assurance#any:0.8:2.5,ForestGiant:0.4:5,FlowerMan:0.2:6;Mars#any:1:2,ForestGiant:1:3. This config should work with every enemy and hazard (vanilla + modded)
+- This config can be made easier on [the generator](https://wexop.github.io/RandomEnemiesSizeCustomGeneraror)
+- Add GiantKiwi in vanilla monster check
+
 ### v1.1.16
 
 - Fix an issue with custom enemy names

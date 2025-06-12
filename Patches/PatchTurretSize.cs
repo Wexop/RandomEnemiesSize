@@ -29,6 +29,9 @@ namespace RandomEnemiesSize.Patches
 
             var scale = Random.Range(RandomEnemiesSize.instance.minSizeTurretEntry.Value,
                 RandomEnemiesSize.instance.maxSizeTurretEntry.Value);
+            
+            var customMoonEnemy = RandomEnemiesSize.instance.GetCustomMoonEnemySize(__instance.gameObject.name, StartOfRound.Instance.currentLevel.PlanetName);
+            if (customMoonEnemy.found) scale = Random.Range(customMoonEnemy.minValue, customMoonEnemy.maxValue);
 
             var networkObject = __instance.NetworkObject;
 

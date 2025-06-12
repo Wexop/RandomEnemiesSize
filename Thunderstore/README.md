@@ -28,7 +28,18 @@ input 'CustomEnemiesSize' to custom the range size of each monsters or modded ma
 #### Manualy:
 
 This is an input, you can for example write -> ForestGiant:1:2;NutCracker:1:2 Make sure to have a separator ';' between
-monsters, even if you have only one custom enemies !
+monsters !
+
+### FOR CUSTOM MOON ENEMIES
+
+#### Recommended:
+
+You can use [this generator](https://wexop.github.io/RandomEnemiesSizeCustomGeneraror) and copy the result in the
+input 'CustomMoonEnemiesSize' to custom the range size of each monsters or modded map hazards for any moon!
+
+#### Manualy:
+
+This is an input, you can for example write -> Assurance#any:0.8:2.5,ForestGiant:0.4:5,FlowerMan:0.2:6;Mars#any:1:2,ForestGiant:1:3 Make sure to have a separator ';' between each moon !
 
 ### FOR CUSTOM INTERIORS
 

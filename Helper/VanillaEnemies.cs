@@ -32,6 +32,7 @@ namespace RandomEnemiesSize
             "Clay Surgeon",
             "Bush Wolf",
             "Maneater",
+            "GiantKiwi"
         };
 
         public bool IsAVanillaEnemy(string name)
