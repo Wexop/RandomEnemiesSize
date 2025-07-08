@@ -46,7 +46,16 @@ namespace RandomEnemiesSize.Patches
                     RandomEnemiesSize.instance.maxSizeIndoorEntry.Value);
 
             var customEnemy = RandomEnemiesSize.instance.GetCustomEnemySize(__instance.enemyType.enemyName);
-            if (customEnemy.found) scale = Random.Range(customEnemy.minValue, customEnemy.maxValue);
+            if (customEnemy.found)
+            {
+                scale = Random.Range(customEnemy.minValue, customEnemy.maxValue);
+            }
+
+            var customFixedEnemy = RandomEnemiesSize.instance.GetCustomFixedEnemySize(__instance.enemyType.enemyName);
+            if (customFixedEnemy.found && customFixedEnemy.values.Count > 0)
+            {
+                scale = customFixedEnemy.values[Random.Range(0, customFixedEnemy.values.Count)];
+            }
 
             if (RandomEnemiesSize.instance.devLogEntry.Value)
                 Debug.Log(

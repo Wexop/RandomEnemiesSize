@@ -30,6 +30,12 @@ public class MapHazardSizeRandomizer: NetworkBehaviour
         var customEnemy = RandomEnemiesSize.instance.GetCustomEnemySize(gameObject.name);
         if (customEnemy.found) scale = Random.Range(customEnemy.minValue, customEnemy.maxValue);
         
+        var customFixedEnemy = RandomEnemiesSize.instance.GetCustomFixedEnemySize(gameObject.name);
+        if (customFixedEnemy.found && customFixedEnemy.values.Count > 0)
+        {
+            scale = customFixedEnemy.values[Random.Range(0, customFixedEnemy.values.Count)];
+        }
+        
         var customMoonEnemy = RandomEnemiesSize.instance.GetCustomMoonEnemySize(gameObject.name, StartOfRound.Instance.currentLevel.PlanetName);
         if (customMoonEnemy.found) scale = Random.Range(customMoonEnemy.minValue, customMoonEnemy.maxValue);
 

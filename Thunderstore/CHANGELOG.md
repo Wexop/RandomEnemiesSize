@@ -1,5 +1,9 @@
 # Changelog
 
+### v1.1.18
+
+- New config, custom fixed enemy size : Custom the size for an enemy with fixed value. Manual example -> ForestGiant:1:2:3;FlowerMan:0.2:2. This mean, forest giant can be size 1 or 2 or 3, no others values. Works with both ',' and ';' separator (use only one of them for the entire config)
+
 ### v1.1.17
 
 - New config, custom moon enemy size. Ex : Assurance#any:0.8:2.5,ForestGiant:0.4:5,FlowerMan:0.2:6;Mars#any:1:2,ForestGiant:1:3. This config should work with every enemy and hazard (vanilla + modded)

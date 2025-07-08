@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Globalization;
+using System.Linq;
 using BepInEx;
 using BepInEx.Bootstrap;
 using BepInEx.Configuration;
@@ -22,7 +23,7 @@ namespace RandomEnemiesSize
     {
         private const string GUID = "wexop.random_enemies_size";
         private const string NAME = "RandomEnemiesSize";
-        private const string VERSION = "1.1.17";
+        private const string VERSION = "1.1.18";
 
         public static string LethalLevelLoaderReferenceChain = "imabatby.lethallevelloader";
 
@@ -38,6 +39,7 @@ namespace RandomEnemiesSize
         public ConfigEntry<bool> customAffectModdedHazardEntry;
         public ConfigEntry<bool> CustomAffectVanillaEntry;
         public ConfigEntry<string> customEnemyEntry;
+        public ConfigEntry<string> customFixedEnemyEntry;
         public ConfigEntry<string> customMoonEntry;
         public ConfigEntry<string> customInteriorEntry;
         public ConfigEntry<bool> devLogEntry;
@@ -123,7 +125,11 @@ namespace RandomEnemiesSize
 
             customMoonEntry = Config.Bind("Custom", "CustomMoonEnemiesSize", "",
                 "Custom the size for an enemy on a specific moon. RECOMMENDED: Go to the thunderstore mod page, you can find a generator to make this config easier. Manual example -> Assurance#any:0.8:2.5,ForestGiant:0.4:5,FlowerMan:0.2:6;Mars#any:1:2,ForestGiant:1:3 . No need to restart the game :)");
-            CreateInteriorStringConfig(customMoonEntry);
+            CreateStringConfig(customMoonEntry);
+
+            customFixedEnemyEntry = Config.Bind("Custom", "CustomFixedEnemiesSize", "",
+                "Custom the size for an enemy with fixed value. Manual example -> ForestGiant:1:2:3;FlowerMan:0.2:2. This mean, forest giant can be size 1 or 2 or 3, no others values. No need to restart the game :)");
+            CreateStringConfig(customFixedEnemyEntry);
             
             // turret
 
@@ -372,6 +378,51 @@ namespace RandomEnemiesSize
             return customEnemy;
         }
 
+        public CustomFixedEnemySize GetCustomFixedEnemySize(string nameValue)
+        {
+            var customEnemy = new CustomFixedEnemySize();
+
+            if (customFixedEnemyEntry.Value == "") return customEnemy;
+
+            var customEnemies = customFixedEnemyEntry.Value.ToLower();
+
+            while (customEnemies.Contains(" ")) customEnemies = customEnemies.Replace(" ", "");
+
+
+            var name = nameValue.ToLower();
+            while (name.Contains(" ")) name = name.Replace(" ", "");
+
+            var enemies = customEnemies.Split(";");
+
+            if (enemies.Length <= 1)
+            {
+                enemies = customEnemies.Split(",");
+            }
+
+            foreach (var e in enemies)
+            {
+                var values = e.Split(":"); //[0] is name, else are values
+                
+                if (name.Contains(values[0]))
+                {
+
+                    customEnemy.found = true;
+                    
+                    for (var i = values.ToList().Count - 1; i >= 0; i--)
+                    {
+                        if (i != 0)
+                        {
+                            float val = 1;
+                            float.TryParse(values[i], NumberStyles.Any, CultureInfo.InvariantCulture, out val);
+                            customEnemy.values.Add(val);
+                        }
+                    }
+                }
+            }
+
+            return customEnemy;
+        }
+
         public CustomEnemySize GetCustomMoonEnemySize(string enemyName, string planetName)
         {
             var customEnemy = new CustomEnemySize();
@@ -494,5 +545,11 @@ namespace RandomEnemiesSize
         public bool found;
         public float maxValue = 1;
         public float minValue = 1;
+    }
+
+    public class CustomFixedEnemySize
+    {
+        public bool found;
+        public List<float> values = new List<float>() { };
     }
 }

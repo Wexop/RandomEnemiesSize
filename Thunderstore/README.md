@@ -27,8 +27,15 @@ input 'CustomEnemiesSize' to custom the range size of each monsters or modded ma
 
 #### Manualy:
 
-This is an input, you can for example write -> ForestGiant:1:2;NutCracker:1:2 Make sure to have a separator ';' between
+This is an input, you can for example write -> ForestGiant:1:2;NutCracker:1:2 . Works with both ',' and ';' separator (use only one of them for the entire config)
 monsters !
+
+### FOR CUSTOM FIXED ENEMIES
+
+#### Manualy:
+
+This is an input, custom the size for an enemy with fixed value. Manual example -> ForestGiant:1:2:3;FlowerMan:0.2:2. This mean, forest giant can be size 1 or 2 or 3, no others values. Works with both ',' and ';' separator (use only one of them for the entire config)
+
 
 ### FOR CUSTOM MOON ENEMIES
 
