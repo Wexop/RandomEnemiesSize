@@ -23,7 +23,7 @@ namespace RandomEnemiesSize
     {
         private const string GUID = "wexop.random_enemies_size";
         private const string NAME = "RandomEnemiesSize";
-        private const string VERSION = "1.1.18";
+        private const string VERSION = "1.1.19";
 
         public static string LethalLevelLoaderReferenceChain = "imabatby.lethallevelloader";
 
@@ -55,6 +55,7 @@ namespace RandomEnemiesSize
         public ConfigEntry<float> influenceSoundMaxEntry;
         public ConfigEntry<float> influenceSoundMinEntry;
         public ConfigEntry<bool> influenceBeehiveEntry;
+        public ConfigEntry<bool> influenceSapsuckersEggsEntry;
 
         public ConfigEntry<float> maxSizeIndoorEntry;
         public ConfigEntry<float> maxSizeMineEntry;
@@ -205,9 +206,13 @@ namespace RandomEnemiesSize
                 "If InfluenceSound is activated, this define the maximum pitch of monsters audio sources. No need to restart the game :)");
             CreateFloatConfig(influenceSoundMaxEntry, 0f, 3f);
 
-            influenceBeehiveEntry = Config.Bind("Influences", "InfluenceBeehive", false,
+            influenceBeehiveEntry = Config.Bind("Influences", "InfluenceBeehive", true,
                 "Activate to make size influence beehive weight and price. No need to restart the game :)");
             CreateBoolConfig(influenceBeehiveEntry);
+
+            influenceSapsuckersEggsEntry = Config.Bind("Influences", "influenceSapsuckerEggs", true,
+                "Activate to make size influence sapsucker eggs weight and price. No need to restart the game :)");
+            CreateBoolConfig(influenceSapsuckersEggsEntry);
 
             //FUNMODE
 
