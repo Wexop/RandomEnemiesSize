@@ -46,7 +46,14 @@ namespace RandomEnemiesSize
                 RandomEnemiesSize.instance.RegisterResizedGameObject(enemyResized);
 
                 if (enemieFound.enemyType.enemyName == "Red Locust Bees")
+                {
                     RedBeesManagement.ChangeSize(enemieFound, scaleMultiplier);
+                }
+                else if (enemieFound.enemyType.enemyName == "GiantKiwi")
+                {
+                    GiantKiwiManagement.ChangeSize(enemieFound, scaleMultiplier, influences);
+                }
+
             }
         }
         

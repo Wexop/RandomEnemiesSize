@@ -1,5 +1,10 @@
 # Changelog
 
+### v1.1.19
+
+- Sapsucker eggs size now match the size of their parent. You can even influence the weight AND price (like for the bee hive) with the influenceSapsuckersEggs config !
+
+
 ### v1.1.18
 
 - New config, custom fixed enemy size : Custom the size for an enemy with fixed value. Manual example -> ForestGiant:1:2:3;FlowerMan:0.2:2. This mean, forest giant can be size 1 or 2 or 3, no others values. Works with both ',' and ';' separator (use only one of them for the entire config)
