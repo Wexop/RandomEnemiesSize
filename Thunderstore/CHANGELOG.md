@@ -1,9 +1,12 @@
 # Changelog
 
+### v1.1.20
+
+- Add v81 monsters in vanilla monster check
+
 ### v1.1.19
 
 - Sapsucker eggs size now match the size of their parent. You can even influence the weight AND price (like for the bee hive) with the influenceSapsuckersEggs config !
-
 
 ### v1.1.18
 

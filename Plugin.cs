@@ -23,7 +23,7 @@ namespace RandomEnemiesSize
     {
         private const string GUID = "wexop.random_enemies_size";
         private const string NAME = "RandomEnemiesSize";
-        private const string VERSION = "1.1.19";
+        private const string VERSION = "1.1.20";
 
         public static string LethalLevelLoaderReferenceChain = "imabatby.lethallevelloader";
 
